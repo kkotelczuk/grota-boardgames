@@ -5,6 +5,10 @@ import { gamePath } from '@/lib/data/games';
 import { formatRange } from '@/lib/game-index';
 import { editionLabel } from '@/lib/languages';
 import type { Game } from '@/lib/schema';
+import { plural } from '@/i18n/plural';
+
+const gamesPl = (n: number) =>
+  plural('pl', n, { one: '{n} gra', few: '{n} gry', many: '{n} gier', other: '{n} gry' });
 
 /**
  * Treść llms.txt (https://llmstxt.org): krótkie, faktograficzne zdania + linki do kluczowych stron.
@@ -17,7 +21,7 @@ export function llmsTxt(siteUrl: URL, games: Game[]): string {
 
   return `# ${site.name}
 
-> ${site.name} (Grota) to stowarzyszenie z Białegostoku (${site.address.street}), w którym gra się na miejscu w gry bez prądu: planszówki, karcianki, gry wojenne i imprezowe. Kolekcja liczy ${games.length} gier. Gier nie wypożyczamy – przychodzi się zagrać na miejscu. Dni otwarte są ogłaszane na Discordzie.
+> ${site.name} (Grota) to stowarzyszenie z Białegostoku (${site.address.street}), w którym gra się na miejscu w gry bez prądu: planszówki, karcianki, gry wojenne i imprezowe. Kolekcja liczy ${gamesPl(games.length)}. Gier nie wypożyczamy – przychodzi się zagrać na miejscu. Dni otwarte są ogłaszane na Discordzie.
 
 Białystok Board Game Group "Grota" is a non-profit association in Białystok, Poland, where people meet to play board games, card games, wargames and party games on site. The collection has ${games.length} games. Games are not lent out. Open days are announced on Discord.
 
@@ -63,7 +67,7 @@ export function llmsFullTxt(siteUrl: URL, games: Game[]): string {
 
   return `# Kolekcja gier – ${site.name}
 
-> Wszystkie gry, w które można zagrać na miejscu w Grocie (${site.address.street}, ${site.address.city}). Gier nie wypożyczamy. ${games.length} pozycji.
+> Wszystkie gry, w które można zagrać na miejscu w Grocie (${site.address.street}, ${site.address.city}). Gier nie wypożyczamy. W kolekcji: ${gamesPl(games.length)}.
 
 ${lines.join('\n')}`;
 }

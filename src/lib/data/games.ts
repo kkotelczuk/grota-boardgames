@@ -71,12 +71,9 @@ const LATIN = /^[\p{Script=Latin}\p{Number}\p{Punctuation}\p{Symbol}\s]+$/u;
 export async function cardCover(game: Game): Promise<CoverImage | null> {
   const image = coverImage(game);
   if (!image) return null;
-  const result = await getImage({
-    src: image,
-    widths: [160, 240, 360, 480],
-    width: 360,
-    format: 'webp',
-  });
+  // Dwie szerokości wystarczą (karta ma ≤ 240 px CSS; 480 px dla ekranów 2x) – każdy wpis
+  // w srcset to dodatkowe bajty w zserializowanych propsach wyspy, powielone ×252.
+  const result = await getImage({ src: image, widths: [240, 480], width: 240, format: 'webp' });
   return {
     src: result.src,
     srcset: result.srcSet.attribute,

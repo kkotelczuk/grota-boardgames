@@ -21,7 +21,7 @@ export default defineConfig({
   integrations: [
     vue(),
     sitemap({
-      i18n: { defaultLocale: 'pl', locales: { pl: 'pl-PL', en: 'en-US' } },
+      i18n: { defaultLocale: 'pl', locales: { pl: 'pl-PL', en: 'en' } },
       // Bez przekierowania i stron ulubionych (noindex – treść zależy od localStorage).
       filter: (page) => !/\/(discord|ulubione|favorites)\/$/.test(page),
     }),

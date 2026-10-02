@@ -189,6 +189,8 @@ export const pl = {
   },
   about: {
     heading: 'O Grocie',
+    collection: (count: number) =>
+      `${p(count, 'W kolekcji Groty jest {n} gra', 'W kolekcji Groty są {n} gry', 'W kolekcji Groty jest {n} gier')} – listę z opisami znajdziesz na stronie głównej.`,
     lead: 'Białostocka Grupa Planszówkowa „Grota” to stowarzyszenie z Białegostoku, które zrzesza miłośników gier bez prądu: planszówek, karcianek, gier wojennych i imprezowych.',
     howItWorksHeading: 'Jak to działa',
     howItWorks: [

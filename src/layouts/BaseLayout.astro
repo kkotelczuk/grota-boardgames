@@ -4,6 +4,10 @@ import Seo, { type Props as SeoProps } from '@/components/Seo.astro';
 import SiteHeader from '@/components/SiteHeader.astro';
 import SiteFooter from '@/components/SiteFooter.astro';
 import { htmlLang, useTranslations, withBase } from '@/i18n';
+// Preload fontów latin – pobieranie rusza razem z HTML-em, a nie dopiero po sparsowaniu CSS.
+// Pliki latin-ext (ą, ę, ł…) dociąga @font-face z unicode-range, gdy na stronie są te znaki.
+import interLatin from '@/assets/fonts/inter-latin.woff2?url';
+import frauncesLatin from '@/assets/fonts/fraunces-latin.woff2?url';
 
 export type Props = SeoProps & {
   /** Nazwa trasy dla przełącznika języka (ścieżki bierzemy z `alternates`). */
@@ -49,6 +53,8 @@ const t = useTranslations(locale);
         });
       })();
     </script>
+    <link rel="preload" href={interLatin} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={frauncesLatin} as="font" type="font/woff2" crossorigin />
     <meta name="theme-color" content="#f6f1e7" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/png" sizes="32x32" href={withBase('favicon-32.png')} />

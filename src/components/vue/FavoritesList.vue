@@ -27,11 +27,18 @@ const items = computed(() =>
     [Vue] Ta lista istnieje tylko w przeglądarce (localStorage). Na serwerze `ready === false`,
     więc HTML zawiera stan „wczytywanie”, a nie fałszywy pusty stan, który by mignął.
   -->
-  <p v-if="!ready" class="text-muted" role="status">{{ t.favorites.loading }}</p>
+  <!-- Stan „wczytywanie” ma te same wymiary co pusty stan – podmiana nie przesuwa układu (CLS). -->
+  <div
+    v-if="!ready"
+    class="grid min-h-72 place-items-center rounded-(--radius-card) border border-dashed border-line-strong px-6 py-12 text-center text-muted"
+    role="status"
+  >
+    {{ t.favorites.loading }}
+  </div>
 
   <div
     v-else-if="!items.length"
-    class="rounded-(--radius-card) border border-dashed border-line-strong px-6 py-12 text-center"
+    class="flex min-h-72 flex-col items-center justify-center rounded-(--radius-card) border border-dashed border-line-strong px-6 py-12 text-center"
   >
     <p class="font-display text-2xl font-semibold">{{ t.favorites.emptyTitle }}</p>
     <p class="mx-auto mt-2 max-w-prose text-muted">{{ t.favorites.emptyText }}</p>

@@ -187,6 +187,8 @@ export const en: Dictionary = {
   },
   about: {
     heading: 'About Grota',
+    collection: (count: number) =>
+      `The Grota collection has ${p(count, '{n} game', '{n} games')} – browse them with descriptions on the home page.`,
     lead: 'Białystok Board Game Group “Grota” (Białostocka Grupa Planszówkowa „Grota”) is an association in Białystok, Poland, bringing together fans of unplugged games: board games, card games, wargames and party games.',
     howItWorksHeading: 'How it works',
     howItWorks: [
