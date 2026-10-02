@@ -42,19 +42,11 @@ describe('ChipGroup', () => {
     expect(wrapper.emitted('update:modelValue')).toEqual([[['a', 'b']], [['b']]]);
   });
 
-  it('reflects selection from v-model (parent updates the prop)', async () => {
-    // Wzorzec v-model w testach: rodzic (tu: handler) odsyła nową wartość jako prop.
+  it('reflects the selection passed through v-model', () => {
     const wrapper = mount(ChipGroup, {
-      props: {
-        legend: 'L',
-        options,
-        modelValue: [] as string[],
-        'onUpdate:modelValue': (value: string[]) =>
-          wrapper.setProps({ modelValue: value } as never),
-      },
+      props: { legend: 'L', options, modelValue: ['c'] as string[] },
       global,
     });
-    await wrapper.findAll('button.chip')[2]!.trigger('click');
     expect(wrapper.findAll('button.chip')[2]!.attributes('aria-pressed')).toBe('true');
   });
 

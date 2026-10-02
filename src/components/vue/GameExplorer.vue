@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue';
-import { useMediaQuery } from '@vueuse/core';
+import { computed, onMounted, ref, useTemplateRef } from 'vue';
+import { onKeyStroke, useMediaQuery } from '@vueuse/core';
 import type { FilterOptions, GameIndexItem } from '@/lib/game-index';
 import { SORT_KEYS, stateFromQuery, stateToQuery, type KindFilter } from '@/lib/filters';
 import type { Locale } from '@/lib/languages';
@@ -20,7 +20,8 @@ import { provideI18n } from './i18n';
 /*
  * [Vue] Granica wyspy: Astro renderuje ten komponent na serwerze (SSR → pełna lista w HTML dla
  * SEO i bez JS), a potem hydratuje go w przeglądarce (`client:load`). Props przechodzą przez
- * serializację JSON, dlatego to odchudzony indeks (bez opisów) i tylko dane – żadnych funkcji.
+ * serializację Astro (format JSON-podobny: obsługuje Map/Set/Date, ale nie funkcje), dlatego to
+ * odchudzony indeks (bez opisów) i tylko dane.
  */
 const { games, options, locale } = defineProps<{
   games: GameIndexItem[];
@@ -66,9 +67,38 @@ const kindModel = computed<Exclude<KindFilter, 'all'> | null>({
   set: (value) => (state.value.kind = value ?? 'all'),
 });
 
-const byId = computed(() => new Map(games.map((g) => [g.id, g])));
-const expansionsOf = (game: GameIndexItem) =>
-  game.expansionIds.flatMap((id) => byId.value.get(id) ?? []);
+/*
+ * [Vue] Stabilne referencje propsów = brak zbędnych re-renderów kart. Gdyby szablon wołał
+ * `game.expansionIds.map(...)` przy każdym renderze, każda karta dostawałaby NOWĄ tablicę
+ * i Vue musiałby ją zaktualizować (252 karty przy każdym znaku w wyszukiwarce).
+ * Mapę liczymy raz (computed) – karta bez dodatków dostaje tę samą pustą tablicę.
+ */
+const NO_EXPANSIONS: GameIndexItem[] = [];
+const expansionsById = computed(() => {
+  const byId = new Map(games.map((g) => [g.id, g]));
+  return new Map(
+    games
+      .filter((g) => g.expansionIds.length)
+      .map((g) => [g.id, g.expansionIds.flatMap((id) => byId.get(id) ?? [])]),
+  );
+});
+const expansionsOf = (game: GameIndexItem) => expansionsById.value.get(game.id) ?? NO_EXPANSIONS;
+
+// ---------- Komunikat dla czytników ekranu po kliknięciu serduszka ----------
+const announcement = ref('');
+function announceFavorite(_id: string, isFavorite: boolean) {
+  announcement.value = isFavorite ? t.favorites.added : t.favorites.removed;
+}
+
+// ---------- Skrót klawiszowy „/” → wyszukiwarka ----------
+// [Vue] useTemplateRef na KOMPONENCIE daje dostęp do tego, co wystawił przez defineExpose().
+const searchBox = useTemplateRef<InstanceType<typeof SearchBox>>('searchBox');
+onKeyStroke('/', (event) => {
+  const target = event.target as HTMLElement | null;
+  if (target?.closest('input, textarea, select, [contenteditable]')) return;
+  event.preventDefault();
+  searchBox.value?.focus();
+});
 /** Liczba pozycji widocznych bez filtrów (gry bazowe + samodzielne dodatki). */
 const totalTopLevel = computed(
   () => games.filter((g) => g.kind === 'base' || !g.baseGameIds.length).length,
@@ -201,7 +231,7 @@ function clearEverything() {
       >
         <div class="flex gap-2">
           <div class="min-w-0 flex-1">
-            <SearchBox v-model="searchModel" />
+            <SearchBox ref="searchBox" v-model="searchModel" />
           </div>
           <button
             type="button"
@@ -236,6 +266,7 @@ function clearEverything() {
           }}</strong>
         </p>
         <SelectField v-model="state.sort" :label="t.list.sortLabel" :options="sortOptions" />
+        <p class="sr-only" aria-live="polite">{{ announcement }}</p>
       </div>
 
       <div
@@ -273,9 +304,14 @@ function clearEverything() {
         role="list"
       >
         <li v-for="game in results" :key="game.id">
+          <!--
+            [Vue] Scoped slot: treść slotu używa propsów slotu (`card`), a nie zmiennej `game` z v-for.
+            Slot odwołujący się do zmiennych z v-for kompilator oznacza jako dynamiczny i wymusza
+            re-render karty przy każdym renderze rodzica.
+          -->
           <GameCard :game="game" :expansions="expansionsOf(game)">
-            <template #actions>
-              <FavoriteButton :id="game.id" :title="game.title" />
+            <template #actions="{ game: card }">
+              <FavoriteButton :id="card.id" :title="card.title" @toggle="announceFavorite" />
             </template>
           </GameCard>
         </li>
@@ -283,7 +319,7 @@ function clearEverything() {
 
       <div
         v-else
-        class="mt-10 rounded-(--radius-card) border border-dashed border-line-strong px-6 py-12 text-center"
+        class="mt-10 rounded-card border border-dashed border-line-strong px-6 py-12 text-center"
       >
         <p class="font-display text-2xl font-semibold">{{ t.list.emptyTitle }}</p>
         <p class="mt-2 text-muted">{{ t.list.emptyText }}</p>

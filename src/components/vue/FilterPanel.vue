@@ -29,7 +29,7 @@ const languages = defineModel<string[]>('languages', { required: true });
 const polishRules = defineModel<boolean>('polishRules', { required: true });
 const categories = defineModel<number[]>('categories', { required: true });
 const mechanics = defineModel<number[]>('mechanics', { required: true });
-const kind = defineModel<KindFilter | null>('kind', { required: true });
+const kind = defineModel<Exclude<KindFilter, 'all'> | null>('kind', { required: true });
 const favoritesOnly = defineModel<boolean>('favoritesOnly', { required: true });
 
 const { t } = useI18n();
@@ -86,7 +86,7 @@ const mechanicOptions = computed(() =>
       <ChipGroup v-model="languages" :legend="t.list.filter.language" :options="languageOptions" />
       <!-- Etykieta obejmuje checkbox: cały wiersz (≥ 44 px) jest celem dotykowym. -->
       <label class="flex min-h-11 cursor-pointer items-center gap-3 text-sm">
-        <input v-model="polishRules" type="checkbox" class="size-5 rounded accent-(--accent)" />
+        <input v-model="polishRules" type="checkbox" class="size-5 rounded accent-accent" />
         {{ t.list.filter.polishRules }}
       </label>
     </div>
@@ -115,7 +115,7 @@ const mechanicOptions = computed(() =>
     />
 
     <label class="flex min-h-11 cursor-pointer items-center gap-3 text-sm font-semibold">
-      <input v-model="favoritesOnly" type="checkbox" class="size-5 rounded accent-(--accent)" />
+      <input v-model="favoritesOnly" type="checkbox" class="size-5 rounded accent-accent" />
       {{ t.list.filter.favoritesOnly }}
     </label>
   </div>

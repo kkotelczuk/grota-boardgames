@@ -4,6 +4,11 @@ import { formatRange, type GameIndexItem } from '@/lib/game-index';
 import AppIcon from './AppIcon.vue';
 import { useI18n } from './i18n';
 
+defineSlots<{
+  /** Akcje w rogu karty (np. serduszko). Scoped: rodzic dostaje dane karty. */
+  actions(props: { game: GameIndexItem }): unknown;
+}>();
+
 const { game, expansions = [] } = defineProps<{
   game: GameIndexItem;
   /** Dodatki z kolekcji – rozwiązane przez rodzica (karta nie zna całej listy). */
@@ -40,7 +45,7 @@ const languageTitle = computed(() =>
 
 <template>
   <article
-    class="group relative flex h-full flex-col overflow-hidden rounded-(--radius-card) border border-line bg-surface shadow-(--shadow-card) transition-[box-shadow,transform] duration-200 ease-(--ease-out-soft) focus-within:shadow-(--shadow-lift) hover:-translate-y-0.5 hover:shadow-(--shadow-lift) max-sm:grid max-sm:grid-cols-[6.5rem_1fr]"
+    class="group relative flex h-full flex-col overflow-hidden rounded-card border border-line bg-surface shadow-card transition-[box-shadow,transform] duration-200 ease-out-soft focus-within:shadow-lift hover:-translate-y-0.5 hover:shadow-lift max-sm:grid max-sm:grid-cols-[6.5rem_1fr]"
   >
     <div class="relative bg-sunken max-sm:row-span-2">
       <!-- Okładka jest dekoracyjnym duplikatem linku z tytułu: poza tabulacją i czytnikiem. -->
@@ -68,7 +73,7 @@ const languageTitle = computed(() =>
     </div>
     <!-- Jeden slot akcji: na desktopie nad okładką, na mobile w prawym górnym rogu treści. -->
     <div class="absolute top-1.5 right-1.5 z-10">
-      <slot name="actions" />
+      <slot name="actions" :game="game" />
     </div>
 
     <div class="flex min-w-0 flex-1 flex-col gap-2 p-3 sm:p-4">

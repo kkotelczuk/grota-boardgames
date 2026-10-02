@@ -2,5 +2,15 @@
   "version": "0.2",
   "language": "en,pl",
   "ignorePaths": ["node_modules", "dist", "data/**", "src/data/**", "pnpm-lock.yaml", "*.csv"],
-  "words": ["Grota", "Groty", "Grocie", "planszówki", "fontsource", "Fraunces", "vueuse", "hreflang", "llms"]
+  "words": [
+    "Grota",
+    "Groty",
+    "Grocie",
+    "planszówki",
+    "fontsource",
+    "Fraunces",
+    "vueuse",
+    "hreflang",
+    "llms"
+  ]
 }

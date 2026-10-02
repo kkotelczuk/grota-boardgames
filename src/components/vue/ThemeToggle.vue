@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue';
+import { useMutationObserver } from '@vueuse/core';
 import type { Locale } from '@/lib/languages';
 import AppIcon from './AppIcon.vue';
 import { useI18n } from './i18n';
@@ -17,9 +18,20 @@ const THEME_KEY = 'grota:theme';
  */
 const theme = ref<Theme | null>(null);
 
+const readTheme = (): Theme =>
+  document.documentElement.dataset['theme'] === 'dark' ? 'dark' : 'light';
+
 onMounted(() => {
-  theme.value = document.documentElement.dataset['theme'] === 'dark' ? 'dark' : 'light';
+  theme.value = readTheme();
 });
+
+// Skrypt w <head> zmienia data-theme także przy zmianie motywu systemowego – nasłuchujemy atrybutu,
+// żeby ikona nie rozjechała się z faktycznym motywem. (useMutationObserver sprząta po odmontowaniu.)
+useMutationObserver(
+  () => (typeof document === 'undefined' ? null : document.documentElement),
+  () => (theme.value = readTheme()),
+  { attributes: true, attributeFilter: ['data-theme'] },
+);
 
 const nextLabel = computed(() => (theme.value === 'dark' ? t.theme.light : t.theme.dark));
 

@@ -56,12 +56,16 @@ function onBackdropClick(event: MouseEvent) {
 </script>
 
 <template>
-  <!-- [Vue] Teleport do <body>: dialog nie dziedziczy overflow/transform/z-index ze sticky paska. -->
+  <!--
+    [Vue] Teleport do <body>. Przy showModal() dialog i tak trafia do top layer (overflow/z-index
+    przodków go nie dotyczą), ale Teleport wynosi go poza DOM wyspy: nie staje się elementem
+    siatki `lg:grid` rodzica, nie dziedziczy jego stylów i nie zależy od struktury listy.
+  -->
   <Teleport v-if="mounted" to="body">
     <dialog
       ref="dialog"
       :aria-labelledby="titleId"
-      class="sheet m-0 mt-auto max-h-[88dvh] w-full max-w-none rounded-t-3xl bg-paper p-0 text-ink shadow-(--shadow-lift)"
+      class="sheet m-0 mt-auto max-h-[88dvh] w-full max-w-none rounded-t-3xl bg-paper p-0 text-ink shadow-lift"
       :style="dragY ? { transform: `translateY(${dragY}px)`, transition: 'none' } : undefined"
       @close="open = false"
       @cancel.prevent="open = false"

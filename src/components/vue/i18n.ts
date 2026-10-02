@@ -9,7 +9,7 @@ export interface I18nContext {
 /*
  * [Vue] Typowany InjectionKey: `inject(I18N)` zwraca `I18nContext | undefined` bez rzutowań.
  * Słownik zawiera funkcje (odmiana przez liczby), więc NIE da się go przekazać z Astro jako
- * props wyspy (props są serializowane do JSON-a). Wyspa dostaje tylko `locale: 'pl' | 'en'`,
+ * props wyspy (Astro serializuje propsy – Map/Set/Date tak, funkcje nie). Wyspa dostaje tylko `locale`,
  * a słownik importuje sama i udostępnia potomkom przez provide/inject.
  */
 export const I18N: InjectionKey<I18nContext> = Symbol('i18n');

@@ -77,11 +77,8 @@ function toggle(value: T) {
         :aria-pressed="selected.includes(option.value)"
         @click="toggle(option.value)"
       >
-        <!-- [Vue] Scoped slot: rodzic może podmienić treść chipa, dostając dane opcji. -->
-        <slot name="option" :option="option" :selected="selected.includes(option.value)">
-          {{ option.label }}
-          <span v-if="option.count != null" class="text-xs opacity-70">{{ option.count }}</span>
-        </slot>
+        {{ option.label }}
+        <span v-if="option.count != null" class="text-xs opacity-70">{{ option.count }}</span>
       </button>
     </div>
     <button

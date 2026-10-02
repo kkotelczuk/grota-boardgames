@@ -30,7 +30,7 @@ const items = computed(() =>
   <!-- Stan „wczytywanie” ma te same wymiary co pusty stan – podmiana nie przesuwa układu (CLS). -->
   <div
     v-if="!ready"
-    class="grid min-h-72 place-items-center rounded-(--radius-card) border border-dashed border-line-strong px-6 py-12 text-center text-muted"
+    class="grid min-h-72 place-items-center rounded-card border border-dashed border-line-strong px-6 py-12 text-center text-muted"
     role="status"
   >
     {{ t.favorites.loading }}
@@ -38,7 +38,7 @@ const items = computed(() =>
 
   <div
     v-else-if="!items.length"
-    class="flex min-h-72 flex-col items-center justify-center rounded-(--radius-card) border border-dashed border-line-strong px-6 py-12 text-center"
+    class="flex min-h-72 flex-col items-center justify-center rounded-card border border-dashed border-line-strong px-6 py-12 text-center"
   >
     <p class="font-display text-2xl font-semibold">{{ t.favorites.emptyTitle }}</p>
     <p class="mx-auto mt-2 max-w-prose text-muted">{{ t.favorites.emptyText }}</p>
@@ -73,8 +73,5 @@ const items = computed(() =>
 .fav-leave-to {
   opacity: 0;
   transform: scale(0.96);
-}
-.fav-move {
-  transition: transform 250ms var(--ease-out-soft);
 }
 </style>
