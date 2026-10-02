@@ -1,0 +1,41 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import FavoritesList from '@/components/vue/FavoritesList.vue';
+import { localizedPath, useTranslations, type Locale } from '@/i18n';
+import { buildIndex } from '@/lib/data/games';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const index = await buildIndex(locale);
+const alternates = {
+  pl: localizedPath({ name: 'favorites' }, 'pl'),
+  en: localizedPath({ name: 'favorites' }, 'en'),
+};
+---
+
+<!-- Lista zależy od localStorage konkretnej osoby – nie ma sensu jej indeksować. -->
+<BaseLayout
+  title={`${t.meta.favoritesTitle} – Grota`}
+  description={t.meta.favoritesDescription}
+  locale={locale}
+  alternates={alternates}
+  current="favorites"
+  noindex
+>
+  <section class="container-page pt-8 sm:pt-12">
+    <h1 class="font-display text-4xl font-semibold sm:text-5xl">{t.favorites.heading}</h1>
+    <p class="mt-3 max-w-prose text-muted">{t.favorites.lead}</p>
+    <div class="mt-8">
+      <!-- [Vue] client:load – bez JS ta strona nie ma treści; hydratujemy od razu. -->
+      <FavoritesList
+        client:load
+        games={index}
+        locale={locale}
+        browseHref={localizedPath({ name: 'home' }, locale)}
+      />
+    </div>
+  </section>
+</BaseLayout>

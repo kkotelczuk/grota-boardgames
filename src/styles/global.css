@@ -1,0 +1,237 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/fraunces/index.css';
+@import '@fontsource-variable/inter/index.css';
+
+/* Dark mode sterowany atrybutem na <html> (ustawia inline script w <head>), nie samą media query –
+   dzięki temu działa ręczny przełącznik zapisany w localStorage. */
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/* ---------- Design tokens (opis: docs/design.md) ---------- */
+:root {
+  --paper: #f6f1e7;
+  --surface: #fffcf5;
+  --surface-sunken: #efe8da;
+  --ink: #1b1916;
+  --ink-muted: #5a544a;
+  --line: #ddd3bf;
+  --line-strong: #b9ad94;
+  --accent: #1e5a44;
+  --accent-hover: #164433;
+  --accent-ink: #fffcf5;
+  --accent-soft: #dbe9e0;
+  --heart: #b3261e;
+  --focus: #1e5a44;
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --paper: #141311;
+  --surface: #1d1b18;
+  --surface-sunken: #24211d;
+  --ink: #f2ecdf;
+  --ink-muted: #b4ab9b;
+  --line: #36322b;
+  --line-strong: #4d473d;
+  --accent: #82c7a6;
+  --accent-hover: #a2d8bd;
+  --accent-ink: #10231b;
+  --accent-soft: #1f3a2e;
+  --heart: #ff8a80;
+  --focus: #a2d8bd;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-sunken: var(--surface-sunken);
+  --color-ink: var(--ink);
+  --color-muted: var(--ink-muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-heart: var(--heart);
+}
+
+@theme {
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --radius-card: 1rem;
+  --shadow-card: 0 1px 2px rgb(27 25 22 / 0.06), 0 4px 16px -8px rgb(27 25 22 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(27 25 22 / 0.08), 0 12px 28px -12px rgb(27 25 22 / 0.3);
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---------- View Transitions (MPA, cross-document) ----------
+   Natywne przejścia między stronami, bez routera JS: okładka „morfuje” z karty na stronę gry
+   (wspólna `view-transition-name: cover-<id>`). Wyspy Vue nie są dotknięte – to zwykła nawigacja. */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+}
+
+/* ---------- Base ---------- */
+@layer base {
+  html {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    min-height: 100dvh;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+    border-radius: 0.375rem;
+  }
+
+  ::selection {
+    background: var(--accent-soft);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ---------- Komponenty współdzielone przez Astro i Vue ---------- */
+@layer components {
+  .container-page {
+    width: 100%;
+    max-width: 80rem;
+    margin-inline: auto;
+    padding-inline: clamp(1rem, 4vw, 2rem);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding: 0.625rem 1.125rem;
+    border-radius: 999px;
+    font-weight: 600;
+    line-height: 1.2;
+    transition:
+      background-color 150ms,
+      color 150ms,
+      border-color 150ms,
+      transform 150ms var(--ease-out-soft);
+  }
+  .btn:active {
+    transform: scale(0.97);
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+  .btn-primary:hover {
+    background: var(--accent-hover);
+  }
+  .btn-ghost {
+    border: 1px solid var(--line-strong);
+    color: var(--ink);
+  }
+  .btn-ghost:hover {
+    border-color: var(--ink);
+    background: var(--surface);
+  }
+
+  .icon-btn {
+    display: inline-grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 999px;
+    color: var(--ink);
+    transition: background-color 150ms;
+  }
+  .icon-btn:hover {
+    background: var(--surface-sunken);
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    min-height: 2.75rem;
+    padding: 0.375rem 0.875rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    background: var(--surface);
+    font-size: 0.875rem;
+    line-height: 1.2;
+    transition:
+      background-color 150ms,
+      border-color 150ms;
+  }
+  .chip:hover {
+    border-color: var(--ink);
+  }
+  .chip[aria-pressed='true'],
+  .chip:has(input:checked) {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.375rem;
+    background: var(--surface-sunken);
+    color: var(--ink);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .prose-grota p + p {
+    margin-top: 1em;
+  }
+
+  .sr-only-focusable:not(:focus) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}

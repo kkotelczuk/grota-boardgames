@@ -1,0 +1,40 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { localizedPath, useTranslations } from '@/i18n';
+
+/*
+ * GitHub Pages serwuje jeden /404.html dla wszystkich ścieżek, więc strona jest dwujęzyczna:
+ * treść PL i EN obok siebie (EN z lang="en").
+ */
+const pl = useTranslations('pl');
+const en = useTranslations('en');
+---
+
+<BaseLayout
+  title={`${pl.meta.notFoundTitle} / ${en.meta.notFoundTitle} – Grota`}
+  description={pl.notFound.text}
+  locale="pl"
+  alternates={null}
+  noindex
+>
+  <section class="container-page grid gap-10 py-16 sm:py-24 md:grid-cols-2">
+    <div>
+      <p class="font-display text-7xl font-semibold text-accent">404</p>
+      <h1 class="mt-4 font-display text-3xl font-semibold">{pl.notFound.heading}</h1>
+      <p class="mt-3 text-muted">{pl.notFound.text}</p>
+      <a href={localizedPath({ name: 'home' }, 'pl')} class="btn btn-primary mt-6">
+        {pl.notFound.cta}
+      </a>
+    </div>
+    <div lang="en" class="md:border-l md:border-line md:pl-10">
+      <p class="font-display text-7xl font-semibold text-muted" aria-hidden="true">
+        404
+      </p>
+      <h2 class="mt-4 font-display text-3xl font-semibold">{en.notFound.heading}</h2>
+      <p class="mt-3 text-muted">{en.notFound.text}</p>
+      <a href={localizedPath({ name: 'home' }, 'en')} class="btn btn-ghost mt-6">
+        {en.notFound.cta}
+      </a>
+    </div>
+  </section>
+</BaseLayout>

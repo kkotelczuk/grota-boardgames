@@ -9,3 +9,5 @@ data/fetch-report.md
 PROMPT.md
 spec.md
 .translations-work
+test-results
+playwright-report

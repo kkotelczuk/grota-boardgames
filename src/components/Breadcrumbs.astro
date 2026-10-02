@@ -1,0 +1,32 @@
+---
+import { useTranslations, type Locale } from '@/i18n';
+
+interface Props {
+  locale: Locale;
+  items: { name: string; href?: string }[];
+}
+const { locale, items } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<nav aria-label={t.a11y.breadcrumbs} class="text-sm text-muted">
+  <ol class="flex flex-wrap items-center gap-x-1.5">
+    {items.map((item, index) => (
+      <li class="flex items-center gap-1.5">
+        {index > 0 && <span aria-hidden="true">/</span>}
+        {item.href ? (
+          <a
+            href={item.href}
+            class="inline-flex min-h-11 items-center underline-offset-4 hover:text-ink hover:underline"
+          >
+            {item.name}
+          </a>
+        ) : (
+          <span aria-current="page" class="text-ink">
+            {item.name}
+          </span>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>

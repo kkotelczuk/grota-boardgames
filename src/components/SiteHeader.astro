@@ -1,0 +1,106 @@
+---
+import Logo from './Logo.astro';
+import FavoritesCounter from './vue/FavoritesCounter.vue';
+import ThemeToggle from './vue/ThemeToggle.vue';
+import { localizedPath, otherLocale, useTranslations, withBase, type Locale } from '@/i18n';
+
+interface Props {
+  locale: Locale;
+  alternates: Record<Locale, string> | null;
+  current: 'games' | 'favorites' | 'about' | null;
+}
+const { locale, alternates, current } = Astro.props;
+const t = useTranslations(locale);
+const other = otherLocale(locale);
+const switchHref = alternates?.[other] ?? localizedPath({ name: 'home' }, other);
+
+const nav = [
+  { key: 'games', label: t.nav.games, href: localizedPath({ name: 'home' }, locale) },
+  { key: 'about', label: t.nav.about, href: localizedPath({ name: 'about' }, locale) },
+] as const;
+---
+
+<header class="border-b border-line">
+  <div class="container-page flex items-center gap-2 py-2 sm:gap-4 sm:py-3">
+    <a
+      href={localizedPath({ name: 'home' }, locale)}
+      class="-ml-1 flex min-h-11 items-center gap-2.5 rounded-lg pr-2 pl-1"
+      aria-label={`${t.meta.siteName} – ${t.nav.home}`}
+    >
+      <Logo size={44} alt="" />
+      <span class="font-display text-2xl leading-none font-semibold tracking-tight">Grota</span>
+    </a>
+
+    <nav aria-label={t.a11y.mainNav} class="ml-auto max-sm:hidden">
+      <ul class="flex items-center gap-1">
+        {nav.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              aria-current={current === item.key ? 'page' : undefined}
+              class="inline-flex min-h-11 items-center rounded-full px-3 font-medium hover:bg-sunken aria-[current=page]:text-accent aria-[current=page]:underline aria-[current=page]:decoration-2 aria-[current=page]:underline-offset-8"
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+        <li>
+          <a
+            href={withBase('discord/')}
+            class="inline-flex min-h-11 items-center rounded-full px-3 font-medium hover:bg-sunken"
+          >
+            {t.nav.discord}
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="flex items-center max-sm:ml-auto">
+      <!--
+        [Vue] Małe wyspy w headerze: client:idle – nie są potrzebne do pierwszego malowania,
+        hydratują się, gdy przeglądarka ma wolną chwilę (nie konkurują z listą gier).
+      -->
+      <FavoritesCounter
+        client:idle
+        href={localizedPath({ name: 'favorites' }, locale)}
+        locale={locale}
+      />
+      <ThemeToggle client:idle locale={locale} />
+      <a
+        href={switchHref}
+        hreflang={other === 'pl' ? 'pl-PL' : 'en'}
+        lang={other === 'pl' ? 'pl-PL' : 'en'}
+        class="inline-grid min-h-11 min-w-11 place-items-center rounded-full px-2 text-sm font-bold tracking-wide hover:bg-sunken"
+        aria-label={t.language.switchLabel}
+        title={t.language.switchLabel}
+      >
+        {other.toUpperCase()}
+      </a>
+    </div>
+  </div>
+
+  <!-- Mobile: główne linki w drugim rzędzie – zawsze widoczne, bez ukrytego menu. -->
+  <nav aria-label={t.a11y.mainNav} class="container-page -mt-1 pb-1 sm:hidden">
+    <ul class="flex gap-1 overflow-x-auto">
+      {nav.map((item) => (
+        <li>
+          <a
+            href={item.href}
+            aria-current={current === item.key ? 'page' : undefined}
+            class="inline-flex min-h-11 items-center rounded-full px-3 text-sm font-medium aria-[current=page]:bg-sunken"
+          >
+            {item.label}
+          </a>
+        </li>
+      ))}
+      <li>
+        <a
+          href={withBase('discord/')}
+          class="inline-flex min-h-11 items-center rounded-full px-3 text-sm font-medium"
+        >
+          {t.nav.discord}
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

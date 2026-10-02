@@ -1,0 +1,88 @@
+---
+import { site } from '@/config/site';
+import { localizedPath, useTranslations, withBase, type Locale } from '@/i18n';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-16 border-t border-line bg-sunken/60">
+  <div class="container-page grid gap-8 py-10 text-sm sm:grid-cols-[2fr_1fr_1fr]">
+    <!-- Spójne dane NAP (nazwa, adres) z src/config/site.ts – te same co w JSON-LD i llms.txt. -->
+    <div>
+      <p class="font-display text-lg font-semibold">{site.name}</p>
+      <p class="mt-1 text-muted">{t.footer.tagline}</p>
+      <address class="mt-3 not-italic">
+        {site.address.street}, {site.address.postalCode ? `${site.address.postalCode} ` : ''}
+        {site.address.city}
+      </address>
+    </div>
+    <nav aria-label={t.a11y.footerNav}>
+      <ul class="space-y-1">
+        <li>
+          <a
+            class="inline-flex min-h-11 items-center hover:underline"
+            href={localizedPath({ name: 'home' }, locale)}
+          >
+            {t.nav.games}
+          </a>
+        </li>
+        <li>
+          <a
+            class="inline-flex min-h-11 items-center hover:underline"
+            href={localizedPath({ name: 'favorites' }, locale)}
+          >
+            {t.nav.favorites}
+          </a>
+        </li>
+        <li>
+          <a
+            class="inline-flex min-h-11 items-center hover:underline"
+            href={localizedPath({ name: 'about' }, locale)}
+          >
+            {t.nav.about}
+          </a>
+        </li>
+        <li>
+          <a class="inline-flex min-h-11 items-center hover:underline" href={withBase('discord/')}>
+            {t.nav.discord}
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="space-y-3">
+      <!-- Wymóg warunków BGG XML API: widoczne „Powered by BGG” z linkiem. -->
+      <a
+        href="https://boardgamegeek.com"
+        rel="noopener"
+        class="inline-flex min-h-11 items-center gap-2 rounded-lg border border-line-strong bg-surface px-3 font-semibold hover:border-ink"
+      >
+        Powered by BGG
+      </a>
+      <p class="text-muted">
+        {t.footer.poweredBy}{' '}
+        <a class="underline" href="https://boardgamegeek.com" rel="noopener">
+          {t.footer.bggTerms}
+        </a>
+        .
+      </p>
+      <p class="text-muted">
+        {t.footer.machine}:
+        <a class="underline" href={withBase('llms.txt')}>
+          llms.txt
+        </a>
+        ,
+        <a class="underline" href={withBase('games.json')}>
+          games.json
+        </a>
+      </p>
+    </div>
+  </div>
+  <p class="container-page pb-8 text-xs text-muted">
+    © {year} {t.footer.rights}
+  </p>
+</footer>

@@ -1,0 +1,358 @@
+---
+import { Picture, getImage } from 'astro:assets';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import GameMiniCard from '@/components/GameMiniCard.astro';
+import FavoriteButton from '@/components/vue/FavoriteButton.vue';
+import { localizedPath, useTranslations, withBase, type Locale } from '@/i18n';
+import {
+  coverImage,
+  gamePath,
+  gameSubtitle,
+  gameTitle,
+  getAllGames,
+  getGamesById,
+  similarGames,
+} from '@/lib/data/games';
+import { formatNumberList, formatRange } from '@/lib/game-index';
+import { editionLabel } from '@/lib/languages';
+import type { Game } from '@/lib/schema';
+import { breadcrumbLd, gameLd, graph } from '@/lib/seo/jsonld';
+
+interface Props {
+  game: Game;
+  locale: Locale;
+}
+const { game, locale } = Astro.props;
+const t = useTranslations(locale);
+const g = t.game;
+
+const [allGames, byId] = await Promise.all([getAllGames(), getGamesById()]);
+const title = gameTitle(game, locale);
+const subtitle = gameSubtitle(game, locale);
+const cover = coverImage(game);
+const abs = (path: string) => new URL(path, Astro.site).toString();
+const homePath = localizedPath({ name: 'home' }, locale);
+
+const bases = game.baseGameIds.flatMap((id) => byId.get(id) ?? []);
+const expansions = game.expansionIds.flatMap((id) => byId.get(id) ?? []);
+const similar = similarGames(game, allGames);
+
+// Opis: PL z tłumaczenia; gdy go brak – EN z adnotacją (i lang="en" dla czytników ekranu).
+const descriptionText = game.description[locale] ?? game.description.en;
+const descriptionIsFallback =
+  locale === 'pl' && !game.description.pl && Boolean(game.description.en);
+const paragraphs = descriptionText?.split(/\n{2,}/) ?? [];
+
+const summary = game.summary[locale];
+const metaDescription = summary ?? t.meta.gameDescriptionFallback(title);
+
+const number = (value: number, digits = 1) =>
+  value.toLocaleString(locale, { minimumFractionDigits: digits, maximumFractionDigits: digits });
+const players = formatRange(game.minPlayers, game.maxPlayers);
+const time = formatRange(game.minPlayTime, game.maxPlayTime);
+const weightIndex = game.weight ? Math.min(4, Math.max(0, Math.round(game.weight) - 1)) : null;
+
+const ogImage = cover
+  ? (await getImage({ src: cover, width: 1200, format: 'jpg' })).src
+  : undefined;
+
+const alternates = { pl: gamePath(game, 'pl'), en: gamePath(game, 'en') };
+const crumbs = [
+  { name: t.nav.games, href: homePath },
+  ...bases.slice(0, 1).map((b) => ({ name: gameTitle(b, locale), href: gamePath(b, locale) })),
+  { name: title },
+];
+const siteUrl = new URL(withBase(''), Astro.site).toString();
+const jsonLd = graph([
+  gameLd(game, {
+    name: title,
+    url: abs(alternates[locale]),
+    description: metaDescription,
+    image: ogImage ? abs(ogImage) : null,
+    locale,
+    siteUrl,
+  }),
+  breadcrumbLd(crumbs.map((c) => ({ name: c.name, url: abs(c.href ?? alternates[locale]) }))),
+]);
+
+const filterHref = (param: 'cat' | 'mech', id: number) => `${homePath}?${param}=${id}`;
+---
+
+<BaseLayout
+  title={t.meta.gameTitle(title)}
+  description={metaDescription}
+  locale={locale}
+  alternates={alternates}
+  image={ogImage}
+  imageAlt={title}
+  type="article"
+  jsonLd={jsonLd}
+  current="games"
+>
+  <article class="container-page pt-4 sm:pt-6">
+    <Breadcrumbs locale={locale} items={crumbs} />
+
+    <div class="mt-4 grid gap-8 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:gap-12">
+      <div class="md:sticky md:top-6 md:self-start">
+        <div class="overflow-hidden rounded-(--radius-card) border border-line bg-sunken">
+          {cover ? (
+            <Picture
+              src={cover}
+              alt={locale === 'pl' ? `Okładka gry ${title}` : `${title} box cover`}
+              formats={['avif', 'webp']}
+              widths={[320, 480, 640, 800]}
+              sizes="(min-width: 768px) 40vw, 100vw"
+              loading="eager"
+              fetchpriority="high"
+              class="aspect-[4/3] w-full object-contain p-4 md:aspect-square"
+              style={`view-transition-name: cover-${game.id}`}
+            />
+          ) : (
+            <div class="grid aspect-[4/3] place-items-center text-muted md:aspect-square">
+              {t.card.noImage}
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div class="min-w-0">
+        {game.kind === 'expansion' && <p class="badge bg-accent-soft">{t.card.expansionBadge}</p>}
+        <h1 class="mt-2 font-display text-3xl font-semibold sm:text-4xl lg:text-5xl">{title}</h1>
+        {subtitle && (
+          <p class="mt-2 text-muted">
+            {locale === 'pl' ? g.originalTitle : g.polishEdition}:{' '}
+            <span lang={locale === 'pl' ? undefined : 'pl'} class="text-ink">
+              {subtitle}
+            </span>
+          </p>
+        )}
+        {game.year && (
+          <p class="mt-1 text-sm text-muted">
+            {g.year}: {game.year}
+          </p>
+        )}
+
+        <div class="mt-5 flex flex-wrap gap-3">
+          <!-- [Vue] Samodzielna wyspa: client:idle – przycisk nie jest potrzebny do pierwszego malowania. -->
+          <FavoriteButton client:idle id={game.id} title={title} locale={locale} variant="full" />
+          {game.bggUrl && (
+            <a href={game.bggUrl} rel="noopener" class="btn btn-ghost">
+              {g.onBgg}
+            </a>
+          )}
+        </div>
+
+        <dl class="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-(--radius-card) border border-line bg-line sm:grid-cols-3">
+          <div class="bg-surface p-4">
+            <dt class="text-sm text-muted">{g.players}</dt>
+            <dd class="mt-1 text-lg font-semibold">{players ?? g.unknown}</dd>
+            {game.bestPlayers.length > 0 && (
+              <dd class="text-sm text-muted">{g.best(formatNumberList(game.bestPlayers))}</dd>
+            )}
+          </div>
+          <div class="bg-surface p-4">
+            <dt class="text-sm text-muted">{g.playTime}</dt>
+            <dd class="mt-1 text-lg font-semibold">{time ? g.minutes(time) : g.unknown}</dd>
+          </div>
+          <div class="bg-surface p-4">
+            <dt class="text-sm text-muted">{g.age}</dt>
+            <dd class="mt-1 text-lg font-semibold">
+              {game.minAge ? g.ageValue(game.minAge) : g.unknown}
+            </dd>
+          </div>
+          <div class="bg-surface p-4">
+            <dt class="text-sm text-muted">{g.weight}</dt>
+            {game.weight != null && weightIndex != null ? (
+              <dd class="mt-1">
+                <span class="text-lg font-semibold">{g.weightScale(number(game.weight))}</span>
+                <span class="block text-sm text-muted">{g.weightLabels[weightIndex]}</span>
+                <span class="mt-2 flex gap-1" aria-hidden="true">
+                  {[1, 2, 3, 4, 5].map((step) => (
+                    <span
+                      class:list={[
+                        'h-1.5 flex-1 rounded-full',
+                        game.weight! >= step - 0.5 ? 'bg-accent' : 'bg-line',
+                      ]}
+                    />
+                  ))}
+                </span>
+              </dd>
+            ) : (
+              <dd class="mt-1 text-lg font-semibold">{g.unknown}</dd>
+            )}
+          </div>
+          <div class="bg-surface p-4">
+            <dt class="text-sm text-muted">{g.rating}</dt>
+            <dd class="mt-1 text-lg font-semibold">
+              {game.rating ? `${number(game.rating)} / 10` : g.unknown}
+            </dd>
+            {game.usersRated > 0 && (
+              <dd class="text-sm text-muted">{game.usersRated.toLocaleString(locale)} ★</dd>
+            )}
+          </div>
+          <div class="bg-surface p-4">
+            <dt class="text-sm text-muted">{g.rank}</dt>
+            <dd class="mt-1 text-lg font-semibold">{game.rank ? g.rankValue(game.rank) : '—'}</dd>
+          </div>
+        </dl>
+
+        {game.kind === 'expansion' && bases.length === 0 && game.externalBaseGames.length > 0 && (
+          <p class="mt-6 rounded-xl border border-line-strong bg-sunken p-4 text-sm" role="note">
+            {g.baseNotInCollection(game.externalBaseGames.map((b) => b.name).join(', '))}
+          </p>
+        )}
+
+        {bases.length > 0 && (
+          <section class="mt-8" aria-labelledby="base-title">
+            <h2 id="base-title" class="font-display text-xl font-semibold">
+              {g.baseGameHeading}
+            </h2>
+            <ul class="mt-3 grid gap-2" role="list">
+              {bases.map((base) => (
+                <li>
+                  <GameMiniCard game={base} locale={locale} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        <section class="mt-8" aria-labelledby="description-title">
+          <h2 id="description-title" class="font-display text-2xl font-semibold">
+            {g.description}
+          </h2>
+          {descriptionIsFallback && (
+            <p class="mt-2 text-sm text-muted italic">{g.descriptionFallback}</p>
+          )}
+          {paragraphs.length ? (
+            <div
+              class="prose-grota mt-3 max-w-prose text-[1.0625rem] leading-relaxed"
+              lang={descriptionIsFallback ? 'en' : undefined}
+            >
+              {paragraphs.map((p) => (
+                <p>{p}</p>
+              ))}
+            </div>
+          ) : (
+            <p class="mt-3 text-muted">{g.noDescription}</p>
+          )}
+        </section>
+
+        {expansions.length > 0 && (
+          <section class="mt-8" aria-labelledby="expansions-title">
+            <h2 id="expansions-title" class="font-display text-xl font-semibold">
+              {g.expansionsHeading}
+            </h2>
+            <ul class="mt-3 grid gap-2 sm:grid-cols-2" role="list">
+              {expansions.map((expansion) => (
+                <li>
+                  <GameMiniCard game={expansion} locale={locale} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        <div class="mt-8 grid gap-6 sm:grid-cols-2">
+          {game.categories.length > 0 && (
+            <section aria-labelledby="categories-title">
+              <h2
+                id="categories-title"
+                class="text-sm font-semibold text-muted uppercase tracking-wide"
+              >
+                {g.categories}
+              </h2>
+              <ul class="mt-2 flex flex-wrap gap-2" role="list">
+                {game.categories
+                  .filter((c) => c.id !== 1042)
+                  .map((c) => (
+                    <li>
+                      <a href={filterHref('cat', c.id)} class="chip">
+                        {c[locale]}
+                      </a>
+                    </li>
+                  ))}
+              </ul>
+            </section>
+          )}
+          {game.mechanics.length > 0 && (
+            <section aria-labelledby="mechanics-title">
+              <h2
+                id="mechanics-title"
+                class="text-sm font-semibold text-muted uppercase tracking-wide"
+              >
+                {g.mechanics}
+              </h2>
+              <ul class="mt-2 flex flex-wrap gap-2" role="list">
+                {game.mechanics.map((m) => (
+                  <li>
+                    <a href={filterHref('mech', m.id)} class="chip">
+                      {m[locale]}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+        </div>
+
+        {game.designers.length > 0 && (
+          <p class="mt-6 text-sm">
+            <span class="font-semibold">{g.designers}:</span> {game.designers.join(', ')}
+          </p>
+        )}
+
+        <section class="mt-8" aria-labelledby="copies-title">
+          <h2 id="copies-title" class="font-display text-xl font-semibold">
+            {g.inGrota}
+          </h2>
+          <ul
+            class="mt-3 divide-y divide-line rounded-xl border border-line bg-surface"
+            role="list"
+          >
+            {game.copies.map((copy) => (
+              <li class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 px-4 py-3">
+                <span lang={copy.editionLanguage === 'PL' ? 'pl' : undefined} class="font-medium">
+                  {copy.localTitle}
+                </span>
+                <span class="text-sm text-muted">
+                  {g.edition}: {editionLabel(copy, locale)}
+                </span>
+              </li>
+            ))}
+          </ul>
+          {game.missing.length > 0 && <p class="mt-2 text-sm text-muted italic">{g.incomplete}</p>}
+        </section>
+
+        <aside
+          class="mt-10 rounded-(--radius-card) bg-ink p-6 text-paper sm:p-8"
+          aria-labelledby="cta-title"
+        >
+          <h2 id="cta-title" class="font-display text-2xl font-semibold">
+            {g.ctaTitle}
+          </h2>
+          <p class="mt-2 opacity-85">{g.ctaText}</p>
+          <a href={withBase('discord/')} class="btn mt-5 bg-paper text-ink hover:bg-surface">
+            {g.ctaButton}
+          </a>
+        </aside>
+      </div>
+    </div>
+
+    {similar.length > 0 && (
+      <section class="mt-14" aria-labelledby="similar-title">
+        <h2 id="similar-title" class="font-display text-2xl font-semibold">
+          {g.similarHeading}
+        </h2>
+        <ul class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3" role="list">
+          {similar.map((other) => (
+            <li>
+              <GameMiniCard game={other} locale={locale} />
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+  </article>
+</BaseLayout>

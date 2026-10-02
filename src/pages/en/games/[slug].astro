@@ -1,0 +1,15 @@
+---
+import type { GetStaticPaths } from 'astro';
+import GameView from '@/views/GameView.astro';
+import { getAllGames } from '@/lib/data/games';
+
+export const getStaticPaths = (async () =>
+  (await getAllGames()).map((game) => ({
+    params: { slug: game.slug },
+    props: { game },
+  }))) satisfies GetStaticPaths;
+
+const { game } = Astro.props;
+---
+
+<GameView game={game} locale="en" />

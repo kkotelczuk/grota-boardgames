@@ -1,0 +1,65 @@
+---
+import { htmlLang, ogLocale, otherLocale, useTranslations, type Locale } from '@/i18n';
+
+export interface Props {
+  title: string;
+  description: string;
+  locale: Locale;
+  /** Ścieżki (z `base`) tej strony w obu językach – canonical + hreflang. `null` = brak odpowiednika. */
+  alternates: Record<Locale, string> | null;
+  /** Absolutny lub względny URL obrazu OG. */
+  image?: string | undefined;
+  imageAlt?: string | undefined;
+  type?: 'website' | 'article';
+  jsonLd?: object;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description,
+  locale,
+  alternates,
+  image,
+  imageAlt,
+  type = 'website',
+  jsonLd,
+  noindex = false,
+} = Astro.props;
+const t = useTranslations(locale);
+const site = Astro.site!;
+const abs = (path: string) => new URL(path, site).toString();
+
+const canonical = alternates ? abs(alternates[locale]) : abs(Astro.url.pathname);
+const ogImage = abs(image ?? `${import.meta.env.BASE_URL}og-default.png`);
+// JSON w <script> – escapujemy `<`, żeby treść (np. opis) nie mogła zamknąć tagu.
+const jsonLdText = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : null;
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+{noindex && <meta name="robots" content="noindex, follow" />}
+<link rel="canonical" href={canonical} />
+{alternates && (
+  <>
+    <link rel="alternate" hreflang={htmlLang.pl} href={abs(alternates.pl)} />
+    <link rel="alternate" hreflang={htmlLang.en} href={abs(alternates.en)} />
+    <link rel="alternate" hreflang="x-default" href={abs(alternates.pl)} />
+  </>
+)}
+
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content={t.meta.siteName} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:locale" content={ogLocale[locale]} />
+<meta property="og:locale:alternate" content={ogLocale[otherLocale(locale)]} />
+<meta property="og:image" content={ogImage} />
+{imageAlt && <meta property="og:image:alt" content={imageAlt} />}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+
+{jsonLdText && <script type="application/ld+json" set:html={jsonLdText} />}

@@ -1,0 +1,36 @@
+---
+import { Image } from 'astro:assets';
+import logoBlack from '@/assets/brand/bgp_grota.png';
+import logoWhite from '@/assets/brand/bgp_grota_white.png';
+
+interface Props {
+  size: number;
+  alt: string;
+  class?: string;
+  loading?: 'eager' | 'lazy';
+}
+const { size, alt, class: className = '', loading = 'eager' } = Astro.props;
+const widths = [size, size * 2];
+---
+
+<!-- Czarne logo w jasnym motywie, białe w ciemnym (przełączane przez data-theme na <html>). -->
+<span class={`inline-block shrink-0 ${className}`}>
+  <Image
+    src={logoBlack}
+    alt={alt}
+    width={size}
+    widths={widths}
+    sizes={`${size}px`}
+    loading={loading}
+    class="block h-auto dark:hidden"
+  />
+  <Image
+    src={logoWhite}
+    alt={alt}
+    width={size}
+    widths={widths}
+    sizes={`${size}px`}
+    loading={loading}
+    class="hidden h-auto dark:block"
+  />
+</span>

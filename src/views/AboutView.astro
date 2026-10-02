@@ -1,0 +1,110 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Logo from '@/components/Logo.astro';
+import { faq } from '@/config/faq';
+import { site } from '@/config/site';
+import { localizedPath, useTranslations, withBase, type Locale } from '@/i18n';
+import { breadcrumbLd, faqPageLd, graph, organizationLd } from '@/lib/seo/jsonld';
+import { getAllGames } from '@/lib/data/games';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const a = t.about;
+
+const games = await getAllGames();
+const alternates = {
+  pl: localizedPath({ name: 'about' }, 'pl'),
+  en: localizedPath({ name: 'about' }, 'en'),
+};
+const abs = (path: string) => new URL(path, Astro.site).toString();
+const siteUrl = abs(withBase(''));
+
+// Publikujemy tylko pytania z odpowiedzią – reszta to TODO w src/config/faq.ts.
+const answered = faq.flatMap((item) =>
+  item.answer ? [{ question: item.question[locale], answer: item.answer[locale] }] : [],
+);
+const fullAddress = `${site.address.street}, ${site.address.postalCode ? `${site.address.postalCode} ` : ''}${site.address.city}`;
+
+const jsonLd = graph([
+  organizationLd(
+    siteUrl,
+    abs(localizedPath({ name: 'home' }, locale)),
+    abs(withBase('icon-512.png')),
+    locale,
+  ),
+  faqPageLd(answered),
+  breadcrumbLd([
+    { name: t.nav.home, url: abs(localizedPath({ name: 'home' }, locale)) },
+    { name: a.heading, url: abs(alternates[locale]) },
+  ]),
+]);
+---
+
+<BaseLayout
+  title={`${t.meta.aboutTitle} – Grota`}
+  description={t.meta.aboutDescription}
+  locale={locale}
+  alternates={alternates}
+  jsonLd={jsonLd}
+  current="about"
+>
+  <div class="container-page pt-8 sm:pt-12">
+    <div class="grid items-start gap-10 lg:grid-cols-[1fr_18rem]">
+      <div class="max-w-prose">
+        <h1 class="font-display text-4xl font-semibold sm:text-5xl">{a.heading}</h1>
+        <!-- Zdania faktograficzne (GEO): kto, co, gdzie – łatwe do zacytowania przez modele językowe. -->
+        <p class="mt-4 text-lg">{a.lead}</p>
+        <p class="mt-3 text-muted">
+          {locale === 'pl'
+            ? `W kolekcji Groty jest ${games.length} gier – listę z opisami znajdziesz na stronie głównej.`
+            : `The Grota collection has ${games.length} games – browse them with descriptions on the home page.`}
+        </p>
+
+        <h2 class="mt-10 font-display text-2xl font-semibold">{a.howItWorksHeading}</h2>
+        <ul class="mt-3 list-disc space-y-2 pl-5">
+          {a.howItWorks.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+
+        <h2 class="mt-10 font-display text-2xl font-semibold">{a.whereHeading}</h2>
+        <address class="mt-3 not-italic">
+          <span class="font-semibold">{a.addressLabel}:</span> {fullAddress}
+        </address>
+        <div class="mt-4 flex flex-wrap gap-3">
+          <a href={site.maps.osm} rel="noopener" class="btn btn-ghost">
+            {a.openMap}
+          </a>
+          <a href={site.maps.google} rel="noopener" class="btn btn-ghost">
+            {a.openGoogleMap}
+          </a>
+        </div>
+
+        <h2 class="mt-10 font-display text-2xl font-semibold">{a.hoursHeading}</h2>
+        <p class="mt-3">{a.hoursText}</p>
+        <a href={withBase('discord/')} class="btn btn-primary mt-4">
+          {t.hero.cta}
+        </a>
+
+        <h2 class="mt-12 font-display text-2xl font-semibold">{a.faqHeading}</h2>
+        <div class="mt-4 divide-y divide-line rounded-xl border border-line bg-surface">
+          {answered.map((item) => (
+            <details class="group px-4 py-1">
+              <summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 font-semibold [&::-webkit-details-marker]:hidden">
+                {item.question}
+                <span aria-hidden="true" class="text-xl transition-transform group-open:rotate-45">
+                  +
+                </span>
+              </summary>
+              <p class="pb-4 text-muted">{item.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+      <Logo size={260} alt="" class="mx-auto max-lg:hidden" loading="lazy" />
+    </div>
+  </div>
+</BaseLayout>

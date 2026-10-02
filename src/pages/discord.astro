@@ -1,0 +1,62 @@
+---
+import { site } from '@/config/site';
+import { useTranslations } from '@/i18n';
+
+/*
+ * Stały adres /discord/ → aktualne zaproszenie z src/config/site.ts.
+ * Link zaproszenia się zmienia; wszystkie przyciski na stronie (i linki udostępnione wcześniej)
+ * wskazują tutaj, więc zmiana zaproszenia = edycja jednej wartości.
+ * Statyczny hosting nie da prawdziwego 301, stąd meta refresh + canonical + widoczny link.
+ */
+const pl = useTranslations('pl');
+const en = useTranslations('en');
+const invite = site.discordInvite;
+---
+
+<!doctype html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pl.discord.title}</title>
+    <meta http-equiv="refresh" content={`0; url=${invite}`} />
+    <link rel="canonical" href={invite} />
+    <meta name="robots" content="noindex, follow" />
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        background: #f6f1e7;
+        color: #1b1916;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+      }
+      a {
+        color: #1e5a44;
+        font-weight: 600;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #141311;
+          color: #f2ecdf;
+        }
+        a {
+          color: #82c7a6;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>
+        {pl.discord.text} <a href={invite}>{pl.discord.fallback}</a>.
+      </p>
+      <p lang="en">
+        {en.discord.text} <a href={invite}>{en.discord.fallback}</a>.
+      </p>
+    </main>
+  </body>
+</html>

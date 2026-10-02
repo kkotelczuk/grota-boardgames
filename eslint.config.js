@@ -29,6 +29,13 @@ export default defineConfig(
     languageOptions: { parserOptions: { parser: tseslint.parser } },
   },
   {
+    files: ['**/*.vue'],
+    rules: {
+      // Opcjonalne propsy typowane w TS (`locale?: Locale`) są poprawne bez wartości domyślnej.
+      'vue/require-default-prop': 'off',
+    },
+  },
+  {
     rules: {
       '@typescript-eslint/no-unused-vars': [
         'error',

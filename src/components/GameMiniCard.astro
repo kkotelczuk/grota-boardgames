@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets';
+import { coverImage, gamePath, gameTitle } from '@/lib/data/games';
+import { formatRange } from '@/lib/game-index';
+import { useTranslations, type Locale } from '@/i18n';
+import type { Game } from '@/lib/schema';
+
+/** Statyczna (bez JS) mała karta – dodatki, gra bazowa, podobne gry na stronie szczegółów. */
+interface Props {
+  game: Game;
+  locale: Locale;
+}
+const { game, locale } = Astro.props;
+const t = useTranslations(locale);
+const cover = coverImage(game);
+const players = formatRange(game.minPlayers, game.maxPlayers);
+const time = formatRange(game.minPlayTime, game.maxPlayTime);
+---
+
+<a
+  href={gamePath(game, locale)}
+  class="group flex items-center gap-3 rounded-xl border border-line bg-surface p-2 pr-3 transition-shadow hover:shadow-(--shadow-card)"
+>
+  <span class="grid size-16 shrink-0 place-items-center overflow-hidden rounded-lg bg-sunken">
+    {cover && (
+      <Image
+        src={cover}
+        alt=""
+        width={64}
+        widths={[64, 128]}
+        sizes="64px"
+        class="size-16 object-contain p-1"
+      />
+    )}
+  </span>
+  <span class="min-w-0">
+    <span class="block font-semibold leading-snug group-hover:underline">
+      {gameTitle(game, locale)}
+    </span>
+    <span class="block text-sm text-muted">
+      {[players && `${players} ${t.card.playersUnit}`, time && `${time} ${t.card.minutes}`]
+        .filter(Boolean)
+        .join(' · ')}
+    </span>
+  </span>
+</a>

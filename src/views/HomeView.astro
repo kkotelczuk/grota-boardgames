@@ -1,0 +1,85 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Logo from '@/components/Logo.astro';
+import GameExplorer from '@/components/vue/GameExplorer.vue';
+import { localizedPath, useTranslations, withBase, type Locale } from '@/i18n';
+import { buildFilterOptions, buildIndex, gamePath, gameTitle, getAllGames } from '@/lib/data/games';
+import { graph, itemListLd, organizationLd, websiteLd } from '@/lib/seo/jsonld';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+const games = await getAllGames();
+const index = await buildIndex(locale, games);
+const options = buildFilterOptions(games, locale);
+
+const siteUrl = new URL(withBase(''), Astro.site).toString();
+const abs = (path: string) => new URL(path, Astro.site).toString();
+const alternates = {
+  pl: localizedPath({ name: 'home' }, 'pl'),
+  en: localizedPath({ name: 'home' }, 'en'),
+};
+const logoUrl = abs(withBase('icon-512.png'));
+
+const jsonLd = graph([
+  organizationLd(siteUrl, abs(alternates[locale]), logoUrl, locale),
+  websiteLd(siteUrl, abs(alternates[locale]), locale),
+  itemListLd(games.map((g) => ({ name: gameTitle(g, locale), url: abs(gamePath(g, locale)) }))),
+]);
+---
+
+<BaseLayout
+  title={t.meta.homeTitle}
+  description={t.meta.homeDescription}
+  locale={locale}
+  alternates={alternates}
+  jsonLd={jsonLd}
+  current="games"
+>
+  <section class="container-page pt-8 pb-6 sm:pt-12 sm:pb-10" aria-labelledby="hero-title">
+    <div class="grid items-center gap-8 md:grid-cols-[1fr_auto]">
+      <div class="max-w-2xl">
+        <p class="text-sm font-semibold tracking-[0.14em] text-accent uppercase">
+          {t.hero.eyebrow}
+        </p>
+        <h1
+          id="hero-title"
+          class="mt-2 font-display text-4xl font-semibold sm:text-5xl lg:text-6xl"
+        >
+          {t.hero.title}
+        </h1>
+        <p class="mt-4 text-lg text-muted">{t.hero.lead}</p>
+        <div class="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a href={withBase('discord/')} class="btn btn-primary">
+            {t.hero.cta}
+          </a>
+          <a href={localizedPath({ name: 'about' }, locale)} class="btn btn-ghost">
+            {t.nav.about}
+          </a>
+        </div>
+        <p class="mt-4 text-sm text-muted">
+          {t.hero.ctaHint} · {t.hero.address}
+        </p>
+      </div>
+      <Logo size={220} alt="" class="mx-auto max-md:hidden" />
+    </div>
+  </section>
+
+  <section class="container-page" aria-labelledby="collection-title">
+    <div class="mb-2 flex items-baseline justify-between gap-4 border-t border-line pt-6">
+      <h2 id="collection-title" class="font-display text-2xl font-semibold sm:text-3xl">
+        {t.list.heading}
+      </h2>
+      <p class="text-sm text-muted">{t.hero.stats(games.length)}</p>
+    </div>
+    <!--
+      [Vue] client:load – lista to główna funkcja strony: wyszukiwarka i filtry mają działać od razu.
+      HTML i tak jest w pełni wyrenderowany na serwerze (SEO, działa bez JS); hydratacja tylko
+      „ożywia” istniejący DOM. Skrypty wysp są type="module" (async), nie blokują renderu.
+    -->
+    <GameExplorer client:load games={index} options={options} locale={locale} />
+  </section>
+</BaseLayout>

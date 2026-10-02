@@ -22,7 +22,8 @@ export default defineConfig({
     vue(),
     sitemap({
       i18n: { defaultLocale: 'pl', locales: { pl: 'pl-PL', en: 'en-US' } },
-      filter: (page) => !page.includes('/discord/'),
+      // Bez przekierowania i stron ulubionych (noindex – treść zależy od localStorage).
+      filter: (page) => !/\/(discord|ulubione|favorites)\/$/.test(page),
     }),
   ],
   vite: {

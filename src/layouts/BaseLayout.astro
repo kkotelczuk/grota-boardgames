@@ -1,0 +1,76 @@
+---
+import '@/styles/global.css';
+import Seo, { type Props as SeoProps } from '@/components/Seo.astro';
+import SiteHeader from '@/components/SiteHeader.astro';
+import SiteFooter from '@/components/SiteFooter.astro';
+import { htmlLang, useTranslations, withBase } from '@/i18n';
+
+export type Props = SeoProps & {
+  /** Nazwa trasy dla przełącznika języka (ścieżki bierzemy z `alternates`). */
+  current?: 'games' | 'favorites' | 'about' | null;
+};
+
+const { current = null, ...seo } = Astro.props;
+const { locale, alternates } = seo;
+const t = useTranslations(locale);
+---
+
+<!doctype html>
+<html lang={htmlLang[locale]} data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <!--
+      Motyw ustawiany ZANIM przeglądarka cokolwiek namaluje – brak mignięcia jasnego tła w dark mode.
+      Musi być inline i synchroniczny (to jedyny blokujący skrypt na stronie, ~300 B).
+    -->
+    <script is:inline>
+      (() => {
+        const root = document.documentElement;
+        const media = matchMedia('(prefers-color-scheme: dark)');
+        let stored = null;
+        try {
+          stored = localStorage.getItem('grota:theme');
+        } catch {
+          /* storage zablokowany – motyw systemowy */
+        }
+        const apply = () => {
+          root.dataset.theme =
+            stored === 'dark' || stored === 'light' ? stored : media.matches ? 'dark' : 'light';
+        };
+        apply();
+        media.addEventListener('change', () => {
+          try {
+            stored = localStorage.getItem('grota:theme');
+          } catch {
+            /* j.w. */
+          }
+          apply();
+        });
+      })();
+    </script>
+    <meta name="theme-color" content="#f6f1e7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/png" sizes="32x32" href={withBase('favicon-32.png')} />
+    <link rel="icon" type="image/png" sizes="16x16" href={withBase('favicon-16.png')} />
+    <link rel="apple-touch-icon" href={withBase('apple-touch-icon.png')} />
+    <link rel="manifest" href={withBase('site.webmanifest')} />
+    <link rel="sitemap" href={withBase('sitemap-index.xml')} />
+    <link rel="alternate" type="text/plain" title="llms.txt" href={withBase('llms.txt')} />
+    <Seo {...seo} />
+    <slot name="head" />
+  </head>
+  <body class="flex min-h-dvh flex-col bg-paper text-ink antialiased">
+    <a
+      href="#main"
+      class="sr-only-focusable fixed top-2 left-2 z-50 rounded-full bg-accent px-4 py-2 font-semibold text-accent-ink"
+    >
+      {t.a11y.skipToContent}
+    </a>
+    <SiteHeader locale={locale} alternates={alternates} current={current} />
+    <main id="main" tabindex="-1" class="flex-1 outline-none">
+      <slot />
+    </main>
+    <SiteFooter locale={locale} />
+  </body>
+</html>
