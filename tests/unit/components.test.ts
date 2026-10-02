@@ -7,10 +7,7 @@ import FavoriteButton from '@/components/vue/FavoriteButton.vue';
 import GameCard from '@/components/vue/GameCard.vue';
 import { I18N } from '@/components/vue/i18n';
 import { useTranslations } from '@/i18n';
-import {
-  FAVORITES_STORAGE_KEY,
-  __resetFavoritesForTests,
-} from '@/composables/useFavorites';
+import { FAVORITES_STORAGE_KEY, __resetFavoritesForTests } from '@/composables/useFavorites';
 import { makeGame } from './fixtures';
 
 const global = { provide: { [I18N as symbol]: { locale: 'pl', t: useTranslations('pl') } } };
@@ -34,7 +31,12 @@ describe('ChipGroup', () => {
       global,
     });
     const chips = wrapper.findAll('button.chip');
-    expect(chips.map((c) => c.attributes('aria-pressed'))).toEqual(['true', 'false', 'false', 'false']);
+    expect(chips.map((c) => c.attributes('aria-pressed'))).toEqual([
+      'true',
+      'false',
+      'false',
+      'false',
+    ]);
     await chips[1]!.trigger('click');
     await chips[0]!.trigger('click');
     expect(wrapper.emitted('update:modelValue')).toEqual([[['a', 'b']], [['b']]]);
@@ -47,7 +49,8 @@ describe('ChipGroup', () => {
         legend: 'L',
         options,
         modelValue: [] as string[],
-        'onUpdate:modelValue': (value: string[]) => wrapper.setProps({ modelValue: value } as never),
+        'onUpdate:modelValue': (value: string[]) =>
+          wrapper.setProps({ modelValue: value } as never),
       },
       global,
     });
@@ -108,7 +111,13 @@ describe('FavoriteButton', () => {
 
 describe('GameCard', () => {
   it('renders title link, subtitle and players range', () => {
-    const game = makeGame({ id: 'catan', title: 'Catan', subtitle: 'Settlers', minPlayers: 2, maxPlayers: 4 });
+    const game = makeGame({
+      id: 'catan',
+      title: 'Catan',
+      subtitle: 'Settlers',
+      minPlayers: 2,
+      maxPlayers: 4,
+    });
     const wrapper = mount(GameCard, { props: { game }, global });
     const link = wrapper.find('h3 a');
     expect(link.text()).toBe('Catan');

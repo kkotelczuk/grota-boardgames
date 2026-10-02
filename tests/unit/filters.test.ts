@@ -39,11 +39,17 @@ describe('matchesFilters', () => {
     expect(matchesFilters(g, st({ players: 1 }), none)).toBe(false);
   });
   it('players: 8 means 8+', () => {
-    expect(matchesFilters(makeGame({ minPlayers: 2, maxPlayers: 10 }), st({ players: 8 }), none)).toBe(true);
-    expect(matchesFilters(makeGame({ minPlayers: 2, maxPlayers: 7 }), st({ players: 8 }), none)).toBe(false);
+    expect(
+      matchesFilters(makeGame({ minPlayers: 2, maxPlayers: 10 }), st({ players: 8 }), none),
+    ).toBe(true);
+    expect(
+      matchesFilters(makeGame({ minPlayers: 2, maxPlayers: 7 }), st({ players: 8 }), none),
+    ).toBe(false);
   });
   it('players: unknown counts are excluded', () => {
-    expect(matchesFilters(makeGame({ minPlayers: null, maxPlayers: null }), st({ players: 2 }), none)).toBe(false);
+    expect(
+      matchesFilters(makeGame({ minPlayers: null, maxPlayers: null }), st({ players: 2 }), none),
+    ).toBe(false);
   });
   it('time and weight buckets', () => {
     const g = makeGame({ maxPlayTime: 25, weight: 1.5 });
@@ -66,8 +72,12 @@ describe('matchesFilters', () => {
     expect(matchesFilters(g, st({ languages: ['PL'] }), none)).toBe(false);
   });
   it('polishRules', () => {
-    expect(matchesFilters(makeGame({ hasPolishRules: false }), st({ polishRules: true }), none)).toBe(false);
-    expect(matchesFilters(makeGame({ hasPolishRules: true }), st({ polishRules: true }), none)).toBe(true);
+    expect(
+      matchesFilters(makeGame({ hasPolishRules: false }), st({ polishRules: true }), none),
+    ).toBe(false);
+    expect(
+      matchesFilters(makeGame({ hasPolishRules: true }), st({ polishRules: true }), none),
+    ).toBe(true);
   });
   it('categories/mechanics OR within group, AND between groups', () => {
     const g = makeGame({ categories: [1, 2], mechanics: [10] });
@@ -85,7 +95,12 @@ describe('matchesFilters', () => {
 
 describe('filterGames', () => {
   const base = makeGame({ id: 'base', title: 'Base', expansionIds: ['exp'] });
-  const exp = makeGame({ id: 'exp', title: 'Extra Pack', kind: 'expansion', baseGameIds: ['base'] });
+  const exp = makeGame({
+    id: 'exp',
+    title: 'Extra Pack',
+    kind: 'expansion',
+    baseGameIds: ['base'],
+  });
   const orphan = makeGame({ id: 'orph', title: 'Orphan', kind: 'expansion', baseGameIds: [] });
   const all = [base, exp, orphan];
   const ids = (r: { id: string }[]) => r.map((g) => g.id);

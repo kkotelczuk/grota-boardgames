@@ -1,7 +1,9 @@
 import type { GameIndexItem } from '@/lib/game-index';
 import { normalizeForSearch } from '@/lib/text';
 
-export function makeGame(overrides: Partial<GameIndexItem> & { title?: string } = {}): GameIndexItem {
+export function makeGame(
+  overrides: Partial<GameIndexItem> & { title?: string } = {},
+): GameIndexItem {
   const title = overrides.title ?? 'Game';
   return {
     id: overrides.id ?? title.toLowerCase().replace(/\s+/g, '-'),

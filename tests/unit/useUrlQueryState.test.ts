@@ -10,11 +10,7 @@ function mountWith(debounce = 50) {
   app = createApp(
     defineComponent({
       setup() {
-        useUrlQueryState(
-          state,
-          { parse: stateFromQuery, serialize: stateToQuery },
-          { debounce },
-        );
+        useUrlQueryState(state, { parse: stateFromQuery, serialize: stateToQuery }, { debounce });
         return () => h('div');
       },
     }),
