@@ -1,0 +1,13 @@
+- posiadasz spis-gier.csv
+- potrzebuje strony prezentującej gry planszowe
+- strona powinna być czysta i zdezajnowana według najnowszych standrdów UX / UI
+- strona powinna byc zoptymalizowana pod katem SeO i GEO
+- kazda z gier posiada url do BGG, wykorzystaj go zeby pobrać informacje o grach
+- klucz api do BGG: BGG_API_KEY
+- BGG api: BGG_API_URL
+- strona powinn abyc prezentowana w jęyzku poslkim oraz angielskim
+- nie ma tu logowania, to tylko strona informacyjna
+- storna powinna byc latwa w obsludze mobile
+- strona powinn azawierac liste wszytkich gier, z minimalnymi informacjami o nich
+- strona powinna zawierac ekran ze szczegolami gry
+- strona powinn abyc latwa do deploymentu na github pages, lub innnym podobnym serwisie
