@@ -17,3 +17,6 @@ playwright-report/
 .DS_Store
 .idea/
 *.log
+
+# robocze paczki tłumaczeń (pnpm translations export)
+.translations-work/

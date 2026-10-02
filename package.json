@@ -18,7 +18,8 @@
     "typecheck": "astro check && vue-tsc --noEmit -p tsconfig.json",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "translations": "tsx scripts/translations.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

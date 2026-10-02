@@ -1,6 +1,6 @@
 # Raport pobrania danych BGG
 
-Wygenerowano: 2026-10-02T10:30:09.601Z
+Wygenerowano: 2026-10-02T10:39:16.894Z
 
 ## Podsumowanie
 
@@ -60,6 +60,6 @@ Wygenerowano: 2026-10-02T10:30:09.601Z
 
 ## Tłumaczenia
 
-- Brak tłumaczenia opisu PL: 256
+- Brak tłumaczenia opisu PL: 0
 - Nieaktualne tłumaczenia (zmienił się opis EN): 0
-- Brak podsumowania PL/EN: 256
+- Brak podsumowania PL/EN: 0
