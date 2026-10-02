@@ -114,7 +114,7 @@ pnpm exec playwright install chromium   # raz
 pnpm test:e2e
 ```
 
-- Lighthouse (mobile): strona główna – wydajność 96–98; strony gier i „O Grocie” – 100; ulubione – 98 (SEO 66, bo strona jest celowo `noindex`). Dostępność i Best Practices: 100.
+- Lighthouse (mobile, produkcja na GitHub Pages): strona główna – wydajność 93–99 (mediana 96, rozrzut zależy od sieci CDN); strona gry – 100. Lokalnie: „O Grocie” 100, ulubione 98 (SEO 66, bo strona jest celowo `noindex`). Dostępność, Best Practices i SEO: 100.
 - Testy e2e zawierają axe-core (WCAG 2.2 AA) w trybie jasnym i ciemnym dla strony głównej, EN, gry, „O Grocie”, ulubionych i 404.
 
 ## TODO dla człowieka

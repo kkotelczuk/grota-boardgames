@@ -1334,7 +1334,7 @@ Nigdzie – to decyzja. Odpowiedniki: wspólny stan `src/composables/useFavorite
 
 <a id="lazy-hydration"></a>
 
-## 23. Lazy hydration w Vue 3.5 – rozważona, nieużyta
+## 23. Lazy hydration w Vue 3.5 – zmierzona i odrzucona
 
 ### Co to jest
 
@@ -1342,11 +1342,11 @@ Od **3.5** `defineAsyncComponent({ loader, hydrate })` przyjmuje strategię hydr
 
 ### Gdzie w projekcie
 
-Nieużyte. Kandydat: lista 252 kart w `src/components/vue/GameExplorer.vue:301-318`. Stan obecny: slot karty jest `STABLE`, a propsy mają stabilne referencje (`:76-85`), więc **główna techniczna przeszkoda została usunięta** – re-render rodzica po montażu (`:181`) nie aktualizuje już kart. Decyzję „nie teraz” podtrzymują wyniki Lighthouse w `README.md:117`.
+Nieużyte – **wypróbowane i zmierzone**. Kandydat: lista 252 kart w `src/components/vue/GameExplorer.vue:301-318`. Stan obecny: slot karty jest `STABLE`, a propsy mają stabilne referencje (`:76-85`), więc **główna techniczna przeszkoda została usunięta** – re-render rodzica po montażu (`:181`) nie aktualizuje już kart. Decyzję „nie teraz” podtrzymują wyniki Lighthouse w `README.md:117`.
 
 ```vue
 <!-- src/components/vue/GameExplorer.vue:306-317 -->
-<li v-for="game in results" :key="game.id">
+<li v-for="game in results" :key="game.id" class="card-slot">
           <!--
             [Vue] Scoped slot: treść slotu używa propsów slotu (`card`), a nie zmiennej `game` z v-for.
             Slot odwołujący się do zmiennych z v-for kompilator oznacza jako dynamiczny i wymusza
@@ -1360,7 +1360,7 @@ Nieużyte. Kandydat: lista 252 kart w `src/components/vue/GameExplorer.vue:301-3
         </li>
 ```
 
-Tak wyglądałaby zmiana (nie ma jej w kodzie):
+Tak wyglądała testowana zmiana (wycofana – patrz pomiar niżej):
 
 ```ts
 const LazyGameCard = defineAsyncComponent({
@@ -1371,7 +1371,8 @@ const LazyGameCard = defineAsyncComponent({
 
 ### Dlaczego tak
 
-- **Pomiar przed optymalizacją**: Lighthouse mobile dla strony głównej to 96–98 (wydajność), dostępność 100 (`README.md:117`) – cel ≥ 95 był spełniony bez lazy hydration.
+- **Pomiar zamiast intuicji**: na produkcji (GitHub Pages) strona główna miała 91–94 (TBT 170–280 ms). Lazy hydration kart (`hydrateOnVisible({ rootMargin: '300px' })`) **pogorszyła** TBT lokalnie do 320–380 ms. Powód: strategia `hydrateOnVisible` przy hydracji każdej karty woła `getBoundingClientRect()` (sprawdzenie, czy element jest już w viewporcie) – 252 wymuszone przeliczenia layoutu w jednym tasku. Profil głównego wątku pokazał zresztą, że największy koszt to **Style & Layout** (~370 ms dla ~10 tys. węzłów DOM), a nie wykonanie JS hydracji.
+- **Co zadziałało**: CSS `content-visibility: auto` + `contain-intrinsic-size: auto …` na elementach listy (klasa `.card-slot` w `src/styles/global.css`) – karty poza ekranem nie są układane ani malowane. Wynik produkcyjny: 93–99 (mediana 96), TBT 60–160 ms. Zero JS, zero zmian w modelu hydracji.
 - **Przed poprawką slotów by nie zadziałała**: `onMounted(() => (hydrated.value = true))` re-renderuje `GameExplorer` od razu po hydracji; gdy karty miały `DYNAMIC_SLOTS` i nową tablicę `expansions` przy każdym renderze, wszystkie wrappery zostałyby zaktualizowane przed hydracją i Vue pominąłby lazy hydration dla każdej karty. Po przejściu na scoped slot i stabilne propsy wrapper nie jest patchowany, dopóki jego dane się nie zmienią – lazy hydration jest więc **technicznie możliwa** (ćwiczenie 1 w [Ścieżce nauki](#sciezka-nauki)).
 - **Złożoność stanu**: karty hydratowane później muszą mieć te same zabezpieczenia co osobne wyspy – `FavoriteButton` już ma bramkę `mounted` per instancja, ale każdy nowy stan zależny od przeglądarki musiałby ją mieć.
 - **UX**: serduszko w niezhydratowanej karcie jest „martwe” (brak handlera) – trzeba by `hydrateOnInteraction` albo pogodzić się z utratą pierwszego kliknięcia.
@@ -1387,6 +1388,8 @@ const LazyGameCard = defineAsyncComponent({
 
 ### Pułapki
 
+- **Optymalizacja „na oko” może szkodzić**: lazy hydration brzmi jak oczywista wygrana dla długiej listy, a tu zwiększyła TBT. Zawsze porównuj ten sam scenariusz przed/po (kilka przebiegów – Lighthouse ma rozrzut ±3 pkt).
+- `hydrateOnVisible` przy starcie mierzy pozycję każdego elementu (`getBoundingClientRect`) – przy setkach instancji to wymuszone layouty; w połączeniu z `content-visibility: auto` koszt rośnie jeszcze bardziej.
 - Aktualizacja wrappera przed hydracją = brak lazy hydration (sprawdzone w `@vue/runtime-core`: `__asyncHydrate` rejestruje `beforeUpdate`, które ustawia flagę `patched`).
 - Każdy prop tworzony w szablonie (inline obiekty/tablice, `.map()`/`.filter()` w szablonie, funkcje strzałkowe) i każdy slot czytający zmienną z `v-for` powoduje aktualizację dziecka – a więc i utratę lazy hydration. `expansionsOf(game)` jest bezpieczne tylko dlatego, że zwraca referencje z cache (`expansionsById`) lub stałą `NO_EXPANSIONS`.
 - Interakcja przed hydracją jest tracona, chyba że użyjesz `hydrateOnInteraction` (który odtwarza zdarzenie).
@@ -1396,7 +1399,7 @@ const LazyGameCard = defineAsyncComponent({
 
 1. **Czym różni się lazy hydration Vue 3.5 od `client:visible` w Astro?** – `client:visible` opóźnia całą aplikację (wyspę); lazy hydration Vue opóźnia poddrzewo **wewnątrz** jednej aplikacji, zachowując wspólny stan, `provide`/`inject` i reaktywność z rodzicem.
 2. **Dlaczego aktualizacja rodzica może „zepsuć” lazy hydration?** – Jeśli rodzic spatchuje niezhydratowany wrapper, DOM i vnode'y przestają się zgadzać ze stanem „do hydracji”, więc Vue rezygnuje z leniwej hydracji (ostrzeżenie) i komponent zachowuje się jak zwykły async.
-3. **Od czego zaczniesz optymalizację hydracji dużej listy?** – Od pomiaru (Performance panel, TBT/INP, Vue devtools „highlight updates”), potem ustabilizowanie propsów/slotów (żeby nie było zbędnych re-renderów), dopiero potem lazy hydration/paginacja.
+3. **Od czego zaczniesz optymalizację hydracji dużej listy?** – Od pomiaru (Performance panel, TBT/INP, Vue devtools „highlight updates”) i sprawdzenia, CO jest kosztem (JS? style/layout?). Potem ustabilizowanie propsów/slotów, tanie wygrane w CSS (`content-visibility`), a dopiero potem lazy hydration/paginacja – i ponowny pomiar. W tym projekcie lazy hydration przegrała z jedną regułą CSS.
 
 ---
 
