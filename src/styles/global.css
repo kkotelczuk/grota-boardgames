@@ -263,6 +263,18 @@
     margin-top: 1em;
   }
 
+  /* Karty poza ekranem nie są układane ani malowane (duża lista = ~10 tys. węzłów DOM).
+     contain-intrinsic-size z `auto` zapamiętuje faktyczny rozmiar po pierwszym renderze. */
+  .card-slot {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 9.5rem;
+  }
+  @media (min-width: 40rem) {
+    .card-slot {
+      contain-intrinsic-size: auto 26rem;
+    }
+  }
+
   .sr-only-focusable:not(:focus) {
     position: absolute;
     width: 1px;

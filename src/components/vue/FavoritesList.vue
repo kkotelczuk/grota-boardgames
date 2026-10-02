@@ -53,7 +53,7 @@ const items = computed(() =>
       role="list"
       class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 xl:grid-cols-4"
     >
-      <li v-for="game in items" :key="game.id">
+      <li v-for="game in items" :key="game.id" class="card-slot">
         <GameCard :game="game">
           <template #actions>
             <FavoriteButton :id="game.id" :title="game.title" />

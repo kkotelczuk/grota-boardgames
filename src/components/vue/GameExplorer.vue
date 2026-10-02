@@ -12,9 +12,9 @@ import AppIcon from './AppIcon.vue';
 import FavoriteButton from './FavoriteButton.vue';
 import FilterDrawer from './FilterDrawer.vue';
 import FilterPanel from './FilterPanel.vue';
-import GameCard from './GameCard.vue';
 import SearchBox from './SearchBox.vue';
 import SelectField from './SelectField.vue';
+import GameCard from './GameCard.vue';
 import { provideI18n } from './i18n';
 
 /*
@@ -303,7 +303,7 @@ function clearEverything() {
         class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 xl:grid-cols-4"
         role="list"
       >
-        <li v-for="game in results" :key="game.id">
+        <li v-for="game in results" :key="game.id" class="card-slot">
           <!--
             [Vue] Scoped slot: treść slotu używa propsów slotu (`card`), a nie zmiennej `game` z v-for.
             Slot odwołujący się do zmiennych z v-for kompilator oznacza jako dynamiczny i wymusza
