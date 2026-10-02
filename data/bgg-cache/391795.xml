@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="391795">
+         <thumbnail>https://cf.geekdo-images.com/io5dPH2ImA5uqoLsO7K1GA__small/img/P613Xg4KWA4NO5KE4-ZOBqboTys=/fit-in/200x150/filters:strip_icc()/pic7570975.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/io5dPH2ImA5uqoLsO7K1GA__original/img/YSHX304i8sCqhyvW6wk9Xy8Y1go=/0x0/filters:format(jpeg)/pic7570975.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Kinfire Delve: Vainglory&#039;s Grotto" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Kinfire Delve: Álomszövő fészke" />
+			    				
+				<name type="alternate" sortindex="1" value="Kinfire Delve: Grota Próżności" />
+			    				
+				<name type="alternate" sortindex="1" value="Kinfire: Предания – Чертоги тщеславия" />
+			    				
+				<name type="alternate" sortindex="1" value="Kinfire. Сходження: Грот Марнославства" />
+			    				
+				<name type="alternate" sortindex="1" value="Rodozář: Marnivostina síň" />
+			    				
+				<name type="alternate" sortindex="1" value="킨파이어 델브: 베인글로리의 암굴" />
+			
+						               													<description>Kinfire Delve: Vainglory's Grotto is a tactical and cooperative card game.  As Seekers, you will fight your way through the well deck of challenge cards to reach Vainglory, the master of the well, and face her in an epic final battle.
+
+To defeat Vainglory, you'll battle and puzzle your way through her well deck of 57 challenge cards before facing her final gauntlet. On your turn, attempt a challenge by playing a matching skill card and rolling the dice. Add enough progress tokens to a challenge and you'll be richly rewarded. But fail and you'll face the penalty by losing health, discarding cards, or being forced to return cards to the well deck.
+
+Even when it's not your turn, the cards in your hand can be played to boost your teammate's action. But be cautious&amp;ndash;emptying your hand means gaining exhaustion and suffering effects that can lose you the game.
+
+Survive long enough to reach the bottom of the well and reveal Vainglory's final form. Break through her gauntlet of protectors in order to face and defeat her once and for all and win the game.
+
+&amp;mdash;description from publisher
+
+</description>
+										      	               				<yearpublished value="2023" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="2" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="63">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="31" />
+					<result value="Recommended" numvotes="26" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="38" />
+					<result value="Recommended" numvotes="14" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="2+">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="12" />
+					<result value="Not Recommended" numvotes="23" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 1–2 players" />
+  <result name="recommmendedwith" value="Recommended with 1–2 players" />
+</poll-summary> 			               				<playingtime value="60" />
+						               				<minplaytime value="60" />
+						               				<maxplaytime value="60" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="14">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="6" />
+					<result value="12" numvotes="8" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="5">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="4" />
+					<result level="5" value="Unplayable in another language" numvotes="1" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1010" value="Fantasy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1024" value="Horror" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2023" value="Cooperative Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2962" value="Move Through Deck" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3099" value="Multi-Use Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="61979" value="Players: Two-Player Only Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="116031" value="Setting: Kinfire Chronicles" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="73724" value="Theme: Boss Battle" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="449972" value="Kinfire Micro Expansion" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="450034" value="Kinfire Delve: Playmat" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="450033" value="Kinfire Delve: Upgrade Kit" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="406174" value="Kinfire Delve: Callous&#039; Lab" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="404538" value="Kinfire Delve: Scorn&#039;s Stockade" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="2336" value="Kevin Wilson" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="128325" value="Katarzyna Bekus" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="146248" value="Sandra Chlewińska" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="146249" value="Wiktor Kozyra" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="111065" value="Vesna &quot;vesner&quot; Redesiuk" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="51823" value="Incredible Dream Studios" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="28293" value="Colossal Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29194" value="GaGa Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8820" value="Gémklub" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="55324" value="HIT Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="55187" value="Old Dawg" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2726" value="Portal Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="52040" value="Present Is Future Games (PIF GAMES)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44209" value="Ігромаг" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="2751" />
+			<average value="7.81743" />
+			<bayesaverage value="6.68784" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="942" bayesaverage="6.68784" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="525" bayesaverage="6.84297" />
+												</ranks>
+
+			<stddev value="1.16365" />
+			<median value="0" />
+			<owned value="7914" />
+			<trading value="69" />
+			<wanting value="171" />
+			<wishing value="1903" />
+			<numcomments value="481" />
+			<numweights value="62" />
+			<averageweight value="2.1452" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

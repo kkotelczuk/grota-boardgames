@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="1111">
+         <thumbnail>https://cf.geekdo-images.com/TdOB9V-wTf0LenXk8QWo-A__small/img/FU6jPnm6yzKxH8au69ZAJwC2wpY=/fit-in/200x150/filters:strip_icc()/pic8377520.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/TdOB9V-wTf0LenXk8QWo-A__original/img/mhYaJYFxGrVZaP7ZL08ZuFJj5Ak=/0x0/filters:format(jpeg)/pic8377520.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Taboo" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Taboe" />
+			    				
+				<name type="alternate" sortindex="1" value="Taboo To Go" />
+			    				
+				<name type="alternate" sortindex="1" value="Taboo: Astérix chez les Belges" />
+			    				
+				<name type="alternate" sortindex="1" value="Tabú" />
+			    				
+				<name type="alternate" sortindex="1" value="Tabu" />
+			    				
+				<name type="alternate" sortindex="1" value="Tabu: Asterix bei den Belgiern" />
+			    				
+				<name type="alternate" sortindex="1" value="World&#039;s Smallest Taboo" />
+			    				
+				<name type="alternate" sortindex="1" value="Табу" />
+			    				
+				<name type="alternate" sortindex="1" value="טאבו" />
+			
+						               													<description>In the party game Taboo, you're trying to give clues to your teammates so that they'll guess a particular word, but you can't say just anything you like. Some clues are off limits!
+
+When you're the active player, hold the deck of cards so that you and the opposing team can see the top card. At the top of the card is the word your teammate must say to score the card, and you can anything you want to help them figure out what to guess other than the word itself (duh!) or the five words/phrases listed on the bottom of the card.
+
+For example, can you get your teammates to say "bacon" without saying "pig", "eggs", "breakfast", "sausage", or "eat"? If you do, you score the card, then move on to the next card, trying to guess as many cards as possible before time runs out. However, if you say a taboo word (or make gestures), the opposing team will buzz a buzzer and score the card themselves.
+
+How well can you describe things without breaking the taboo?
+
+</description>
+										      	               				<yearpublished value="1989" />
+						               				<minplayers value="4" />
+						               				<maxplayers value="10" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="113">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="88" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="88" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="10" />
+					<result value="Not Recommended" numvotes="81" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="34" />
+					<result value="Recommended" numvotes="56" />
+					<result value="Not Recommended" numvotes="17" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="5" />
+					<result value="Recommended" numvotes="53" />
+					<result value="Not Recommended" numvotes="36" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="85" />
+					<result value="Recommended" numvotes="19" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="7">		
+					<result value="Best" numvotes="11" />
+					<result value="Recommended" numvotes="50" />
+					<result value="Not Recommended" numvotes="31" />
+				</results>					
+			
+		<results numplayers="8">		
+					<result value="Best" numvotes="69" />
+					<result value="Recommended" numvotes="23" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="9">		
+					<result value="Best" numvotes="10" />
+					<result value="Recommended" numvotes="42" />
+					<result value="Not Recommended" numvotes="35" />
+				</results>					
+			
+		<results numplayers="10">		
+					<result value="Best" numvotes="26" />
+					<result value="Recommended" numvotes="44" />
+					<result value="Not Recommended" numvotes="20" />
+				</results>					
+			
+		<results numplayers="10+">		
+					<result value="Best" numvotes="9" />
+					<result value="Recommended" numvotes="18" />
+					<result value="Not Recommended" numvotes="48" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 6, 8 players" />
+  <result name="recommmendedwith" value="Recommended with 4–10 players" />
+</poll-summary> 			               				<playingtime value="20" />
+						               				<minplaytime value="20" />
+						               				<maxplaytime value="20" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="50">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="9" />
+					<result value="10" numvotes="30" />
+					<result value="12" numvotes="9" />
+					<result value="14" numvotes="1" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="34">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="5" />
+					<result level="5" value="Unplayable in another language" numvotes="28" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1030" value="Party Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1037" value="Real-time" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1025" value="Word Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2893" value="Communication Limits" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2019" value="Team-Based Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="10491" value="Comic Books: Asterix" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="75031" value="Components: Sand Timers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="10145" value="Game: Taboo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="66334" value="Mechanism: Give a Clue / Get a Clue" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="105030" value="Misc: Dice Tower Hall of Fame" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="6485" value="Misc: Mensa Select" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="66787" value="Series: World&#039;s Smallest (Super Impulse)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="62861" value="Word Games: Guess the Word" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="10721" value="Taboo Refill" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="148611" value="Tabu: Deine Tabu Special-Edition" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="437373" value="Taboo: Braille Accessability Kit" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="11573" value="Celebrity Taboo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="97747" value="Electronic Taboo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="223222" value="Midnight Taboo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="456028" value="Owiń w bawełnę" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="177799" value="Taboo Buzz&#039;d" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="450423" value="Taboo Charades" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="426461" value="Taboo Horror" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="8998" value="Taboo Junior" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="297783" value="Taboo Speak Out" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="404715" value="Taboo Uncensored" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="286408" value="Taboo: Kids vs. Parents" />
+		
+									
+			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="3233" value="Brian Hersch" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="30281" value="René Goscinny" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="30280" value="Albert Uderzo" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7217" value="Editions ATLAS" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="13103" value="El Greco" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="858" value="Grow Jogos e Brinquedos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="51" value="Hasbro" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="248" value="Hersch and Company" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2721" value="Kod Kod" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4539" value="MB Giochi" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8931" value="MB Jeux" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="17039" value="MB Juegos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="17072" value="MB spel" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6290" value="MB Spiele" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="20" value="Milton Bradley" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="32395" value="NeoTroy Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="28" value="Parker Brothers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30088" value="Super Impulse" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="24099" value="Winning Solutions (WS Game Company)" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="14303" />
+			<average value="6.32373" />
+			<bayesaverage value="6.1423" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2488" bayesaverage="6.1423" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="244" bayesaverage="6.15698" />
+												</ranks>
+
+			<stddev value="1.49507" />
+			<median value="0" />
+			<owned value="28932" />
+			<trading value="426" />
+			<wanting value="24" />
+			<wishing value="455" />
+			<numcomments value="2728" />
+			<numweights value="654" />
+			<averageweight value="1.1988" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

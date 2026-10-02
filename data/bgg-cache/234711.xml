@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="234711">
+         <thumbnail>https://cf.geekdo-images.com/HYmTwGgjmuxGpDJc1LfeSQ__small/img/0NoxW6xuG0GWOkRUfTUlMJLWiBo=/fit-in/200x150/filters:strip_icc()/pic4320873.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/HYmTwGgjmuxGpDJc1LfeSQ__original/img/Ortd_zD3enENxXnBkWFjXNa6_FY=/0x0/filters:format(jpeg)/pic4320873.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Christmas Tree" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Choinka" />
+			    				
+				<name type="alternate" sortindex="1" value="Karácsonyfa" />
+			
+						               													<description>Who will have the most beautiful Christmas tree? Who will decorate their Christmas tree in the smartest way? This game revolves around these questions, because the winner of the game is the player who decorated the most beautiful and most precious Christmas tree. If you want to be that player, you have to care about the other player&amp;rsquo;s Christmas trees too, you have to pay attention to the way they are decorating their trees.
+
+Christmas Tree is a card game for children and adults, families and experienced players too, wherein each player decorates their Christmas tree on the basis of different decorating aspects. The Christmas Trees are evaluated many times during the game and at the end of the game too, and the player who gathered the most points wins the game.
+
+&amp;mdash;description from the publisher
+
+Components:
+
+4 player boards
+106 ornament cards&amp;dagger;
+&amp;bull; 72 glass ornaments
+&amp;bull; 18 gingerbreads
+&amp;bull; 16 wrapped candies
+30 objective cards
+&amp;bull; 15 for all game types
+&amp;bull; 6 more for the family game and the advanced game
+&amp;bull; 9 more for the advanced game
+16 linzer cookies
+1 point tracker
+8 point tokens
+
+Some changes in the Second Edition:
+72 score tokens in the value of 1/5/10/20/50 (instead of the point tracker)
+
+&amp;dagger; rhombic and thus unsleevable
+
+</description>
+										      	               				<yearpublished value="2017" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="8">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="5" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="6" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="7" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 2–4 players" />
+</poll-summary> 			               				<playingtime value="45" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="45" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="4">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="2" />
+					<result value="10" numvotes="1" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="3">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="2" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2984" value="Closed Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2020" value="Simultaneous Action Selection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="6364" value="Holidays: Christmas" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="57181" value="Theme: Trees and Forests" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="261324" value="Christmas Tree: Essen Special Cards" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="103532" value="Nagy Balázs" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="103532" value="Nagy Balázs" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="112247" value="Vörös Judit" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="104553" value="Keve Kepes" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="103754" value="Marcin Minor" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="37305" value="Clevergreen Board Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34627" value="Nasza Księgarnia" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="654" />
+			<average value="7.12334" />
+			<bayesaverage value="5.84292" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="4415" bayesaverage="5.84292" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="1352" bayesaverage="5.95446" />
+												</ranks>
+
+			<stddev value="1.21648" />
+			<median value="0" />
+			<owned value="1149" />
+			<trading value="7" />
+			<wanting value="76" />
+			<wishing value="363" />
+			<numcomments value="143" />
+			<numweights value="21" />
+			<averageweight value="2.1429" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

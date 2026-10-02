@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="447243">
+         <thumbnail>https://cf.geekdo-images.com/e-Xx7mz_tgisEx2Aq4Wa6w__small/img/ie98O_KC7v3m_jSXZpYd1vqmd_I=/fit-in/200x150/filters:strip_icc()/pic8910865.png</thumbnail>
+      <image>https://cf.geekdo-images.com/e-Xx7mz_tgisEx2Aq4Wa6w__original/img/pe7roKL2-gtXSvGIzHBiXzb0yzk=/0x0/filters:format(png)/pic8910865.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Duel for Cardia" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Cardia: Magiczny pojedynek" />
+			    				
+				<name type="alternate" sortindex="1" value="Duel o město Cardia" />
+			    				
+				<name type="alternate" sortindex="1" value="Duel om Cardia" />
+			    				
+				<name type="alternate" sortindex="1" value="Duel pour Cardia" />
+			    				
+				<name type="alternate" sortindex="1" value="Duell um Cardia" />
+			    				
+				<name type="alternate" sortindex="1" value="Duello per Cardia" />
+			    				
+				<name type="alternate" sortindex="1" value="Duelo por Cardia" />
+			
+						               													<description>Cardia is a fast paced, strategic card game for two players: Choose your card wisely to win each encounter against your opponent.
+ In gratitude for her liberation, a mighty djinn created the wondrous city of Cardia. Legend has it that whoever wins over the four factions and gains their five powerful signet rings will rule the city. Your goal is set!
+ Players will each pilot one of two Decks, made up of the same cards for each, with values from 1-16 and with each card having unique abilities. Play your cards at the moment your opponent does not expect them and use their abilities wisely to outwit them!
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2025" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="57">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="45" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="54" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="38" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2 players" />
+  <result name="recommmendedwith" value="Recommended with 2 players" />
+</poll-summary> 			               				<playingtime value="15" />
+						               				<minplaytime value="15" />
+						               				<maxplaytime value="15" />
+						               				<minage value="9" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="26">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="8" />
+					<result value="10" numvotes="17" />
+					<result value="12" numvotes="1" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="11">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="2" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="8" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="1" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1010" value="Fantasy" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2020" value="Simultaneous Action Selection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2009" value="Trick-taking" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="22783" value="Admin: Better Description Needed!" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="103962" value="Card Games: Lane Battler" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="117387" value="Game: Cardia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="19528" value="Organizations: Forgenext" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="113768" value="Players: Games with expansions that change player count" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="61979" value="Players: Two-Player Only Games" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="451441" value="Duel for Cardia: Ceremonia Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="452758" value="Duel for Cardia: Extra Plättchen für 4 Spieler" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="464088" value="Duel for Cardia: Guardians of the Wild" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="465036" value="Duel for Cardia: Playmat" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="470745" value="Cardia: Tide &amp; Storm" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="111424" value="Faouzi Boughida" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="150996" value="Mathieu Rivero" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="121353" value="Florian Herold" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="119780" value="Qistina Khalidah" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="103476" value="Dominik Mayer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="142361" value="Ingram Schell" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="169231" value="Jonas Schmutzler" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="133" value="Hans im Glück" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="267" value="999 Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="157" value="asmodee" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7162" value="Brain Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2366" value="Devir" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36981" value="Feelindigo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="52408" value="Games4you" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5530" value="Giochi Uniti" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6214" value="Kaissa Chess &amp; Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33626" value="Lucky Duck Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30521" value="Mandoo Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7992" value="MINDOK" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="62145" value="Piatnik Distribution" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="31904" value="Ponva d.o.o." />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="5033" />
+			<average value="7.49622" />
+			<bayesaverage value="6.82129" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="737" bayesaverage="6.82129" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="469" bayesaverage="6.91379" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="155" bayesaverage="6.96079" />
+												</ranks>
+
+			<stddev value="1.14801" />
+			<median value="0" />
+			<owned value="11298" />
+			<trading value="93" />
+			<wanting value="173" />
+			<wishing value="1983" />
+			<numcomments value="680" />
+			<numweights value="107" />
+			<averageweight value="1.7757" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="165401">
+         <thumbnail>https://cf.geekdo-images.com/em65Za2y7FNo-otQ6IgUCQ__small/img/UAL4JsaK6Rph7YS0lxDOKG1kWrw=/fit-in/200x150/filters:strip_icc()/pic2239210.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/em65Za2y7FNo-otQ6IgUCQ__original/img/cCyRJX4pyij34e2YFsQ_XoNPEEs=/0x0/filters:format(jpeg)/pic2239210.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Wir sind das Volk!" />
+			
+						                               				
+				<name type="alternate" sortindex="5" value="The divided Germany, 1945-1989" />
+			
+						               													<description>1949: Germany, still in ruins from WWII, is split in two, as the Iron Curtain of the Cold War descends. East Germany and West Germany become bitter rivals, each wanting to show its system is superior. Which will reconstruct quicker? Which will make its people happier? Socialism vs Capitalism; collectivism vs individualism - which will triumph?
+
+Wir sind das Volk! ("We are the people!" &amp;mdash; the main slogan of the East German demonstrators in 1989) recreates the history of the divided Germany, from the Berlin Airlift to the fall of the Berlin Wall. Flowing from how the 84 individually designed action cards are played, each game is different. There are many possible strategies. Will East Germany build the Wall or stem the exodus of its citizens another way?
+
+East vs West: as a player, you take the role of East or West Germany. Use your action cards wisely. Build up your economy and increase the living standards of your people. Don&amp;rsquo;t fall behind, or you will face widespread unrest. Also win the contest for international prestige. Precise planning is the key to victory. But be careful! Even the best plans may be derailed by events like the 1973 Oil Crisis or the Monday demos. Mass protests, that may seal your fate, are always on the horizon.
+
+</description>
+										      	               				<yearpublished value="2014" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="2" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="66">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="10" />
+					<result value="Not Recommended" numvotes="32" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="63" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="2+">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="40" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2 players" />
+  <result name="recommmendedwith" value="Recommended with 2 players" />
+</poll-summary> 			               				<playingtime value="150" />
+						               				<minplaytime value="60" />
+						               				<maxplaytime value="150" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="23">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="6" />
+					<result value="14" numvotes="12" />
+					<result value="16" numvotes="5" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="26">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="13" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="12" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1001" value="Political" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2840" value="Action / Event" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2081" value="Network and Route Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2070" value="Simulation" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2888" value="Tug of War" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="18214" value="Cities: Berlin (Germany)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="10643" value="Country: Germany" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70706" value="Digital Implementations: Boardgamecore" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="72674" value="Digital Implementations: Rally the Troops" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="46190" value="History: Cold War" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="61979" value="Players: Two-Player Only Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="109270" value="Political: Movements and/or Activism" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="109096" value="Theme: Labour movement / Workers rights / Unionising" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="234017" value="Wir sind das Volk!: 2+2" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="407570" value="Wir sind das Volk!: Combined Edition" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="4034" value="Richard Sivél" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="5554" value="Peer Sylvester" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="77937" value="Friedemann Bochow" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="51410" value="Richard Shako" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1629" value="Histogame" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="2862" />
+			<average value="7.75676" />
+			<bayesaverage value="6.71326" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="898" bayesaverage="6.71326" />
+																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="41" bayesaverage="7.43352" />
+											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="477" bayesaverage="6.90297" />
+												</ranks>
+
+			<stddev value="1.33768" />
+			<median value="0" />
+			<owned value="4957" />
+			<trading value="107" />
+			<wanting value="260" />
+			<wishing value="1364" />
+			<numcomments value="738" />
+			<numweights value="209" />
+			<averageweight value="3.7464" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

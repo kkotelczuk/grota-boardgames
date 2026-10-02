@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="330174">
+         <thumbnail>https://cf.geekdo-images.com/t_QgPTCtmsw2xUn4JM6Kxw__small/img/qZaY4ILm3b4tS9mVcefAkMWGdVE=/fit-in/200x150/filters:strip_icc()/pic5950783.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/t_QgPTCtmsw2xUn4JM6Kxw__original/img/widbnaUDMSIofUte0ODzh6oVVpw=/0x0/filters:format(jpeg)/pic5950783.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Explorers" />
+			
+						                           
+						               													<description>At the beginning of Explorers, you and each other explorer place four landscape tiles &amp;mdash; grasslands, bodies of water, desert or mountains &amp;mdash; and three different scoring tiles in your game frame. Then from your starting village, you go on an exploratory tour.
+
+The exploration cards, each of which shows two landscapes, indicates which landscapes you are allowed to cross (off). On your turn, you reveal an exploration card, chooses one of the two types of terrain, then cross off three spaces ahead of your current location. Your fellow players must then decide whether to place only two crosses on the same landscape, or choose the other landscape and tick off three crosses. All of your crosses must be orthogonally adjacent, so you need to plan well to avoid being stuck due to "bad" landscape choices.
+
+Over four rounds, you expand your territory, receiving a special action for each checked box with an object in it. You receive points for provisions and gems, with a map you can place crosses on any type of terrain, and lost temples can be explored with keys &amp;mdash; but whoever reaches the temple first receives the most points for it...
+
+Explorers contains a solo version as well as additional task tiles for experienced players, with more than a million possible game combinations.
+
+</description>
+										      	               				<yearpublished value="2021" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="50">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="10" />
+					<result value="Recommended" numvotes="23" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="30" />
+					<result value="Recommended" numvotes="12" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="9" />
+					<result value="Recommended" numvotes="21" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="6" />
+					<result value="Recommended" numvotes="20" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="17" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="20" />
+						               				<minplaytime value="20" />
+						               				<maxplaytime value="20" />
+						               				<minage value="8" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="13">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="12" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="5">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="5" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1009" value="Abstract Strategy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1020" value="Exploration" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2039" value="Line Drawing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2011" value="Modular Board" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2055" value="Paper-and-Pencil" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2007" value="Pick-up and Deliver" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2940" value="Square Grid" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="64960" value="Components: Map (Continental / National scale)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="76458" value="Digital Implementations: BrettspielWelt" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78432" value="Digital Implementations: Google Play" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="66143" value="Mechanism: Flip-and-Write" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78198" value="Misc: Watch It Played How To Videos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="69209" value="Occupation: Adventurer / Explorer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="8347" value="Phil Walker-Harding" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="69113" value="Sabrina Miramon" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34" value="Ravensburger AG" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="1958" />
+			<average value="7.10906" />
+			<bayesaverage value="6.21777" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2197" bayesaverage="6.21777" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="631" bayesaverage="6.36797" />
+												</ranks>
+
+			<stddev value="1.06329" />
+			<median value="0" />
+			<owned value="4168" />
+			<trading value="103" />
+			<wanting value="57" />
+			<wishing value="810" />
+			<numcomments value="354" />
+			<numweights value="62" />
+			<averageweight value="1.8871" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

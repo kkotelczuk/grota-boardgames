@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="177478">
+         <thumbnail>https://cf.geekdo-images.com/ypE6HrTY1Xvpt1XCpKlMBw__small/img/25aN_TPIrOU6S7_1V31lVwsr3iA=/fit-in/200x150/filters:strip_icc()/pic5960068.png</thumbnail>
+      <image>https://cf.geekdo-images.com/ypE6HrTY1Xvpt1XCpKlMBw__original/img/G4-gFXe9tKgnkgJOFTVO2A-Wbm4=/0x0/filters:format(png)/pic5960068.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="IKI" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="IKI: Die Handwerker und Händler von Edo" />
+			    				
+				<name type="alternate" sortindex="1" value="IKI: El juego de los artesanos de Edo" />
+			    				
+				<name type="alternate" sortindex="1" value="IKI. Игра о мастерах эпохи Эдо" />
+			    				
+				<name type="alternate" sortindex="1" value="Ікі" />
+			    				
+				<name type="alternate" sortindex="1" value="江戶職人物語" />
+			
+						               													<description>Edo &amp;mdash; what we now know today as Tokyo, Japan &amp;mdash; was a thriving city with an estimated population of one million, half townspeople and half samurai. With a huge shopping culture, Edo's main district, Nihonbashi, was lined with shops, selling kimonos, rice, and so much more.
+
+Nihonbashi is the focus of IKI: A Game of EDO Artisans, which brings you on a journey through the famed street of old Tokyo. Hear the voices of Nihonbashi Bridge's great fish market. Meet the professionals, who carry out 700&amp;shy;-800 different jobs. Enter the interactivity of the shoppers and vendors. Become one with the townspeople.
+
+One of the main professions in the world of Edo is the artisan. Each of the Edo artisans uses their own skill of trade to support the townspeople's lives. In this game, not only are there artisans, but street vendors, sellers at the shops, and professions unique to this time and age. Meet the puppet masters, putting on a show. Meet the ear cleaners that people would line up for.
+
+The goal of this game is to become the annual Edoite, best personifying what is known as "IKI", an ancient philosophy believed to be the ideal way of living among people in Edo. Knowing the subtleties of human nature, being refined and attractive &amp;mdash; these are all elements of a true IKI master.
+
+</description>
+										      	               				<yearpublished value="2015" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="192">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="87" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="17" />
+					<result value="Recommended" numvotes="79" />
+					<result value="Not Recommended" numvotes="46" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="51" />
+					<result value="Recommended" numvotes="96" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="116" />
+					<result value="Recommended" numvotes="32" />
+					<result value="Not Recommended" numvotes="8" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="64" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 2–4 players" />
+</poll-summary> 			               				<playingtime value="90" />
+						               				<minplaytime value="60" />
+						               				<maxplaytime value="90" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="35">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="2" />
+					<result value="10" numvotes="6" />
+					<result value="12" numvotes="18" />
+					<result value="14" numvotes="8" />
+					<result value="16" numvotes="1" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="23">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="23" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1035" value="Medieval" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2902" value="Income" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2911" value="Ownership" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2813" value="Rondel" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2939" value="Track Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2826" value="Turn Order: Stat-Based" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="10634" value="Country: Japan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="22135" value="Crowdfunding: Spieleschmiede" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="58667" value="History: Edo Period" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="67862" value="Occupation: Merchant" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="375824" value="IKI: Akebono" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="186452" value="IKI: Essen 2015 Promo" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="374060" value="IKI: Sloyca Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="365783" value="IKI: Tower Rex Organizer" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="164878" value="Edo Craftsman Story" inbound="true"/>
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="77702" value="Koota Yamada" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="77703" value="Dommiy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="106180" value="David Sitbon" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="77702" value="Koota Yamada" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29693" value="UTSUROI" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36401" value="Arrakis Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9068" value="Broadway Toys LTD" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="11043" value="Conclave Editora" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29930" value="Cosmodrome Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33618" value="Fractal Juegos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="47476" value="Geronimo Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4785" value="Ghenos Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="42147" value="Giant Roc" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="50993" value="Hachette Boardgames UK" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33626" value="Lucky Duck Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36563" value="Reflexshop" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="35166" value="Sorry We Are French" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="47883" value="WoodCat" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="6997" />
+			<average value="7.58323" />
+			<bayesaverage value="7.02295" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="489" bayesaverage="7.02295" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="298" bayesaverage="7.13787" />
+												</ranks>
+
+			<stddev value="1.1915" />
+			<median value="0" />
+			<owned value="12475" />
+			<trading value="176" />
+			<wanting value="382" />
+			<wishing value="2789" />
+			<numcomments value="1264" />
+			<numweights value="310" />
+			<averageweight value="3.0613" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

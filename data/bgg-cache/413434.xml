@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgameexpansion" id="413434">
+         <thumbnail>https://cf.geekdo-images.com/1xaGlZz2vN9undj-NLSp9w__small/img/MtQy8E9w66MT6feqlfo2-S7_M1c=/fit-in/200x150/filters:strip_icc()/pic8000167.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/1xaGlZz2vN9undj-NLSp9w__original/img/KH_BmuIglEAYEm3Du2aeSRwX3ls=/0x0/filters:format(jpeg)/pic8000167.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="DEFCON 1: Deep Dive" />
+			
+						                           
+						               													<description>The DEFCON 1: Deep Dive contains expansions and additional material for the DEFCON 1 base game. The latter is needed to play with Deep Dive.
+
+
+     40 additional Mission cards
+     20 additional Objective cards
+     1 History booklet
+     1 Strategic Guide booklet
+     5 double-layer Block boards
+     100+ wooden meeples (replacing the counters of the base box)
+
+
+UN Each player is a member of the Security Council and is able to submit to a collective vote 5 types of resolution. 5 specific Mission cards, 1 UN board, 5 Veto markers.
+
+Doctrines allow you to lead your block by following doctrines, each with strengths and weaknesses. 5 specific Mission cards, 15 Doctrine cards, 5 Locked Technology tiles.
+
+Leaders allow you to strengthen your block by calling to your side the great leaders who marked the Cold War. 5 specific Mission cards, 15 Leader cards, 15 Leader Control markers.
+
+Finance allows you both to gain more resources and to have more flexibility in managing them. 5 specific Mission cards, 1 Finance board.
+
+Air Strike allows you to use fighters and bombers to inflict heavy damage to your enemies. 5 specific Mission cards, 8 Technology tiles, 12 Aircraft markers.
+
+Black Op allows you to mobilize your secret services, your Special Units, and your diplomatic network to use the opposing forces to your advantage. 5 specific Mission cards, 25 Black Op markers.
+
+&amp;mdash;description from the back of the box
+
+</description>
+										      	               				<yearpublished value="2023" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="1">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 5 players" />
+  <result name="recommmendedwith" value="Recommended with 2–5 players" />
+</poll-summary> 			               				<playingtime value="180" />
+						               				<minplaytime value="90" />
+						               				<maxplaytime value="180" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="1">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="1" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="1">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="1" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1042" value="Expansion for Base-game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1001" value="Political" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1019" value="Wargame" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="46190" value="History: Cold War" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="68723" value="Theme: Nuclear Option" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="322354" value="DEFCON 1" inbound="true"/>
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="131491" value="Florian Dumont" />
+		
+									
+			
+
+			      			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7186" value="ASYNCRON games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="10" />
+			<average value="8.68" />
+			<bayesaverage value="0" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="Not Ranked" />
+												</ranks>
+
+			<stddev value="0.775629" />
+			<median value="0" />
+			<owned value="66" />
+			<trading value="1" />
+			<wanting value="3" />
+			<wishing value="4" />
+			<numcomments value="5" />
+			<numweights value="4" />
+			<averageweight value="3.5" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

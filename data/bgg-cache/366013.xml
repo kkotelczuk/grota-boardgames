@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="366013">
+         <thumbnail>https://cf.geekdo-images.com/-vOrd4bOspibyohYExLqWg__small/img/2GbaKvYOzWIxfgbYTk2R9puiyzo=/fit-in/200x150/filters:strip_icc()/pic6940449.png</thumbnail>
+      <image>https://cf.geekdo-images.com/-vOrd4bOspibyohYExLqWg__original/img/iXU8a9WaVlwrkiEiOxWN06y9y5g=/0x0/filters:format(png)/pic6940449.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Heat: Pedal to the Metal" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Heat" />
+			    				
+				<name type="alternate" sortindex="1" value="Heat: Padlógáz" />
+			    				
+				<name type="alternate" sortindex="1" value="Turbo" />
+			    				
+				<name type="alternate" sortindex="1" value="Гонка: Жара на трассе" />
+			    				
+				<name type="alternate" sortindex="1" value="Турбо: Спека на треку" />
+			    				
+				<name type="alternate" sortindex="1" value="ヒート" />
+			    				
+				<name type="alternate" sortindex="1" value="火爆狂飙：全速前进" />
+			    				
+				<name type="alternate" sortindex="1" value="熱力狂飆" />
+			    				
+				<name type="alternate" sortindex="1" value="히트: 질주의 열기" />
+			
+						               													<description>Based on simple and intuitive hand management, Heat: Pedal to the Metal puts players in the driver's seat of intense car races, jockeying for position to cross the finish line first, while managing their car's speed if they don't want to overheat. Selecting the right upgrades for their car will help them hug the curves and keep their engine cool enough to maintain top speeds. Ultimately, their driving skills will be the key to victory!
+
+Drivers can compete in a single race or use the "Championship System" to play a whole season in one game night, customizing their car before each race to claim the top spot of the podium. They have to be careful as the weather, road conditions, and events will change every race to spice up their championship. Players can also enjoy a solo mode with the Legends Module or add automated drivers as additional opponents in multiplayer games.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2022" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="6" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="916">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="86" />
+					<result value="Recommended" numvotes="419" />
+					<result value="Not Recommended" numvotes="199" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="61" />
+					<result value="Recommended" numvotes="455" />
+					<result value="Not Recommended" numvotes="201" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="84" />
+					<result value="Recommended" numvotes="500" />
+					<result value="Not Recommended" numvotes="114" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="268" />
+					<result value="Recommended" numvotes="454" />
+					<result value="Not Recommended" numvotes="19" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="539" />
+					<result value="Recommended" numvotes="190" />
+					<result value="Not Recommended" numvotes="8" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="578" />
+					<result value="Recommended" numvotes="151" />
+					<result value="Not Recommended" numvotes="17" />
+				</results>					
+			
+		<results numplayers="6+">		
+					<result value="Best" numvotes="86" />
+					<result value="Recommended" numvotes="99" />
+					<result value="Not Recommended" numvotes="225" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 5–6 players" />
+  <result name="recommmendedwith" value="Recommended with 1–6 players" />
+</poll-summary> 			               				<playingtime value="60" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="60" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="231">
+			<results>		
+					<result value="2" numvotes="2" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="1" />
+					<result value="6" numvotes="23" />
+					<result value="8" numvotes="111" />
+					<result value="10" numvotes="80" />
+					<result value="12" numvotes="12" />
+					<result value="14" numvotes="1" />
+					<result value="16" numvotes="1" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="57">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="38" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="17" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="2" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1031" value="Racing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1038" value="Sports" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2887" value="Catch the Leader" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2953" value="Programmed Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2661" value="Push Your Luck" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2876" value="Race" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2070" value="Simulation" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2020" value="Simultaneous Action Selection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2939" value="Track Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="108938" value="Game: Heat – Pedal to the Metal" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78198" value="Misc: Watch It Played How To Videos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="6206" value="Sports: Auto Racing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="72934" value="Sports: Formula 1" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="71573" value="Theme: Retro" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="410291" value="Heat: Heavy Rain" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="463405" value="Heat: Legends" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="459763" value="Heat: Rocky Roads" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="436904" value="Heat: Tunnel Vision" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="443658" value="Heat: Pedal to the Metal – 3D Gear Shifters" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="413793" value="Heat: Pedal to the Metal – BGExpansions Full Upgrade Kit" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="449410" value="Heat: Pedal to the Metal – Board Bento Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="465988" value="Heat: Pedal to the Metal – Hobby Next Kit" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="457800" value="Heat: Pedal to the Metal – Kalkared Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="444170" value="Heat: Pedal to the Metal – Magnetic Gear Stick Deluxe Upgrade" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="80520" value="Asger Aleksandrov Granerud" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="80521" value="Daniel Skjold Pedersen" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="12130" value="Vincent Dutrait" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1027" value="Days of Wonder" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="23043" value="ADC Blackfire Entertainment" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="50696" value="CoolPlay" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15605" value="Galápagos Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8820" value="Gémklub" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="28415" value="GoKids 玩樂小子" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="18852" value="Hobby World" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6214" value="Kaissa Chess &amp; Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="46500" value="Lord of Boards" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="43429" />
+			<average value="7.99116" />
+			<bayesaverage value="7.79539" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="48" bayesaverage="7.79539" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="6" bayesaverage="7.81168" />
+												</ranks>
+
+			<stddev value="1.33345" />
+			<median value="0" />
+			<owned value="65169" />
+			<trading value="305" />
+			<wanting value="1303" />
+			<wishing value="15689" />
+			<numcomments value="5246" />
+			<numweights value="1196" />
+			<averageweight value="2.2007" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

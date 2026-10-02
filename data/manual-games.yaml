@@ -1,0 +1,254 @@
+# Gry spoza BGG (albo takie, których nie udało się pobrać z API).
+# Plik generuje `pnpm data:fetch` – DOPISUJE tylko brakujące wpisy, Twoich zmian nie nadpisuje.
+# Uzupełnij pola oznaczone TODO. Puste pola (null) są OK – gra i tak się wyświetli.
+# Format opisany w data/README.md.
+
+games:
+
+  - id: manual-kraina-zagadek
+    # Powód: brak linku do BGG (CSV, wiersz 188)
+    title: "Kraina zagadek"
+    originalTitle: null # TODO (opcjonalnie): tytuł oryginalny, jeśli inny
+    kind: base # base | expansion
+    baseGameId: null # dla dodatku: id gry bazowej z kolekcji (np. "28143")
+    copies:
+      - localTitle: "Kraina zagadek"
+        editionLanguage: PL
+        hasPolishRules: true
+    sourceUrl: "https://zuberry.pl/games_series/kraina-zagadek/"
+    csvComment: null
+    year: null # TODO
+    minPlayers: null # TODO
+    maxPlayers: null # TODO
+    bestPlayers: [] # TODO (opcjonalnie), np. [3, 4]
+    minPlayTime: null # TODO: minuty
+    maxPlayTime: null # TODO: minuty
+    minAge: null # TODO
+    weight: null # TODO (opcjonalnie): złożoność 1–5
+    categories: [] # TODO (opcjonalnie): id kategorii BGG, np. [1002] – lista w data/translations/bgg-terms.pl.json
+    mechanics: [] # TODO (opcjonalnie): id mechanik BGG
+    designers: [] # TODO (opcjonalnie)
+    image: null # TODO: nazwa pliku w data/manual-images/, np. "manual-kraina-zagadek.jpg"
+    summary:
+      pl: null # TODO: 1–2 zdania
+      en: null # TODO: 1–2 zdania
+    description:
+      pl: null # TODO
+      en: null # TODO
+
+  - id: manual-mrowisko
+    # Powód: brak linku do BGG (CSV, wiersz 189)
+    title: "Mrowisko"
+    originalTitle: null # TODO (opcjonalnie): tytuł oryginalny, jeśli inny
+    kind: base # base | expansion
+    baseGameId: null # dla dodatku: id gry bazowej z kolekcji (np. "28143")
+    copies:
+      - localTitle: "Mrowisko"
+        editionLanguage: PL
+        hasPolishRules: true
+    sourceUrl: "https://abino.com.pl/mrowisko/"
+    csvComment: null
+    year: null # TODO
+    minPlayers: null # TODO
+    maxPlayers: null # TODO
+    bestPlayers: [] # TODO (opcjonalnie), np. [3, 4]
+    minPlayTime: null # TODO: minuty
+    maxPlayTime: null # TODO: minuty
+    minAge: null # TODO
+    weight: null # TODO (opcjonalnie): złożoność 1–5
+    categories: [] # TODO (opcjonalnie): id kategorii BGG, np. [1002] – lista w data/translations/bgg-terms.pl.json
+    mechanics: [] # TODO (opcjonalnie): id mechanik BGG
+    designers: [] # TODO (opcjonalnie)
+    image: null # TODO: nazwa pliku w data/manual-images/, np. "manual-mrowisko.jpg"
+    summary:
+      pl: null # TODO: 1–2 zdania
+      en: null # TODO: 1–2 zdania
+    description:
+      pl: null # TODO
+      en: null # TODO
+
+  - id: manual-kibole-wyjazd-na-mecz
+    # Powód: brak linku do BGG (CSV, wiersz 202)
+    title: "Kibole: wyjazd na mecz"
+    originalTitle: null # TODO (opcjonalnie): tytuł oryginalny, jeśli inny
+    kind: base # base | expansion
+    baseGameId: null # dla dodatku: id gry bazowej z kolekcji (np. "28143")
+    copies:
+      - localTitle: "Kibole: wyjazd na mecz"
+        editionLanguage: PL
+        hasPolishRules: true
+    sourceUrl: "https://www.facebook.com/grakibole/"
+    csvComment: null
+    year: null # TODO
+    minPlayers: null # TODO
+    maxPlayers: null # TODO
+    bestPlayers: [] # TODO (opcjonalnie), np. [3, 4]
+    minPlayTime: null # TODO: minuty
+    maxPlayTime: null # TODO: minuty
+    minAge: null # TODO
+    weight: null # TODO (opcjonalnie): złożoność 1–5
+    categories: [] # TODO (opcjonalnie): id kategorii BGG, np. [1002] – lista w data/translations/bgg-terms.pl.json
+    mechanics: [] # TODO (opcjonalnie): id mechanik BGG
+    designers: [] # TODO (opcjonalnie)
+    image: null # TODO: nazwa pliku w data/manual-images/, np. "manual-kibole-wyjazd-na-mecz.jpg"
+    summary:
+      pl: null # TODO: 1–2 zdania
+      en: null # TODO: 1–2 zdania
+    description:
+      pl: null # TODO
+      en: null # TODO
+
+  - id: manual-4-male-ule-i-miod
+    # Powód: brak linku do BGG (CSV, wiersz 209)
+    title: "4 małe ule i miód"
+    originalTitle: null # TODO (opcjonalnie): tytuł oryginalny, jeśli inny
+    kind: base # base | expansion
+    baseGameId: null # dla dodatku: id gry bazowej z kolekcji (np. "28143")
+    copies:
+      - localTitle: "4 małe ule i miód"
+        editionLanguage: PL
+        hasPolishRules: true
+    sourceUrl: "https://planszeo.pl/gry-planszowe/male-4-ule/opis#tab"
+    csvComment: null
+    year: null # TODO
+    minPlayers: null # TODO
+    maxPlayers: null # TODO
+    bestPlayers: [] # TODO (opcjonalnie), np. [3, 4]
+    minPlayTime: null # TODO: minuty
+    maxPlayTime: null # TODO: minuty
+    minAge: null # TODO
+    weight: null # TODO (opcjonalnie): złożoność 1–5
+    categories: [] # TODO (opcjonalnie): id kategorii BGG, np. [1002] – lista w data/translations/bgg-terms.pl.json
+    mechanics: [] # TODO (opcjonalnie): id mechanik BGG
+    designers: [] # TODO (opcjonalnie)
+    image: null # TODO: nazwa pliku w data/manual-images/, np. "manual-4-male-ule-i-miod.jpg"
+    summary:
+      pl: null # TODO: 1–2 zdania
+      en: null # TODO: 1–2 zdania
+    description:
+      pl: null # TODO
+      en: null # TODO
+
+  - id: manual-tappi-i-poziomkowa-przygoda
+    # Powód: brak linku do BGG (CSV, wiersz 218)
+    title: "Tappi i poziomkowa przygoda"
+    originalTitle: null # TODO (opcjonalnie): tytuł oryginalny, jeśli inny
+    kind: base # base | expansion
+    baseGameId: null # dla dodatku: id gry bazowej z kolekcji (np. "28143")
+    copies:
+      - localTitle: "Tappi i poziomkowa przygoda"
+        editionLanguage: PL
+        hasPolishRules: true
+    sourceUrl: "https://www.planszeo.pl/gry-planszowe/tappi-i-poziomkowa-przygoda"
+    csvComment: null
+    year: null # TODO
+    minPlayers: null # TODO
+    maxPlayers: null # TODO
+    bestPlayers: [] # TODO (opcjonalnie), np. [3, 4]
+    minPlayTime: null # TODO: minuty
+    maxPlayTime: null # TODO: minuty
+    minAge: null # TODO
+    weight: null # TODO (opcjonalnie): złożoność 1–5
+    categories: [] # TODO (opcjonalnie): id kategorii BGG, np. [1002] – lista w data/translations/bgg-terms.pl.json
+    mechanics: [] # TODO (opcjonalnie): id mechanik BGG
+    designers: [] # TODO (opcjonalnie)
+    image: null # TODO: nazwa pliku w data/manual-images/, np. "manual-tappi-i-poziomkowa-przygoda.jpg"
+    summary:
+      pl: null # TODO: 1–2 zdania
+      en: null # TODO: 1–2 zdania
+    description:
+      pl: null # TODO
+      en: null # TODO
+
+  - id: manual-star-wars-guessing-game
+    # Powód: brak linku do BGG (CSV, wiersz 223)
+    title: "STAR WARS: Guessing game"
+    originalTitle: null # TODO (opcjonalnie): tytuł oryginalny, jeśli inny
+    kind: base # base | expansion
+    baseGameId: null # dla dodatku: id gry bazowej z kolekcji (np. "28143")
+    copies:
+      - localTitle: "STAR WARS: Guessing game"
+        editionLanguage: EN
+        hasPolishRules: true
+    sourceUrl: "https://allegro.pl/produkt/gra-planszowa-star-wars-guessing-game-img-fe9f8c8d-3282-4341-8164-14fd6f695ffa?offerId=15459715541"
+    csvComment: "sorry, to jest jedyny link który o tym znalazłem xD"
+    year: null # TODO
+    minPlayers: null # TODO
+    maxPlayers: null # TODO
+    bestPlayers: [] # TODO (opcjonalnie), np. [3, 4]
+    minPlayTime: null # TODO: minuty
+    maxPlayTime: null # TODO: minuty
+    minAge: null # TODO
+    weight: null # TODO (opcjonalnie): złożoność 1–5
+    categories: [] # TODO (opcjonalnie): id kategorii BGG, np. [1002] – lista w data/translations/bgg-terms.pl.json
+    mechanics: [] # TODO (opcjonalnie): id mechanik BGG
+    designers: [] # TODO (opcjonalnie)
+    image: null # TODO: nazwa pliku w data/manual-images/, np. "manual-star-wars-guessing-game.jpg"
+    summary:
+      pl: null # TODO: 1–2 zdania
+      en: null # TODO: 1–2 zdania
+    description:
+      pl: null # TODO
+      en: null # TODO
+
+  - id: manual-zgroza-xd
+    # Powód: brak linku do BGG (CSV, wiersz 243)
+    title: "Zgroza xD"
+    originalTitle: null # TODO (opcjonalnie): tytuł oryginalny, jeśli inny
+    kind: base # base | expansion
+    baseGameId: null # dla dodatku: id gry bazowej z kolekcji (np. "28143")
+    copies:
+      - localTitle: "Zgroza xD"
+        editionLanguage: PL
+        hasPolishRules: true
+    sourceUrl: "https://planszeo.pl/gry-planszowe/zgroza-xd"
+    csvComment: null
+    year: null # TODO
+    minPlayers: null # TODO
+    maxPlayers: null # TODO
+    bestPlayers: [] # TODO (opcjonalnie), np. [3, 4]
+    minPlayTime: null # TODO: minuty
+    maxPlayTime: null # TODO: minuty
+    minAge: null # TODO
+    weight: null # TODO (opcjonalnie): złożoność 1–5
+    categories: [] # TODO (opcjonalnie): id kategorii BGG, np. [1002] – lista w data/translations/bgg-terms.pl.json
+    mechanics: [] # TODO (opcjonalnie): id mechanik BGG
+    designers: [] # TODO (opcjonalnie)
+    image: null # TODO: nazwa pliku w data/manual-images/, np. "manual-zgroza-xd.jpg"
+    summary:
+      pl: null # TODO: 1–2 zdania
+      en: null # TODO: 1–2 zdania
+    description:
+      pl: null # TODO
+      en: null # TODO
+
+  - id: manual-grzybobranie-rajd
+    # Powód: brak linku do BGG (CSV, wiersz 246)
+    title: "Grzybobranie: Rajd"
+    originalTitle: null # TODO (opcjonalnie): tytuł oryginalny, jeśli inny
+    kind: base # base | expansion
+    baseGameId: null # dla dodatku: id gry bazowej z kolekcji (np. "28143")
+    copies:
+      - localTitle: "Grzybobranie: Rajd"
+        editionLanguage: PL
+        hasPolishRules: true
+    sourceUrl: "https://planszeo.pl/gry-planszowe/grzybobranie-rajd"
+    csvComment: null
+    year: null # TODO
+    minPlayers: null # TODO
+    maxPlayers: null # TODO
+    bestPlayers: [] # TODO (opcjonalnie), np. [3, 4]
+    minPlayTime: null # TODO: minuty
+    maxPlayTime: null # TODO: minuty
+    minAge: null # TODO
+    weight: null # TODO (opcjonalnie): złożoność 1–5
+    categories: [] # TODO (opcjonalnie): id kategorii BGG, np. [1002] – lista w data/translations/bgg-terms.pl.json
+    mechanics: [] # TODO (opcjonalnie): id mechanik BGG
+    designers: [] # TODO (opcjonalnie)
+    image: null # TODO: nazwa pliku w data/manual-images/, np. "manual-grzybobranie-rajd.jpg"
+    summary:
+      pl: null # TODO: 1–2 zdania
+      en: null # TODO: 1–2 zdania
+    description:
+      pl: null # TODO
+      en: null # TODO

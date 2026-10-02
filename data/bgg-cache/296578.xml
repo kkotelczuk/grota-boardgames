@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="296578">
+         <thumbnail>https://cf.geekdo-images.com/Uehdf0nGJsNDnmB7hTlSSg__small/img/q3CcbSBQB5w841fZNm_6E7wBCC0=/fit-in/200x150/filters:strip_icc()/pic7977892.png</thumbnail>
+      <image>https://cf.geekdo-images.com/Uehdf0nGJsNDnmB7hTlSSg__original/img/URVq44jiYlbt7Id1OxZ_ANLkNJM=/0x0/filters:format(png)/pic7977892.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Congress of Vienna" />
+			
+						                           
+						               													<description>Congress of Vienna (CoV) is a diplomatic strategy card driven game. It is based on Churchill and is the third game after Churchill and Pericles in GMT&amp;rsquo;s &amp;ldquo;Great Statesmen&amp;rdquo; series. It allows players to become the main characters of the dramatic, titanic struggle between the struggling Napoleonic Empire and the coalition of Russia, Austria, and Great Britain (with their Prussian, Spanish, Portuguese, and Swedish allies).
+
+The game starts after Napoleon&amp;rsquo;s disastrous 1812 retreat from Moscow, covering the decisive years of 1813 and 1814. The abstract game map involves a strategic theatre portraying Europe from the Iberian Peninsula to the boundaries of Poland and Prussia. It also includes the secondary front of Italy, an area for depicting maritime warfare and the British/American War of 1812. This game has been created to be played as both a diplomatic and strategic military conflict without losing the taste of the Napoleonic era&amp;rsquo;s great battles. All tables necessary for gameplay are printed on the game board. Congress of Vienna reproduces the spirit of Churchill in the mechanics and organization of its rules, diplomatic display, and its military map.
+
+The game ends if:
+
+     any Major Power solely has 80 VP or more at the end of any game turn.
+     Napoleon surrenders during a turn.
+     this is the last turn of a scenario.
+
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2025" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="11">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="4" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="8" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 2–4 players" />
+</poll-summary> 			               				<playingtime value="360" />
+						               				<minplaytime value="90" />
+						               				<maxplaytime value="360" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="3">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="1" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="1" />
+					<result value="18" numvotes="1" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="1">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1051" value="Napoleonic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1001" value="Political" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1019" value="Wargame" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2012" value="Auction / Bidding" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2018" value="Campaign / Battle Card Driven" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2915" value="Negotiation" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2888" value="Tug of War" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="61118" value="History: Napoleonic Wars" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="62300" value="Series: Great Statesmen (GMT)" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="132018" value="Churchill" inbound="true"/>
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="123117" value="Frank Esparrago" />
+		
+									
+			
+
+			      			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="52" value="GMT Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="282" />
+			<average value="8.1375" />
+			<bayesaverage value="5.74913" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="5552" bayesaverage="5.74913" />
+																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="378" bayesaverage="6.64562" />
+											<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="966" bayesaverage="5.91375" />
+											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="2063" bayesaverage="5.83558" />
+												</ranks>
+
+			<stddev value="1.44518" />
+			<median value="0" />
+			<owned value="773" />
+			<trading value="12" />
+			<wanting value="80" />
+			<wishing value="446" />
+			<numcomments value="125" />
+			<numweights value="19" />
+			<averageweight value="3.9474" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

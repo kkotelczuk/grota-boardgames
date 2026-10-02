@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="184522">
+         <thumbnail>https://cf.geekdo-images.com/o-Z0bj1YVYgsnaVVR5yXOQ__small/img/yMBJtqrifxR-z4bufyEFqvIDnvg=/fit-in/200x150/filters:strip_icc()/pic3021686.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/o-Z0bj1YVYgsnaVVR5yXOQ__original/img/JgQHRpfhx6JXMfa0lynP_1XaTdc=/0x0/filters:format(jpeg)/pic3021686.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Dead Last" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Jak Wściekłe Psy" />
+			    				
+				<name type="alternate" sortindex="1" value="Tontine" />
+			    				
+				<name type="alternate" sortindex="1" value="รอด หรือ ร่วง" />
+			
+						               													<description>Stay alive, gain a fortune...
+
+Dead Last &amp;mdash; originally known as Tontine &amp;mdash; is a "social collusion" game of shifting alliances, betrayals, and murder for profit in which players must conspire and vote upon whom to kill each round. Any means of overt or covert communication is allowed &amp;mdash; a glance, a nod, pointing under the table, flashing a card, anything &amp;ndash; but make sure you don't tip off the target or they could ambush you instead! In the end, one or two players will remain, either claiming all the gold or squaring off in a final showdown before starting the next round of play. The first player to score 24 points of gold wins.
+
+Thematically, the inspiration for the game is one of the oldest pulp fiction/detective novel tropes: the Tontine, a financial investment that accrues, but pays out only to the last surviving member of the group. This practice is now largely illegal as it famously had the tendency to lead to murder.
+
+But it is the subtle art of communication that delivers the fun of the game and you conspire with each other. If you are the target of the most votes, you're dead, and if you did not side with the popular vote, you are also dead, so you constantly have to stay informed or deceive your target to band together without letting the target know. Wink, smile, kill &amp;mdash; that's the whole game. As soon as someone asks, "Hey, wanna play Dead Last?", the game has already begun &amp;mdash; and if you don't know who the target is, it very well could be you...
+
+</description>
+										      	               				<yearpublished value="2016" />
+						               				<minplayers value="6" />
+						               				<maxplayers value="12" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="25">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="17" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="17" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="15" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="15" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="15" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="14" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="7">		
+					<result value="Best" numvotes="6" />
+					<result value="Recommended" numvotes="12" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="8">		
+					<result value="Best" numvotes="13" />
+					<result value="Recommended" numvotes="7" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="9">		
+					<result value="Best" numvotes="13" />
+					<result value="Recommended" numvotes="5" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="10">		
+					<result value="Best" numvotes="10" />
+					<result value="Recommended" numvotes="8" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="11">		
+					<result value="Best" numvotes="4" />
+					<result value="Recommended" numvotes="10" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="12">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="10" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="12+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="12" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 8–10 players" />
+  <result name="recommmendedwith" value="Recommended with 6–12 players" />
+</poll-summary> 			               				<playingtime value="60" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="60" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="9">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="4" />
+					<result value="12" numvotes="3" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="1" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="7">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="6" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1023" value="Bluffing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1026" value="Negotiation" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1030" value="Party Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2685" value="Player Elimination" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2858" value="Prisoner&#039;s Dilemma" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2020" value="Simultaneous Action Selection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2686" value="Take That" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2017" value="Voting" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="2989" value="Game: Werewolf / Mafia" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="85745" value="Matthew Grosso" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="75587" value="Andy Patton" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="88998" value="Hinchel Or" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2354" value="Smirk &amp; Dagger Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="27470" value="Lucrum Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="53618" value="Well Designed Game" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="2301" />
+			<average value="6.22482" />
+			<bayesaverage value="5.83508" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="4491" bayesaverage="5.83508" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="339" bayesaverage="5.98538" />
+												</ranks>
+
+			<stddev value="1.67097" />
+			<median value="0" />
+			<owned value="3627" />
+			<trading value="165" />
+			<wanting value="73" />
+			<wishing value="737" />
+			<numcomments value="504" />
+			<numweights value="39" />
+			<averageweight value="1.1538" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

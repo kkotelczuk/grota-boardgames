@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="295072">
+         <thumbnail>https://cf.geekdo-images.com/P2XrYOrxqkEz36AukQV_bw__small/img/bKOCei9rBXm2JYwSVooAWQJLWww=/fit-in/200x150/filters:strip_icc()/pic5079595.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/P2XrYOrxqkEz36AukQV_bw__original/img/5UvwJG52ucgbv6y-HeShrEjtO0M=/0x0/filters:format(jpeg)/pic5079595.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Downfall of Empires" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="帝国的余晖" />
+			
+						               													<description>Downfall of Empires is an army level World War I strategy simulation wargame designed with the goal of creating a fluid, historical and fast game.
+
+This is a game with only 4 pages of rules that works perfectly as an introductory wargame, lasts 18 turns, can be played from 2 to 4 players (Germany, Austria-Hungary, Allies and Russia) and can be completed in less than 3 hours.
+
+Each turn, each player has 2 or 3 actions (depending on which side they control) that they can use to move or attack with their armies, build trenches, conduct diplomacy with non-aligned countries, reinforce their armies or secretly develop technologies. 
+At the end of the game someone will win with most victory points obtained by controlling key areas on the map.
+
+The German and Franco-British Powers have three actions per turn. The Russian and Austro-Hungarian Powers have two actions per turn.
+
+Available actions are:
+
+&amp;bull; Recruit: Create new units or reinforce reduced units to full strength
+&amp;bull; Activation: Move units and attack
+&amp;bull; Research: Develop new technologies.
+&amp;bull; Entrench: Build trenches in an area.
+&amp;bull; Diplomacy: Increase markers on the political track to persuade neutral countries to join the war. 
+&amp;bull; Missions: Create Air missions and Tank missions to help in attacks.
+
+With the exception of Activation, actions can only be played once per turn.
+The Recruit action can only be played as the first action.
+
+Conquering enemy cities earns Victory Points, at the end of the game the side/player with most Victory points is the winner.
+
+</description>
+										      	               				<yearpublished value="2022" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="11">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="7" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="7" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="7" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2 players" />
+  <result name="recommmendedwith" value="Recommended with 2, 4 players" />
+</poll-summary> 			               				<playingtime value="180" />
+						               				<minplaytime value="120" />
+						               				<maxplaytime value="180" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="7">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="2" />
+					<result value="12" numvotes="5" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="0">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1019" value="Wargame" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1065" value="World War I" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2001" value="Action Points" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2070" value="Simulation" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="50153" value="Continents: Europe" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="81575" value="Digital Implementations: VASSAL" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="376862" value="Downfall of Empires: Playmat" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="7055" value="Victor Catala" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11184" value="Jesus Peralta" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="39751" value="Doit Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4" value="(Self-Published)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34464" value="Banner Of War" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="38664" value="Shakos" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="248" />
+			<average value="7.54759" />
+			<bayesaverage value="5.67229" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="7021" bayesaverage="5.67229" />
+																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="700" bayesaverage="6.33634" />
+												</ranks>
+
+			<stddev value="1.46628" />
+			<median value="0" />
+			<owned value="461" />
+			<trading value="9" />
+			<wanting value="25" />
+			<wishing value="184" />
+			<numcomments value="86" />
+			<numweights value="23" />
+			<averageweight value="2.6522" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

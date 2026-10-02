@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="309427">
+         <thumbnail>https://cf.geekdo-images.com/fPGeKMzGEdoqYBg5p8oFIw__small/img/17kF-6bWnw4nDhy7buR_bCuWRaQ=/fit-in/200x150/filters:strip_icc()/pic7821001.png</thumbnail>
+      <image>https://cf.geekdo-images.com/fPGeKMzGEdoqYBg5p8oFIw__original/img/53JFv6hCpv6ztLfb8XKUqQKSlHE=/0x0/filters:format(png)/pic7821001.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Total Domination" />
+			
+						                           
+						               													<description>How do you win a world war, a game in which the stakes are so high that your nation's survival is at stake? You shall harness your industries to craft new technologies superior to that of the enemy. You shall make alliances with the neutral forces. You shall attempt to soar to the edge of the atmosphere and build the biggest bomb the world has ever seen. You shall never surrender! And in Total Domination, you shall do it all in a mere 90 minutes.
+
+World War II was a diplomatic, military, and industrial "total war". Fought on the land, at sea, and in the air, it required mobilization of every imaginable resource. In Total Domination, a strategic, card-driven, area-control game playable with two players (or by three or four players in two teams), you shall harness your industries to develop new weapons, seek the support of neutral nations, form and fund massive partisan armies to resist hostile occupation, break the enigmatic enemy codes, and plan and execute military operations that will sweep across continents and oceans. Balance these tasks and make this your finest hour!
+
+</description>
+										      	               				<yearpublished value="2023" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="11">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="7" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="6" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="9" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="6" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2, 4 players" />
+  <result name="recommmendedwith" value="Recommended with 2, 4 players" />
+</poll-summary> 			               				<playingtime value="120" />
+						               				<minplaytime value="60" />
+						               				<maxplaytime value="120" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="5">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="4" />
+					<result value="14" numvotes="1" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="5">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="3" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="2" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1019" value="Wargame" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1049" value="World War II" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2080" value="Area Majority / Influence" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2018" value="Campaign / Battle Card Driven" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2984" value="Closed Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2078" value="Point to Point Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2019" value="Team-Based Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2849" value="Tech Trees / Tech Tracks" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="62881" value="Region: The World" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="405203" value="Total Domination: KS Exclusive Set" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="405101" value="Total Domination: Miniatures Set" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="405100" value="Total Domination: Playmat" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="222951" value="Mini WWII" inbound="true"/>
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="22269" value="Wei-Cheng Cheng" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="132175" value="Tomasz Badalski" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="107323" value="Bartek Jędrzejewski" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="100683" value="Piotr Tekien" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="123836" value="Miłosz Wojtasik" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36186" value="PHALANX" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="218" />
+			<average value="6.99465" />
+			<bayesaverage value="5.60953" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="9087" bayesaverage="5.60953" />
+																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="1402" bayesaverage="5.99172" />
+												</ranks>
+
+			<stddev value="1.72809" />
+			<median value="0" />
+			<owned value="706" />
+			<trading value="27" />
+			<wanting value="31" />
+			<wishing value="221" />
+			<numcomments value="95" />
+			<numweights value="13" />
+			<averageweight value="2.9231" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

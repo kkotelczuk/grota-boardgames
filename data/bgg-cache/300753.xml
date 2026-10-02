@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="300753">
+         <thumbnail>https://cf.geekdo-images.com/ZN2V2U-Ng_nyBgsg9dxWCg__small/img/Nwo-Ur7atIZiV5Y1nL9STHw5sVg=/fit-in/200x150/filters:strip_icc()/pic5532617.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/ZN2V2U-Ng_nyBgsg9dxWCg__original/img/nZVqYbJ4vtNQnm58R20kmKlDlp0=/0x0/filters:format(jpeg)/pic5532617.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Cross Clues" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Daj namiar" />
+			    				
+				<name type="alternate" sortindex="1" value="Entre Linhas" />
+			    				
+				<name type="alternate" sortindex="1" value="Kreuzweise" />
+			    				
+				<name type="alternate" sortindex="1" value="Mot Malin" />
+			    				
+				<name type="alternate" sortindex="1" value="Pistas Cruzadas" />
+			    				
+				<name type="alternate" sortindex="1" value="Szókapocs" />
+			    				
+				<name type="alternate" sortindex="1" value="Zadaj reč" />
+			    				
+				<name type="alternate" sortindex="1" value="Влучні підказки" />
+			    				
+				<name type="alternate" sortindex="1" value="Ключевые слова" />
+			    				
+				<name type="alternate" sortindex="1" value="Кодовые слова" />
+			    				
+				<name type="alternate" sortindex="1" value="Кръстосмислици" />
+			    				
+				<name type="alternate" sortindex="1" value="크로스 클루" />
+			
+						               													<description>Cross Clues is a cooperative word-association game in which players try to fill a grid by connecting pairs of code words with clever one-word clues. Each row and column of the grid is labeled, and a code word is placed at each label. Every space therefore represents a unique combination of two code words.
+
+Each player secretly receives a Clue Card showing one space in the grid and must give a single-word clue that relates to both code words at that location. There are no turns: whenever a player has a clue ready, they give it to the group. The other players discuss what the clue could mean and try to identify the corresponding row and column. If they guess correctly, the Clue Card is placed in the grid; otherwise, it is discarded.
+
+The game ends when the timer runs out or when all Clue Cards have been played. Players then count the number of cards successfully placed and compare their result with the scoring scale for the chosen grid size. The goal is to fill as much of the grid as possible by developing a shared understanding of how the other players make connections between words.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2020" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="6" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="92">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="43" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="18" />
+					<result value="Recommended" numvotes="47" />
+					<result value="Not Recommended" numvotes="6" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="22" />
+					<result value="Recommended" numvotes="51" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="62" />
+					<result value="Recommended" numvotes="18" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="21" />
+					<result value="Recommended" numvotes="45" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="13" />
+					<result value="Recommended" numvotes="41" />
+					<result value="Not Recommended" numvotes="10" />
+				</results>					
+			
+		<results numplayers="6+">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="16" />
+					<result value="Not Recommended" numvotes="26" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 2–6 players" />
+</poll-summary> 			               				<playingtime value="10" />
+						               				<minplaytime value="5" />
+						               				<maxplaytime value="10" />
+						               				<minage value="7" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="27">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="17" />
+					<result value="10" numvotes="8" />
+					<result value="12" numvotes="1" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="10">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="5" />
+					<result level="5" value="Unplayable in another language" numvotes="4" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1039" value="Deduction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1030" value="Party Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1037" value="Real-time" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1025" value="Word Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2023" value="Cooperative Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2882" value="Elapsed Real Time Ending" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2831" value="Real-Time" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="75031" value="Components: Sand Timers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="66334" value="Mechanism: Give a Clue / Get a Clue" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="115734" value="Series: Cross Clues" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="71573" value="Theme: Retro" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="62861" value="Word Games: Guess the Word" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="348197" value="Cross Clues: Steamy Deck &amp; Winners Tokens" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="373721" value="Cross Clues: Tantrum House Promo Pack" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="412458" value="Entre Linhas: Expansões &quot;Mais Palavras&quot; 1" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="412459" value="Entre Linhas: Expansões &quot;Mais Palavras&quot; 2" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="412460" value="Entre Linhas: Expansões &quot;Mais Palavras&quot; 3" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="412461" value="Entre Linhas: Expansões &quot;Mais Palavras&quot; 4" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="452289" value="Pistas Cruzadas: Pistas Enamoradas" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="428906" value="Cross Clues: Sample Pack" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="445046" value="Entre Linhas: Superinteressante" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="119408" value="Grégory Grard" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="124197" value="Simon Douchy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="119408" value="Grégory Grard" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="155203" value="Thiago Del Ponte" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="491" value="Blue Orange Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5022" value="Blue Orange (EU)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="51304" value="The Bored Game Company" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44144" value="Buró" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="10768" value="Cranio Creations" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="23205" value="DiceTree Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="22560" value="Fantasmagoria" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36981" value="Feelindigo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33618" value="Fractal Juegos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8820" value="Gémklub" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="47476" value="Geronimo Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9634" value="KADABRA" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9325" value="Lifestyle Boardgames Ltd" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="38392" value="MEBO Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="51614" value="MIPL" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="38777" value="Outland" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="32581" value="PaperGames (III)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7466" value="Rebel Sp. z o.o." />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="5077" />
+			<average value="7.19772" />
+			<bayesaverage value="6.60498" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1105" bayesaverage="6.60498" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="54" bayesaverage="6.86405" />
+												</ranks>
+
+			<stddev value="1.28808" />
+			<median value="0" />
+			<owned value="9723" />
+			<trading value="121" />
+			<wanting value="83" />
+			<wishing value="1009" />
+			<numcomments value="695" />
+			<numweights value="127" />
+			<averageweight value="1.0866" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

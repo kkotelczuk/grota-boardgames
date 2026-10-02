@@ -7,7 +7,16 @@ import prettier from 'eslint-config-prettier';
 import globals from 'globals';
 
 export default defineConfig(
-  { ignores: ['dist/', '.astro/', 'node_modules/', 'data/bgg-cache/', 'coverage/', 'playwright-report/'] },
+  {
+    ignores: [
+      'dist/',
+      '.astro/',
+      'node_modules/',
+      'data/bgg-cache/',
+      'coverage/',
+      'playwright-report/',
+    ],
+  },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/recommended'],
@@ -21,7 +30,10 @@ export default defineConfig(
   },
   {
     rules: {
-      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
+      ],
     },
   },
   prettier,

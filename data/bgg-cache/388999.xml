@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="388999">
+         <thumbnail>https://cf.geekdo-images.com/eGq8l-kfmtpywwRcArDc4Q__small/img/mDcdZYR7IcQTcnbJz6XdPEJN3PA=/fit-in/200x150/filters:strip_icc()/pic7526399.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/eGq8l-kfmtpywwRcArDc4Q__original/img/ZNU7QFhyFDIe4eJSf8OCMm2qrCQ=/0x0/filters:format(jpeg)/pic7526399.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Blok Ekipa: Szacun na rejonie" />
+			
+						                           
+						               													<description>There are five participants in the game Blok Ekipa: Szacun na rejonie. The game consists of as many rounds as there are players, and each round is divided into 4 stages:
+				
+				
+					Stage 1: Robbing LosersThe game begins by showing the Loser from the deck. Then we use Losers Detectors. Whoever sees Loser on it shouts "Loser" and takes the card. This is how you get your first Respects, which determine your victory.
+				
+				
+					Stage 2: Fighting for goodsThe first 4 cards from the Goods deck are revealed and trade takes place. If one player is interested in the purchase - he pays the fee and takes the "shopping" (not necessarily legal). If there are more Participants willing, the "Robbing Losers" takes place again, but only with the use of the Losers Detectors. Whoever wins gets the "stuff". However, you should beware of the Ginger Snitch hidden in the cards. He will quickly inform the City Guard about shady business and bring inspection...
+				
+				
+					Stage 3: InspectionThis is where a participant playing the City Guard comes into action. It may select a delinquent to be inspected and reviewed. If the participant does not have anything suspicious on him, compensation is paid and the contents of the pocket are cashed. However, if he has a shady product, the City Guard confiscates it and returns it to the owner without any profit. Of course, you can try to bribe uniformed officers with a bribe, but they don't have to agree to it!
+				
+				
+					Stage 4: TradeNow it's time to count profits and exchange cash for Respects at the rate of 1 PLN = 1 Respect. As we know, their number will determine the victory. After all transactions are closed, the roles are switched: all characters move one player further (including the City Guard).
+
+The cycle repeats for as many rounds as there are players (5 pawns are available). After the rounds are over, the exchange takes place and all accumulated Respects are counted. Who has the most? Who really "rules the area"? Just open the box to find out.
+
+</description>
+										      	               				<yearpublished value="2017" />
+						               				<minplayers value="3" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="0">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="" />
+  <result name="recommmendedwith" value="(no votes)" />
+</poll-summary> 			               				<playingtime value="40" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="40" />
+						               				<minage value="16" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="0">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="0">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1030" value="Party Game" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="146298" value="David Komisarski" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="153506" value="Bartosz Walaszek" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="31383" value="MDR" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="4" />
+			<average value="4" />
+			<bayesaverage value="0" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="Not Ranked" />
+												</ranks>
+
+			<stddev value="1.22474" />
+			<median value="0" />
+			<owned value="15" />
+			<trading value="1" />
+			<wanting value="0" />
+			<wishing value="1" />
+			<numcomments value="2" />
+			<numweights value="0" />
+			<averageweight value="0" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

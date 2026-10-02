@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="436126">
+         <thumbnail>https://cf.geekdo-images.com/BBefMnVYBDS3EbJ9fPaC8A__small/img/Wo2snzBQJMaVXkFdYl-zXL8PrbA=/fit-in/200x150/filters:strip_icc()/pic8634453.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/BBefMnVYBDS3EbJ9fPaC8A__original/img/E2VsUBa6HUU0QKlp4eQOsbP1wUo=/0x0/filters:format(jpeg)/pic8634453.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Finspan" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Flossenschlag" />
+			    				
+				<name type="alternate" sortindex="1" value="Mélytáv" />
+			    				
+				<name type="alternate" sortindex="1" value="Na dnie morza" />
+			    				
+				<name type="alternate" sortindex="1" value="Na ploutvích" />
+			    				
+				<name type="alternate" sortindex="1" value="Плавники" />
+			    				
+				<name type="alternate" sortindex="1" value="Рибокрай" />
+			    				
+				<name type="alternate" sortindex="1" value="フィンスパン" />
+			    				
+				<name type="alternate" sortindex="1" value="展翅遨游" />
+			
+						               													<description>You are a marine researcher seeking to find and observe an array of aquatic life in the colorful Sunlight Zone, ghostly Twilight Zone, and pitch-black Midnight Zone of the world's seas and oceans. In Finspan, the fish you discover over four weeks will generate a series of benefits as you dive deeper into the ocean.
+
+Each dive site specializes in a key aspect of expanding your research:
+
+
+     Grow your collection of fish.
+     Discover freshly laid eggs.
+     Hatch eggs into young and consolidate young to form schools.
+
+
+The winner is the player with the most points gained from fish, eggs, young, schools, and achievements.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2025" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="109">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="12" />
+					<result value="Recommended" numvotes="45" />
+					<result value="Not Recommended" numvotes="9" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="51" />
+					<result value="Recommended" numvotes="35" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="45" />
+					<result value="Recommended" numvotes="32" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="9" />
+					<result value="Recommended" numvotes="46" />
+					<result value="Not Recommended" numvotes="17" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="24" />
+					<result value="Not Recommended" numvotes="36" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="45" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2–3 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="60" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="60" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="32">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="7" />
+					<result value="10" numvotes="20" />
+					<result value="12" numvotes="3" />
+					<result value="14" numvotes="1" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="11">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="1" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="6" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="3" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="1" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1089" value="Animals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1094" value="Educational" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2846" value="Once-Per-Game Abilities" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3100" value="Tags" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7975" value="Animals: Fish / Fishes" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="58267" value="Game: Wingspan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="77906" value="Misc: DIZED Tutorial" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="106729" value="Misc: GettingGames Tutorial Videos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78680" value="Misc: Made by Panda" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="72487" value="Organizations: Automa Factory" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59442" value="Theme: Biology" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="68335" value="Theme: Ecology" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="48871" value="Theme: Nature" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="111925" value="Theme: Sealife, Seas, and Oceans" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="468426" value="Finspan: Sharks &amp; Reefs" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="450426" value="Finspan: 20 Upgraded School Tokens" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="449170" value="Finspan: Board Bento Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="445490" value="Finspan: Folded Space Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="445871" value="Finspan: GGG Insert/Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="437975" value="Finspan: Upgrade Pack" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="467240" value="Finspan: Wooden Sailfin Flying Fish First Player Token" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="266192" value="Wingspan" inbound="true"/>
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="19444" value="David Gordon (I)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="165400" value="Michael O&#039;Connell (II)" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="173195" value="Catalina Martinez" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="113749" value="Ana Maria Martinez Jaramillo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="144645" value="Mesa Schumacher" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="23202" value="Stonemaier Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="267" value="999 Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3475" value="Arclight Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6194" value="Delta Vision Publishing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="40415" value="Divercentro" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="22380" value="Feuerland Spiele" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4785" value="Ghenos Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="42325" value="Grok Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3218" value="Lautapelit.fi" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34801" value="Lavka Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5400" value="Matagot" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7992" value="MINDOK" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="51614" value="MIPL" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7466" value="Rebel Sp. z o.o." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36763" value="Surfin&#039; Meeple China" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44209" value="Ігромаг" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="7958" />
+			<average value="7.66671" />
+			<bayesaverage value="7.09033" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="405" bayesaverage="7.09033" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="287" bayesaverage="7.15279" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="73" bayesaverage="7.20146" />
+												</ranks>
+
+			<stddev value="1.33163" />
+			<median value="0" />
+			<owned value="17547" />
+			<trading value="91" />
+			<wanting value="308" />
+			<wishing value="2877" />
+			<numcomments value="1309" />
+			<numweights value="203" />
+			<averageweight value="2.3054" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

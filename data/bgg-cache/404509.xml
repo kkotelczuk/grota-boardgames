@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="404509">
+         <thumbnail>https://cf.geekdo-images.com/EZYvI0bb44l1yv5FiQXckQ__small/img/0QCNGgVzFsr6P_QbdWdVlVj6yIE=/fit-in/200x150/filters:strip_icc()/pic7839297.png</thumbnail>
+      <image>https://cf.geekdo-images.com/EZYvI0bb44l1yv5FiQXckQ__original/img/ns-w5v1DlgOiZuO-nhg5SUzzAJ4=/0x0/filters:format(png)/pic7839297.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Cthulhu: Dark Providence" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Cthulhu: A sötétség birodalma" />
+			    				
+				<name type="alternate" sortindex="1" value="Cthulhu: Sombre Providence" />
+			    				
+				<name type="alternate" sortindex="1" value="Cthulhu: Temné časy" />
+			    				
+				<name type="alternate" sortindex="1" value="크툴루: 다크 프로비던스" />
+			
+						               													<description>Set in the Cthulhu: Death May Die, Dark Providence is a competitive game in which players take on secret roles of Investigators, Cultists Or Dissidents from the most influential cities of the United States during the Great Depression. While the Cultists explore the nation's vulnerability seeking to remake it into a twisted version of itself by consorting with unspeakable beings from nightmarish dimensions, Investigators take the opposite side, standing against this dark providence. Meanwhile Dissidents are no longer part of either side. Dissidents score points for assassinating Agents and for sealing and protecting Gates.  As enemies of both sides of the struggle, concealing their identity is paramount.
+
+Each player's secret alignment determines how they&amp;rsquo;ll score points at the end of the game, however, this is not a cooperative game. During the game players use Influence cubes to bid for the right to claim Asset cards, take control of cities, and gather Mythos cards. Each new Asset card acquired improves the players&amp;rsquo; deck and therefore the resources and actions they can perform during a turn. At the center of Dark Providence&amp;rsquo;s deck building mechanics lie the Asset cards. All players start the game with the same 10 initial cards. Regardless of their strategy, acquiring new Asset cards is fundamental to improve their decks.
+
+Trying to keep their identity secret and avoid insanity, players perform a multitude of actions, swaying Hired Agents to their side of the battle, assassinating other players&amp;rsquo; Agents, gathering additional help from Mythos cards, blocking other players from claiming cards, and sealing or protecting Gates, among others to gain Victory Points. At the end, only the player with the most Victory Points of the dominant side of the battle will win the game!
+
+Dark Providence also has a brand new solo version in which a single player comes face-to-face with an Elder One attempting to corrupt the nation. The player takes the side of Investigators and plays against 1 of 6 Elder Ones, each with unique features and goals.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2025" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="41">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="10" />
+					<result value="Not Recommended" numvotes="14" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="7" />
+					<result value="Not Recommended" numvotes="16" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="5" />
+					<result value="Recommended" numvotes="17" />
+					<result value="Not Recommended" numvotes="9" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="21" />
+					<result value="Recommended" numvotes="7" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="21" />
+					<result value="Recommended" numvotes="9" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="14" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4–5 players" />
+  <result name="recommmendedwith" value="Recommended with 3–5 players" />
+</poll-summary> 			               				<playingtime value="120" />
+						               				<minplaytime value="90" />
+						               				<maxplaytime value="120" />
+						               				<minage value="13" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="3">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="3" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="3">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="2" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1024" value="Horror" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2080" value="Area Majority / Influence" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2901" value="Delayed Purchase" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2891" value="Hidden Roles" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2078" value="Point to Point Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="14835" value="Country: USA" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5615" value="Creatures: Monsters" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="79254" value="Decades: The 1930&#039;s" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="77474" value="Game: Cthulhu: Death may Die" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="75455" value="Theme: Art style – Art Deco" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5141" value="Theme: Cthulhu Mythos" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="141517" value="A Study in Emerald" inbound="true"/>
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="69952" value="Travis R. Chance" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="6" value="Martin Wallace" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="14596" value="Anders Finér" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="21608" value="CMON Global Limited" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15605" value="Galápagos Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="55324" value="HIT Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2726" value="Portal Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36563" value="Reflexshop" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="21053" value="Rexhry" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="895" />
+			<average value="7.48876" />
+			<bayesaverage value="6.0239" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="3089" bayesaverage="6.0239" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="1389" bayesaverage="6.16733" />
+												</ranks>
+
+			<stddev value="1.5284" />
+			<median value="0" />
+			<owned value="2712" />
+			<trading value="48" />
+			<wanting value="127" />
+			<wishing value="959" />
+			<numcomments value="217" />
+			<numweights value="42" />
+			<averageweight value="3.1905" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

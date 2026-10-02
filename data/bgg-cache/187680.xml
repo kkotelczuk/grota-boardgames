@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="187680">
+         <thumbnail>https://cf.geekdo-images.com/QKFF9xXd5146qKbtoeZMPw__small/img/FLD5ikcN_6nnQUioQil1BUP824o=/fit-in/200x150/filters:strip_icc()/pic3402652.png</thumbnail>
+      <image>https://cf.geekdo-images.com/QKFF9xXd5146qKbtoeZMPw__original/img/2M6eOcgMcadmWTgh3j0Wvri5q1g=/0x0/filters:format(png)/pic3402652.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Quests of Valeria" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Valeria: Wyprawy" />
+			
+						               													<description>In Quests of Valeria you play the role of a Guild Master, recruiting and dispatching Citizens to complete quests posted in a tavern in the Capital City of Valeria to earn Victory Points. The player with the most Victory Points at the end of the game wins.
+
+Quests of Valeria is a unique set collection game where players gather Citizens to fill requirements on a Quest. Hire Citizens from the line in the Tavern that provide you with additional actions to build combo's of free actions!
+
+Players take turns taking 2 actions from the following: Drawing cards, Hiring Citizens, Reserving a Quest, or Completing a Quest. When Hiring a Citizen, players pay the cost by discarding cards in their hand and taking the Citizen from the Tavern to their Guild (tableau). Some Citizens have bonus actions and they trigger as soon as they enter a player's Guild. When Completing a Quest, players must send Citizens from their Guild that match the requirements on the Quest to the discard pile. When a player completes 5 Quests, the game ends and player's reveal their Guild Master and count up Victory Points.
+
+</description>
+										      	               				<yearpublished value="2017" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="40">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="11" />
+					<result value="Not Recommended" numvotes="11" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="21" />
+					<result value="Recommended" numvotes="9" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="13" />
+					<result value="Recommended" numvotes="10" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="9" />
+					<result value="Not Recommended" numvotes="8" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="18" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="14" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2–3 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="45" />
+						               				<minplaytime value="20" />
+						               				<maxplaytime value="45" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="8">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="3" />
+					<result value="10" numvotes="4" />
+					<result value="12" numvotes="1" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="6">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="4" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="2" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1010" value="Fantasy" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2912" value="Contracts" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2686" value="Take That" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="41251" value="Setting: Valeria" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="239156" value="Quests of Valeria: Kickstarter Promo Cards" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="228666" value="Quests of Valeria: Playmat" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="48263" value="Isaias Vallejo" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="70533" value="Mihajlo Dimitrievski" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="28790" value="Daily Magic Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="35960" value="Games Factory" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29907" value="Games Factory Publishing" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="2015" />
+			<average value="6.87632" />
+			<bayesaverage value="6.11461" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2617" bayesaverage="6.11461" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="1299" bayesaverage="6.21747" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="836" bayesaverage="6.22848" />
+												</ranks>
+
+			<stddev value="1.15516" />
+			<median value="0" />
+			<owned value="4381" />
+			<trading value="188" />
+			<wanting value="37" />
+			<wishing value="319" />
+			<numcomments value="556" />
+			<numweights value="63" />
+			<averageweight value="2.1746" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="286080">
+         <thumbnail>https://cf.geekdo-images.com/sfcL-2V1XaQZoi91_7sfMQ__small/img/CJ1JAUeJdnu3-F7LE9kklkyGcTk=/fit-in/200x150/filters:strip_icc()/pic7958336.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/sfcL-2V1XaQZoi91_7sfMQ__original/img/moJjA6AYcuCSomnZNLqT3-58UsM=/0x0/filters:format(jpeg)/pic7958336.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Pełny Kurnik" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Cuibar Plin" />
+			    				
+				<name type="alternate" sortindex="1" value="Plný kurník" />
+			    				
+				<name type="alternate" sortindex="1" value="Teli tyúkól" />
+			
+						               													<description>This game is mainly for children. Its a simple dice rolling game where you get eggs then chickens. Later on you can have an encounter with a fox. If you are not prepared you gonna regret it. Great fun for familys and kids.
+
+&amp;mdash;user summary
+
+Content:
+
+     54 egg tiles
+     48 chicken tiles
+     36 hen tiles
+     4 rooster tiles
+     4 player boards
+     2 dice
+     rulebook
+
+
+Aim of the game
+Players have to collect 9 hens to fill their hennery. The first player to complete it wins the game.
+
+In every turn players have to choose one of the following actions:
+
+     Dice rolling: The active player gets an egg, chicken or hen for every die, depending on the results (details below)
+     Swapping: The active player can swap his/her tiles (with one tile in the common supply). He/She can swap only 1 time per turn: 3 eggs to 1 chicken or 3 chickens to 1 hen or 3 hens to 1 rooster
+
+
+Dice rolling details:
+If the results of the two dice are not the same, the active player gets tiles for both dice
+
+     1, 2 or 3: egg tile
+     4 or 5: chicken tile
+     6: hen tile
+
+
+
+E.g. Player rolls 2 and 5, He/She takes 1 egg and 1 chicken from the common supply and has to place them next to the player board.
+
+If the results of the two dice are the same, something bad happens as described below
+
+     1 and 1: player has to give one egg from his/her stack to a player of his/her choice
+     2 and 2: player has to give one chicken from his/her stack to a player  of his/her choice
+     3 and 3: player has to give one hen from his/her player board to a player  of his/her choice
+     4 and 4: player loses all of his/her eggs
+     5 and 5: it's bird flu epidemic. Player has to roll one die:
+             1, 2 or 3: player is out of the next turn
+             4 or 5: player loses all of his/her chickens
+             6: player loses all of his/her hens
+        
+    
+     6 and 6: There is a fox on the farm. If the player has a rooster, it protects the farm from the fox, nothing bad happens. If He/She does not have a fox, He/She has to roll a die. The fox will take as many as hens the die shows. If He/She has not got enough hens, fox takes chickens, if He/She hasn not got enough chickens fox takes eggs.
+
+
+
+E.g. Player rolls 4 and 4, He/She loses all of his/her eggs. Eggs return to the common supply.
+
+If player gets a hen, He/She has to place it on his/her player board, other tiles must be collected next to it.
+
+</description>
+										      	               				<yearpublished value="2016" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="3">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 2–4 players" />
+</poll-summary> 			               				<playingtime value="30" />
+						               				<minplaytime value="15" />
+						               				<maxplaytime value="30" />
+						               				<minage value="3" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="3">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="1" />
+					<result value="5" numvotes="2" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="1">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="1" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1089" value="Animals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1041" value="Children&#039;s Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1017" value="Dice" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="22783" value="Admin: Better Description Needed!" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7535" value="Animals: Chickens / Roosters" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="456362" value="Pełny kurnik: Powrót Lisa" />
+		
+									
+			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="119863" value="Agnieszka Rimm" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="119864" value="Anna Cywińska" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="43055" value="Promatek" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30318" value="Kukuryku" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="81" />
+			<average value="5.08395" />
+			<bayesaverage value="5.48532" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="29238" bayesaverage="5.48532" />
+												</ranks>
+
+			<stddev value="1.78003" />
+			<median value="0" />
+			<owned value="205" />
+			<trading value="2" />
+			<wanting value="0" />
+			<wishing value="1" />
+			<numcomments value="19" />
+			<numweights value="3" />
+			<averageweight value="1" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

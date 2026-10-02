@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="245934">
+         <thumbnail>https://cf.geekdo-images.com/fsjopscDFCVArzU7fzhVxA__small/img/6Yu-lVdkDTrICD1y5ZqNmzHZEsc=/fit-in/200x150/filters:strip_icc()/pic6183704.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/fsjopscDFCVArzU7fzhVxA__original/img/JJXwLsCeWj_8FOurLToKpdQuvpc=/0x0/filters:format(jpeg)/pic6183704.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Carpe Diem" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="活在當下" />
+			    				
+				<name type="alternate" sortindex="1" value="카르페 디엠" />
+			
+						               													<description>In Carpe Diem, players slip into the role of rich patricians in ancient Rome. Everyone is trying to build a lucrative city district to score as many prestige points as possible. The novel way to get to the individual buildings of a district combined with a large variety of score cards make for an unusual game with a large number of strategies.
+
+Players are wealthy builders in ancient Rome. Each turn, players get more and more building tiles that they have to integrate into their district. After each phase there is a scoring period
+
+The game consists of four phases of seven rounds each. Each round, all players moves their meeples onto one of the opposite semi-circular spaces. They pick one of the building tiles located on the adjacent blueprint space and immediately integrate it into their district. After exactly 7 rounds, all 28 building tiles have been picked and the phase ends. After each phase there is a scoring period.
+
+After the fourth scoring period, there is a final scoring period. This ends the game, and the player with the most victory points is the winner.
+
+</description>
+										      	               				<yearpublished value="2018" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="188">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="5" />
+					<result value="Not Recommended" numvotes="84" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="50" />
+					<result value="Recommended" numvotes="103" />
+					<result value="Not Recommended" numvotes="8" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="88" />
+					<result value="Recommended" numvotes="56" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="39" />
+					<result value="Recommended" numvotes="97" />
+					<result value="Not Recommended" numvotes="10" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="67" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 2–4 players" />
+</poll-summary> 			               				<playingtime value="75" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="75" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="35">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="3" />
+					<result value="10" numvotes="19" />
+					<result value="12" numvotes="12" />
+					<result value="14" numvotes="1" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="17">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="17" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1050" value="Ancient" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2046" value="Area Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2912" value="Contracts" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2828" value="Turn Order: Progressive" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="22783" value="Admin: Better Description Needed!" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5606" value="Ancient: Rome" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70354" value="Digital Implementations: Yucata" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78198" value="Misc: Watch It Played How To Videos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="58" value="Series: Alea Big Box" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="64921" value="Series: Alea Revised Big Box" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="292011" value="Carpe Diem: 1st Expansion" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="4958" value="Stefan Feld" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="166171" value="Eric Elwell" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="112445" value="Lalanda Hruschka" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9" value="alea" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9068" value="Broadway Toys LTD" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34" value="Ravensburger AG" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="8965" />
+			<average value="7.48643" />
+			<bayesaverage value="7.04479" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="462" bayesaverage="7.04479" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="295" bayesaverage="7.14325" />
+												</ranks>
+
+			<stddev value="1.17712" />
+			<median value="0" />
+			<owned value="14256" />
+			<trading value="313" />
+			<wanting value="287" />
+			<wishing value="1866" />
+			<numcomments value="1724" />
+			<numweights value="301" />
+			<averageweight value="2.5349" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

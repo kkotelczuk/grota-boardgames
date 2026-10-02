@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="304620">
+         <thumbnail>https://cf.geekdo-images.com/ligo1wASe0Xd0Jh3ebs3Gg__small/img/jCAcVtzkl9W9-mxkQw9tfJWy4TI=/fit-in/200x150/filters:strip_icc()/pic6474101.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/ligo1wASe0Xd0Jh3ebs3Gg__original/img/GwVYbK24Hi1a0jZUvL-v8zccv7Y=/0x0/filters:format(jpeg)/pic6474101.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="World of Tanks Miniatures Game" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="World of Tanks Miniature Game: Starter Set" />
+			    				
+				<name type="alternate" sortindex="1" value="World of Tanks: Le Jeu de Figurines – Starter Set" />
+			    				
+				<name type="alternate" sortindex="1" value="World of Tanks: Miniaturenspiel" />
+			
+						               													<description>Take the Online Game to the tabletop
+
+World of Tanks: Miniatures Game is an easy to learn, quick play game, where you take command of a unit of tanks, seeking to destroy your opponent and secure victory!
+
+All the models in World of Tanks come ASSEMBLED, PAINTED, and BATTLE READY!
+
+The starter set contains everything you need to start playing, including:
+
+     4x Highly Detailed, Assembled, Painted Plastic Tanks
+     6x Custom Dice
+     Tank Cards
+     Terrain and Tokens
+     Crew &amp; Equipment Upgrade Cards
+     Damage Deck
+
+
+An extensive release plan will follow, allowing you to expand and customize your force.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2020" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="7">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="7" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="4" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="4" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2, 4 players" />
+  <result name="recommmendedwith" value="Recommended with 2–4 players" />
+</poll-summary> 			               				<playingtime value="30" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="30" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="5">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="2" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="3" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="3">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="3" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1044" value="Collectible Components" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1047" value="Miniatures" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1101" value="Video Game Theme" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1019" value="Wargame" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1049" value="World War II" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2854" value="Critical Hits and Failures" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2975" value="Line of Sight" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2947" value="Movement Points" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="25158" value="Components: Miniatures" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="17056" value="Country: United Kingdom" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70953" value="Game: World of Tanks Miniatures Game (Wargaming.net / GF9)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="61979" value="Players: Two-Player Only Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="72016" value="Players: Wargames with Rules Supporting Only Two Players" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="337688" value="World of Tanks Miniatures Game: American – M10 Wolverine Expansion" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="375094" value="World of Tanks Miniatures Game: American – M18 Hellcat" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="359312" value="World of Tanks Miniatures Game: American – M24 Chaffee Expansion" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="341582" value="World of Tanks Miniatures Game: American – M26 Pershing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="322253" value="World of Tanks Miniatures Game: American – M3 Lee" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="329815" value="World of Tanks Miniatures Game: American – M4A1 Sherman" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="351129" value="World of Tanks Miniatures Game: American – M4A1 Sherman (76mm)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="392959" value="World of Tanks Miniatures Game: American – M4A3E2 Sherman Jumbo Expansion" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="366158" value="World of Tanks Miniatures Game: American – M4A3E8 Sherman" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="372992" value="World of Tanks Miniatures Game: American – M7 Priest" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="387153" value="World of Tanks Miniatures Game: American – T2E64 Super Pershing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="392960" value="World of Tanks Miniatures Game: British – Achilles" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="375093" value="World of Tanks Miniatures Game: British – Archer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="462612" value="World of Tanks Miniatures Game: British – Centurion Mk. I" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="366155" value="World of Tanks Miniatures Game: British – Challenger" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="387154" value="World of Tanks Miniatures Game: British – Churchill I" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="351130" value="World of Tanks Miniatures Game: British – Churchill VII" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="341581" value="World of Tanks Miniatures Game: British – Comet" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="329817" value="World of Tanks Miniatures Game: British – Cromwell" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="359314" value="World of Tanks Miniatures Game: British – Crusader Expansion" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="372993" value="World of Tanks Miniatures Game: British – Sexton II" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="337689" value="World of Tanks Miniatures Game: British – Sherman Firefly Expansion" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="322251" value="World of Tanks Miniatures Game: British – Valentine" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="372994" value="World of Tanks Miniatures Game: German – Hummel" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="392961" value="World of Tanks Miniatures Game: German – Jagdpanther" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="359311" value="World of Tanks Miniatures Game: German – Jagdpanzer (38t) Hertzer Expansion" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="375095" value="World of Tanks Miniatures Game: German – Jagdtiger" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="387155" value="World of Tanks Miniatures Game: German – Nashorn" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="351127" value="World of Tanks Miniatures Game: German – Panther" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="337687" value="World of Tanks Miniatures Game: German – Panzer III J Expansion" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="329814" value="World of Tanks Miniatures Game: German – Pz.Kpfw. IV Ausf. H" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="322252" value="World of Tanks Miniatures Game: German – Stug III G" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="341577" value="World of Tanks Miniatures Game: German – Tiger I" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="366159" value="World of Tanks Miniatures Game: German – Tiger II" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="366156" value="World of Tanks Miniatures Game: Soviet - T34-85" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="341579" value="World of Tanks Miniatures Game: Soviet – IS-2" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="351128" value="World of Tanks Miniatures Game: Soviet – ISU-152" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="341376" value="World of Tanks Miniatures Game: Soviet – KV-1S" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="392962" value="World of Tanks Miniatures Game: Soviet – Loza&#039;s M4-A2 Sherman" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="322254" value="World of Tanks Miniatures Game: Soviet – SU-100" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="372995" value="World of Tanks Miniatures Game: Soviet – SU-76M" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="375092" value="World of Tanks Miniatures Game: Soviet – SU-85" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="329816" value="World of Tanks Miniatures Game: Soviet – T-34" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="387156" value="World of Tanks Miniatures Game: Soviet – T-54" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="359313" value="World of Tanks Miniatures Game: Soviet – T-70 Expansion" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="456584" value="World of Tanks Miniatures Game: Soviet – T62A" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="329818" value="World of Tanks Miniatures Game: German Dice and Decals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="329562" value="World of Tanks Miniatures Game: Summer Game Mat – Prokhorovka" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="329822" value="World of Tanks Miniatures Game: Tank Ace Dice and Decals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="354185" value="World of Tanks Miniatures Game: Tank Garage" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="329821" value="World of Tanks Miniatures Game: U.K. Dice and Decals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="329819" value="World of Tanks Miniatures Game: U.S.A. Dice and Decals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="329820" value="World of Tanks Miniatures Game: U.S.S.R. Dice and Decals" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="195242" value="Tanks: Panther vs Sherman Starter Set" inbound="true"/>
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="65793" value="Casey Davies" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="89100" value="Andrew Haught" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="63593" value="Victor Pesch" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="89746" value="Chris Townley" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="3609" value="Phil Yates" />
+		
+									
+			
+
+			      			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="11420" value="Gale Force Nine, LLC" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="13024" value="Wargaming.net" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="224" />
+			<average value="7.21839" />
+			<bayesaverage value="5.62185" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="8530" bayesaverage="5.62185" />
+																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="1443" bayesaverage="5.97738" />
+												</ranks>
+
+			<stddev value="1.8515" />
+			<median value="0" />
+			<owned value="653" />
+			<trading value="10" />
+			<wanting value="14" />
+			<wishing value="92" />
+			<numcomments value="54" />
+			<numweights value="11" />
+			<averageweight value="1.8182" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

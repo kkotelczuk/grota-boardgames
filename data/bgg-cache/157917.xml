@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="157917">
+         <thumbnail>https://cf.geekdo-images.com/gn1YR96qXoUhVSbo4SKwvQ__small/img/JL4Q92Z4rHdKr7s1i5MTj5SKcf0=/fit-in/200x150/filters:strip_icc()/pic2003559.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/gn1YR96qXoUhVSbo4SKwvQ__original/img/KZ962YXiZaoLSP47ySmBsM9jerE=/0x0/filters:format(jpeg)/pic2003559.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="5" value="The Lord of the Ice Garden" />
+			
+						                               				
+				<name type="alternate" sortindex="5" value="Der Herr des Eisgartens" />
+			    				
+				<name type="alternate" sortindex="1" value="Pán ledové zahrady" />
+			    				
+				<name type="alternate" sortindex="1" value="Pan Lodowego Ogrodu" />
+			
+						               													<description>The world of Midgaard, created by author Jarosław Grzędowicz in The Lord of the Ice Garden novel series, is inhabited by a race very similar to humans, filled with magic and for a reason stuck at the cultural and technological level of medieval Viking world. The arrival of scientists from Earth disturbs its fragile balance. The power gained by controlling magic changes the scientists &amp;ndash; they become possessed by the lust for making this world better. They become gods, who are willing to sacrifice any life, except for their own, of course, to accomplish their &amp;ndash; great, according to them &amp;ndash; ideas.
+
+Players impersonate the scientists struggling for the domination over The Coast of Sails and also for staying on Midgaard, because soon after them another person arrives to this world: Vuko Drakkainen, highly trained agent, whose task is to find the members of scientific expedition and send them back to Earth &amp;mdash; or as a last resort make them vanish. Will the players, as powerful gods, allow him to do it?
+
+From the first turn, the players are tossed in the middle of war. They will feel the adrenaline, fear, pain and the heat of a battle. They will smell blood and sweat, hear the clash of arms and the moaning of wounded and dying.
+
+The Lord of the Ice Garden takes place on The Coast of Sails, which is divided into several regions. The main goal is fighting for the domination over those regions. A region is dominated by the player with the most influence in it. Dominating the region allows players to collect its resources (M-factor, gold, population), also to win victory points in specific turns, and to accomplish their own goals. Each player has unique winning conditions and special units.
+
+
+    Olaf Fjollsfinn &amp;ndash; uses Ice Drakkars to seduce/kidnap six dwellers of The Coast of Sails to the Ice Garden.
+
+
+
+    Passionaria Callo &amp;ndash; sends nightmares on the controlled regions and tries to isolate them. She needs to isolate two of them.
+
+
+
+    Pier van Dyken &amp;ndash; greedy collector of M-factor. When he dominates a region with  a magical reserve, he may move it towards his headquarters, The Thorn. He needs to absorb four magical reserves.
+
+
+
+    Ulrike Freihoff &amp;ndash; spreads her religion. When she dominates a region where she also has a special unit called The Enlightened One, she may build a Red Tower there. Six of those grant her victory.
+
+
+There is also Vuko, who came to evacuate the scientists and clean up their mess. Each turn he goes to the region, where the player with least reputation/morality (it decreases each time the player uses magic) has the most influence. Such a visit is nothing nice &amp;ndash; Vuko kills one special unit of that player in this region and lowers his/her influence there.
+
+The game may end in one of the three ways:
+
+    Meeting the player's unique victory condition &amp;ndash; the game ends and that player is the winner,
+    After specified number of turns game ends and the player with most victory points is the winner,
+    The Dead Snow token reaches the end of its track &amp;ndash; each use of magic shakes the balance of Midgaard. If the players exceed the limit of changes that world and its gods can accept, the game ends and the winner is the player with the highest reputation.
+
+
+INITIATIVE PHASE:
+During the initiative phase players decide how many action tokens they will have for the current turn and also determine the player order during the Planning Phase. Moreover, they can initiate scoring of the regions by moving their initiative tokens. In the advanced mode they also determine the order of action fields resolution.
+
+PLANNING PHASE:
+Players, one by one in the order determined in the Initiative Phase, place their action tokens on selected action fields.
+
+ACTION PHASE:
+Players perform actions in the action fields, in the order determined by the placement of tokens.
+&amp;bull; Viper's Nest &amp;ndash; player receives one token of any resource. They can also exchange resources.
+&amp;bull; Influence &amp;ndash; player may sacrifice up to two population tokens to place as many influence tokens on the region(s) where they already have at least one influence
+&amp;bull; Move &amp;ndash; player may sacrifice up to two gold tokens to make as many moves of their influence tokens and/or special units to the neighboring region(s)
+&amp;bull; Voracious Mountain &amp;ndash; player may sacrifice population to move any number of their influence tokens and/or special units from one region to any other region
+&amp;bull; Raven's Shadow &amp;ndash; player may raise his/her reputation or use a magic token to get rid of the disadvantageous token of contact with Vuko.
+&amp;bull; Magic &amp;ndash; allows the player to do any of the three actions: translocate the M-factor, summon special units of the given level, add a new ability to the special unit. Each of those actions results in moving the Dead Snow token up on its track and decreasing the player's reputation.
+&amp;bull; Activation (automatic field) &amp;ndash; after resolving the actions players may activate the abilities of their special units. The order of activation of given abilities is strictly determined. After the activation the situation on the board may change drastically.
+&amp;bull; Vuko Drakkainen (automatic field) &amp;ndash; each turn Vuko must go to another region. Its figure is placed in the region, where the most immoral player has the most influence. That player receives a conact token decreasing his/her influence, and also loses one special unit in this region (provided he/she had any). In the advanced mode players will be able to equip Vuko with more abilities, that will activate in specific moments of the game.
+
+DOMINATION PHASE:
+Players collect victory points and resources from the regions, and accomplish their unique goals.
+
+</description>
+										      	               				<yearpublished value="2014" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="63">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="26" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="13" />
+					<result value="Recommended" numvotes="18" />
+					<result value="Not Recommended" numvotes="15" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="21" />
+					<result value="Recommended" numvotes="27" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="46" />
+					<result value="Recommended" numvotes="8" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="23" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 2–4 players" />
+</poll-summary> 			               				<playingtime value="90" />
+						               				<minplaytime value="90" />
+						               				<maxplaytime value="90" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="19">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="1" />
+					<result value="12" numvotes="2" />
+					<result value="14" numvotes="11" />
+					<result value="16" numvotes="5" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="25">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="25" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1010" value="Fantasy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1046" value="Fighting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1024" value="Horror" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1035" value="Medieval" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1082" value="Mythology" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1093" value="Novel-based" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1016" value="Science Fiction" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2001" value="Action Points" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2689" value="Action Queue" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2080" value="Area Majority / Influence" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2079" value="Variable Phase Order" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2082" value="Worker Placement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="22135" value="Crowdfunding: Spieleschmiede" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="28659" value="Crowdfunding: Wspieram" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="62773" value="Mythology: Norse" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="109411" value="Theme: Medieval Fantasy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="67861" value="Theme: Villainy" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="187482" value="The Lord of the Ice Garden: Vuko Tiles Promo" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="165495" value="The Lord of the Ice Garden: Castle" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="309483" value="The Lord of the Ice Garden: e-Raptor Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="165499" value="The Lord of the Ice Garden: Magical Reserve 3D Markers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="165498" value="The Lord of the Ice Garden: Nightmare 3D Markers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="165496" value="The Lord of the Ice Garden: Red Towers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="165497" value="The Lord of the Ice Garden: Vuko 3D Markers" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="60940" value="Krzysztof Wolicki" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="75217" value="Dominik Kasprzycki" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="22096" value="REDIMP GAMES" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7251" value="Giochix.it" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="264" value="Heidelberger Spieleverlag" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="1381" />
+			<average value="7.6141" />
+			<bayesaverage value="6.2187" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2189" bayesaverage="6.2187" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="1073" bayesaverage="6.37694" />
+												</ranks>
+
+			<stddev value="1.50557" />
+			<median value="0" />
+			<owned value="2372" />
+			<trading value="76" />
+			<wanting value="85" />
+			<wishing value="658" />
+			<numcomments value="289" />
+			<numweights value="134" />
+			<averageweight value="4.0672" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

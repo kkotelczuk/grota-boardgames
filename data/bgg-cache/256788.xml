@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="256788">
+         <thumbnail>https://cf.geekdo-images.com/Fy-jrkPaNbPEOV8414pKqw__small/img/QADFRTNGx45dtrGDh5hWvyi2z3M=/fit-in/200x150/filters:strip_icc()/pic4783811.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/Fy-jrkPaNbPEOV8414pKqw__original/img/A1DG5nsO42tyfoDvNaG9PLBtcXs=/0x0/filters:format(jpeg)/pic4783811.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Detective Club" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Clube Detective" />
+			    				
+				<name type="alternate" sortindex="1" value="Detektív Klub" />
+			    				
+				<name type="alternate" sortindex="1" value="Klub detektivů" />
+			    				
+				<name type="alternate" sortindex="1" value="Klub Detektywów" />
+			    				
+				<name type="alternate" sortindex="1" value="Детектив Клуб" />
+			    				
+				<name type="alternate" sortindex="1" value="Клуб Детектив" />
+			    				
+				<name type="alternate" sortindex="1" value="ชมรมยอดนักสืบ" />
+			    				
+				<name type="alternate" sortindex="1" value="妙語偵探社" />
+			    				
+				<name type="alternate" sortindex="1" value="探偵クラブ" />
+			    				
+				<name type="alternate" sortindex="1" value="탐정들: 추리클럽" />
+			
+						               													<description>Detective Club is a board game for players who enjoy party games, with simple rules that take just a minute to explain. Intrigue, sudden revelations, limitless creativity, and tons of fun await you in this game! Lead the investigation as a detective, or cover your tracks as the infiltrated conspirator. Discuss, accuse, object and try to convince everyone.
+
+In Detective Club, on each round, one of the players secretly teams up with another &amp;mdash; the Conspirator &amp;mdash; and tries to make them guess a secret word using just two illustrated cards! Other players are detectives, who also know the word, but don't know the identities of each other. Detectives have to find out who the conspirator is, making sure they don't get accused by their fellow players!
+
+</description>
+										      	               				<yearpublished value="2018" />
+						               				<minplayers value="4" />
+						               				<maxplayers value="8" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="73">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="48" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="47" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="47" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="29" />
+					<result value="Not Recommended" numvotes="35" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="21" />
+					<result value="Recommended" numvotes="39" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="48" />
+					<result value="Recommended" numvotes="10" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="7">		
+					<result value="Best" numvotes="37" />
+					<result value="Recommended" numvotes="16" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="8">		
+					<result value="Best" numvotes="11" />
+					<result value="Recommended" numvotes="33" />
+					<result value="Not Recommended" numvotes="7" />
+				</results>					
+			
+		<results numplayers="8+">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="5" />
+					<result value="Not Recommended" numvotes="25" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 6–7 players" />
+  <result name="recommmendedwith" value="Recommended with 5–8 players" />
+</poll-summary> 			               				<playingtime value="45" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="45" />
+						               				<minage value="8" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="14">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="4" />
+					<result value="10" numvotes="8" />
+					<result value="12" numvotes="1" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="11">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="11" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1023" value="Bluffing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1039" value="Deduction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1079" value="Humor" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1030" value="Party Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2892" value="Roles with Asymmetric Information" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2027" value="Storytelling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2866" value="Targeted Clues" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2019" value="Team-Based Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2017" value="Voting" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="60651" value="Mechanism: Image Interpretation" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="330678" value="Detective Club: Noir" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="49695" value="Oleksandr Nevskiy" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="124355" value="M81 Studio" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="17179" value="IGAMES" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4304" value="Albi" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="18856" value="AURUM, Inc." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6760" value="Blackrock Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="491" value="Blue Orange Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="39390" value="Engames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="22560" value="Fantasmagoria" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="26380" value="FoxGames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3490" value="HUCH!" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="25996" value="Jumping Turtle Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30399" value="Ludicus Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="38392" value="MEBO Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="51614" value="MIPL" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29786" value="Playagame Edizioni" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36563" value="Reflexshop" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9234" value="Swan Panasia Co., Ltd." />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="4983" />
+			<average value="7.34963" />
+			<bayesaverage value="6.71136" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="902" bayesaverage="6.71136" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="37" bayesaverage="7.02399" />
+												</ranks>
+
+			<stddev value="1.28117" />
+			<median value="0" />
+			<owned value="8185" />
+			<trading value="100" />
+			<wanting value="293" />
+			<wishing value="2549" />
+			<numcomments value="907" />
+			<numweights value="80" />
+			<averageweight value="1.225" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

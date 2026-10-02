@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="265736">
+         <thumbnail>https://cf.geekdo-images.com/aE1EoOzr530gQin8bj8QDA__small/img/AI-Ro3wLJtpyZLmCMNywOlpz0S8=/fit-in/200x150/filters:strip_icc()/pic4460401.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/aE1EoOzr530gQin8bj8QDA__original/img/-GDAsvmQ3wkuHaZ8h9G5Gk_nvVA=/0x0/filters:format(jpeg)/pic4460401.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Tiny Towns" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Městečka na dlani" />
+			    				
+				<name type="alternate" sortindex="1" value="Miasteczka" />
+			    				
+				<name type="alternate" sortindex="5" value="Les Petites Bourgades" />
+			    				
+				<name type="alternate" sortindex="1" value="Крихітні Містечка" />
+			    				
+				<name type="alternate" sortindex="1" value="Крошечные города" />
+			    				
+				<name type="alternate" sortindex="1" value="มหานครย่อส่วน" />
+			    				
+				<name type="alternate" sortindex="1" value="タイニータウン" />
+			    				
+				<name type="alternate" sortindex="1" value="小小城鎮" />
+			    				
+				<name type="alternate" sortindex="1" value="타이니 타운" />
+			
+						               													<description>You are the mayor of a tiny town in the forest in which the smaller creatures of the woods have created a civilization hidden away from predators. This new land is small and the resources are scarce, so you take what you can get and never say no to building materials. Cleverly plan and construct a thriving town, and don't let it fill up with wasted resources! Whoever builds the most prosperous tiny town wins!
+
+In Tiny Towns, your town is represented by a 4x4 grid on which you will place resource cubes in specific layouts to construct buildings. Each building scores victory points (VPs) in a unique way. When no player can place any more resources or construct any buildings, the game ends, and any squares without a building are worth -1 VP. The player with the most VP wins!
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2019" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="6" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="311">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="25" />
+					<result value="Recommended" numvotes="104" />
+					<result value="Not Recommended" numvotes="59" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="57" />
+					<result value="Recommended" numvotes="166" />
+					<result value="Not Recommended" numvotes="30" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="137" />
+					<result value="Recommended" numvotes="95" />
+					<result value="Not Recommended" numvotes="7" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="102" />
+					<result value="Recommended" numvotes="108" />
+					<result value="Not Recommended" numvotes="15" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="29" />
+					<result value="Recommended" numvotes="107" />
+					<result value="Not Recommended" numvotes="64" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="18" />
+					<result value="Recommended" numvotes="74" />
+					<result value="Not Recommended" numvotes="94" />
+				</results>					
+			
+		<results numplayers="6+">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="9" />
+					<result value="Not Recommended" numvotes="107" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 1–5 players" />
+</poll-summary> 			               				<playingtime value="60" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="60" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="97">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="2" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="40" />
+					<result value="10" numvotes="40" />
+					<result value="12" numvotes="12" />
+					<result value="14" numvotes="2" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="23">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="8" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="15" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1009" value="Abstract Strategy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1089" value="Animals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1029" value="City Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1028" value="Puzzle" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2843" value="Follow" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2978" value="Grid Coverage" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2048" value="Pattern Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2685" value="Player Elimination" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2940" value="Square Grid" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2828" value="Turn Order: Progressive" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2079" value="Variable Phase Order" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="62600" value="Components: 4 x 4 Grids" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="68769" value="Components: Wooden pieces &amp; boards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="77905" value="Digital Implementations: Sovranti" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="81590" value="Occupation: Architect" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65774" value="Theme: Anthropomorphic Animals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="68322" value="Theme: City" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="453739" value="Dead Reckoning: Other Games Promo Pack" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="388566" value="Tiny Towns: Architects" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="311714" value="Tiny Towns: FLGS and Larkstone Promo Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="287576" value="Tiny Towns: Fortune" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="312568" value="Tiny Towns: Fortune – Pirate&#039;s Den" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="373505" value="Tiny Towns: Joinery" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="463639" value="Tiny Towns: Lodge" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="370580" value="Tiny Towns: McPherson Manor Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="321679" value="Tiny Towns: Tiny Trees" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="452647" value="Tiny Towns: Underground" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="311441" value="Tiny Towns: Villagers" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="325197" value="Tiny Towns: Buildings Bags" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="328886" value="Tiny Towns: Folded Space Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="291137" value="Tiny Towns: Insert Here Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="377289" value="Tiny Towns: LevityGames Meeple Magic Upgrade Kit Vinyl Stickers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="366917" value="Tiny Towns: MeeplesUpgrade Meeples Upgrade Kit Stickers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="343466" value="Tiny Towns: Shipshape Gamer Insert" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="110951" value="Peter McPherson" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="122536" value="Gong Studios" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="89490" value="Matt Paquette &amp; Co." />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="396" value="Alderac Entertainment Group" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="40047" value="All In Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36401" value="Arrakis Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9068" value="Broadway Toys LTD" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="21608" value="CMON Global Limited" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33618" value="Fractal Juegos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29194" value="GaGa Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15605" value="Galápagos Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="56118" value="Hid Konem (Хід Конем)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36210" value="Lanlalen" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="46500" value="Lord of Boards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33626" value="Lucky Duck Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="39" value="Pegasus Spiele" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3242" value="Raven Distribution" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36563" value="Reflexshop" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="21053" value="Rexhry" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4932" value="White Goblin Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="37975" value="株式会社ケンビル (KenBill)" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="22836" />
+			<average value="7.17086" />
+			<bayesaverage value="6.97591" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="536" bayesaverage="6.97591" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="130" bayesaverage="7.01361" />
+												</ranks>
+
+			<stddev value="1.20969" />
+			<median value="0" />
+			<owned value="36924" />
+			<trading value="710" />
+			<wanting value="494" />
+			<wishing value="6043" />
+			<numcomments value="3308" />
+			<numweights value="433" />
+			<averageweight value="2.0624" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

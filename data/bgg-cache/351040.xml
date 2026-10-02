@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="351040">
+         <thumbnail>https://cf.geekdo-images.com/4ZCV2o_OiGha0bknXDTfdA__small/img/S3t6BJifjuZMOwfnUQ6lcdUx9RA=/fit-in/200x150/filters:strip_icc()/pic6678381.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/4ZCV2o_OiGha0bknXDTfdA__original/img/3ITIxi3iZsBvjnYWAn2KWRBAO-M=/0x0/filters:format(jpeg)/pic6678381.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Ready Set Bet" />
+			
+						                               				
+				<name type="alternate" sortindex="4" value="Un Día en las Carreras" />
+			    				
+				<name type="alternate" sortindex="3" value="A dübörgő derby" />
+			    				
+				<name type="alternate" sortindex="1" value="Poszły konie" />
+			    				
+				<name type="alternate" sortindex="1" value="Ready Set Bet: High Roller Edition" />
+			    				
+				<name type="alternate" sortindex="1" value="Sázky, prosím!" />
+			    				
+				<name type="alternate" sortindex="1" value="Η Κούρσα" />
+			    				
+				<name type="alternate" sortindex="1" value="На старт, внимание, вскачь!" />
+			    				
+				<name type="alternate" sortindex="1" value="ダービーカジノ" />
+			    				
+				<name type="alternate" sortindex="1" value="賽馬大亨" />
+			    				
+				<name type="alternate" sortindex="1" value="레디 셋 벳" />
+			
+						               													<description>In Ready Set Bet, you and your friends head to the races for a day of cheering, jeering, and betting on your favorite horses, whose fates hang on every roll of the dice.
+
+Ready Set Bet is played over four rounds. Each round consists of a race followed by bet resolution. During each race, players freely place their bet tokens on the board while the race is going on. After each race, players win or lose money for each of their placed bet tokens, then receive a VIP Club Card to help them win more money in the following races. After four rounds, the player with the most money wins!
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2022" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="9" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="123">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="76" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="12" />
+					<result value="Not Recommended" numvotes="79" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="37" />
+					<result value="Not Recommended" numvotes="55" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="13" />
+					<result value="Recommended" numvotes="71" />
+					<result value="Not Recommended" numvotes="13" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="41" />
+					<result value="Recommended" numvotes="51" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="74" />
+					<result value="Recommended" numvotes="20" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="7">		
+					<result value="Best" numvotes="63" />
+					<result value="Recommended" numvotes="26" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="8">		
+					<result value="Best" numvotes="52" />
+					<result value="Recommended" numvotes="30" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="9">		
+					<result value="Best" numvotes="18" />
+					<result value="Recommended" numvotes="38" />
+					<result value="Not Recommended" numvotes="23" />
+				</results>					
+			
+		<results numplayers="9+">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="53" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 6–8 players" />
+  <result name="recommmendedwith" value="Recommended with 4–9 players" />
+</poll-summary> 			               				<playingtime value="60" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="60" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="32">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="1" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="14" />
+					<result value="10" numvotes="9" />
+					<result value="12" numvotes="2" />
+					<result value="14" numvotes="3" />
+					<result value="16" numvotes="1" />
+					<result value="18" numvotes="1" />
+					<result value="21 and up" numvotes="1" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="8">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="6" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="2" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1089" value="Animals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1030" value="Party Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1031" value="Racing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1037" value="Real-time" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1038" value="Sports" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2014" value="Betting and Bluffing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2831" value="Real-Time" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2939" value="Track Movement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5730" value="Sports: Horse Racing" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="449899" value="Ready Set Bet: Let It Ride" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="444465" value="Ready Set Bet: ChihuahuaPrint3D Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="448717" value="Ready Set Bet: Magnificent 7 Promo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="448716" value="Ready Set Bet: Race Horse Stable" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="57723" value="John D. Clair" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="19890" value="Kirk W. Buckendorf" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="60538" value="Athena Cagle" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="396" value="Alderac Entertainment Group" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="48941" value="Boardgame Mall" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9068" value="Broadway Toys LTD" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="49480" value="Choo Choo Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="21608" value="CMON Global Limited" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2366" value="Devir" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8923" value="IELLO" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33626" value="Lucky Duck Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36563" value="Reflexshop" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="45845" value="Strohmann Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="11611" value="Sugorokuya" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="41423" value="TLAMA games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="45931" value="Zito! Ώρα για παιχνίδι" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="9295" />
+			<average value="7.47869" />
+			<bayesaverage value="7.05516" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="446" bayesaverage="7.05516" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="17" bayesaverage="7.27006" />
+												</ranks>
+
+			<stddev value="1.32636" />
+			<median value="0" />
+			<owned value="17082" />
+			<trading value="310" />
+			<wanting value="346" />
+			<wishing value="2823" />
+			<numcomments value="1434" />
+			<numweights value="142" />
+			<averageweight value="1.3451" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

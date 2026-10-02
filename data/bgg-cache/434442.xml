@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items><item type="boardgame" id="434442">
+         <thumbnail>https://cf.geekdo-images.com/TTy11JxWQXDqt3itLz9g2w__small/img/Q5HMFnRy1iujgFbfS01paP-GVnI=/fit-in/200x150/filters:strip_icc()/pic8587742.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/TTy11JxWQXDqt3itLz9g2w__original/img/xzzZL2iqZcMKFz-XylyRX9hn9zI=/0x0/filters:format(jpeg)/pic8587742.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="13 Leaves" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="13 Feuilles" />
+			    				
+				<name type="alternate" sortindex="1" value="13 Foglie" />
+			    				
+				<name type="alternate" sortindex="1" value="13 Plantas" />
+			    				
+				<name type="alternate" sortindex="1" value="I&#039;m Out" />
+			    				
+				<name type="alternate" sortindex="1" value="Liście" />
+			
+						               													<description>Enjoy the foliage, discover all the colors and shapes that nature can offer, and create a beautiful and satisfying grading sequence!
+
+In 13 Leaves, players can play one or more cards of the same value that align with the sequence on the table. The cards must be of a value equal to or lower than the lowest card in the sequence, or of a value equal to or higher than the highest card in the sequence.
+
+The game consists of several rounds. Each round is divided into turns that proceed clockwise. On their turn, the active player, if they can and if they want, plays one or more cards of the same value from their hand. Multiple cards of the same value are stacked on top of each other to show how many cards of that value are present on the table. Cards of different values are placed in numerical order forming a sequence on the table.
+
+The first player to play all the cards in their hand wins. At the end of the rules, you'll find the expert variant, which consists of playing multiple games in a row with a scoring at the end of each game.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2025" />
+						               				<minplayers value="3" />
+						               				<maxplayers value="6" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="21">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="14" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="14" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="5" />
+					<result value="Recommended" numvotes="12" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="18" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="9" />
+					<result value="Recommended" numvotes="6" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="6" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="6+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="10" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers"  title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4–5 players" />
+  <result name="recommmendedwith" value="Recommended with 3–6 players" />
+</poll-summary> 			               				<playingtime value="20" />
+						               				<minplaytime value="20" />
+						               				<maxplaytime value="20" />
+						               				<minage value="8" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="5">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="5" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="3">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="3" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1098" value="Number" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2980" value="Ladder Climbing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8120" value="Card Games: Shedding / Stops" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="109406" value="Magenta (CMYK)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="112878" value="Seasons: Autumn" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="48871" value="Theme: Nature" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="57181" value="Theme: Trees and Forests" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="76303" value="Masato Uesugi" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="166971" value="SMLXL" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="165854" value="Elina Zhelyazkova" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="10768" value="Cranio Creations" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="46474" value="CMYK" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="54932" value="Elznir Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="155" value="Gigamic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="38392" value="MEBO Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2726" value="Portal Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings >
+			<usersrated value="862" />
+			<average value="6.60434" />
+			<bayesaverage value="5.77624" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="5139" bayesaverage="5.77624" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="1588" bayesaverage="5.85829" />
+												</ranks>
+
+			<stddev value="1.40689" />
+			<median value="0" />
+			<owned value="1438" />
+			<trading value="15" />
+			<wanting value="53" />
+			<wishing value="243" />
+			<numcomments value="161" />
+			<numweights value="28" />
+			<averageweight value="1.1429" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item></items>

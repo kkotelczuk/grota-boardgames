@@ -1,0 +1,9 @@
+{
+  "$comment": "Ręczne mapowania, których nie da się ustalić z BGG XML API. `versions`: id wersji (URL /boardgameversion/<id>) → id gry. Weryfikacja: GET thing?id=<gameId>&versions=1 zawiera <item type=\"boardgameversion\" id=\"<versionId>\">.",
+  "versions": {
+    "491403": {
+      "gameId": 32236,
+      "note": "Grzybobranie w Zielonym Gaju (Trefl) – wersja gry „Grzybobranie” (1975)"
+    }
+  }
+}
