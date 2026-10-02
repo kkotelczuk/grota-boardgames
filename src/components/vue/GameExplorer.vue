@@ -303,13 +303,18 @@ function clearEverything() {
         class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 xl:grid-cols-4"
         role="list"
       >
-        <li v-for="game in results" :key="game.id" class="card-slot">
+        <li v-for="(game, index) in results" :key="game.id" class="card-slot">
           <!--
             [Vue] Scoped slot: treść slotu używa propsów slotu (`card`), a nie zmiennej `game` z v-for.
             Slot odwołujący się do zmiennych z v-for kompilator oznacza jako dynamiczny i wymusza
             re-render karty przy każdym renderze rodzica.
           -->
-          <GameCard :game="game" :expansions="expansionsOf(game)">
+          <!-- Pierwszy ekran (mobile ~4 karty, desktop ~6) ładujemy od razu, bez lazy-load. -->
+          <GameCard
+            :game="game"
+            :expansions="expansionsOf(game)"
+            :priority="index < 2 ? 'high' : index < 6 ? 'eager' : 'lazy'"
+          >
             <template #actions="{ game: card }">
               <FavoriteButton :id="card.id" :title="card.title" @toggle="announceFavorite" />
             </template>

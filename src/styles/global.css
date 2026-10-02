@@ -275,6 +275,25 @@
     }
   }
 
+  /* Okładki kart: obraz pojawia się płynnie na placeholderze w kolorze okładki zamiast
+     „wskakiwać” na puste pole. `data-loaded` ustawia atrybut `onload` (działa przed hydracją). */
+  .cover-placeholder {
+    opacity: 0.35;
+    transition: opacity 300ms;
+  }
+  .cover-placeholder:has(+ picture img[data-loaded]) {
+    opacity: 0;
+  }
+  .cover-fade:not([data-loaded]) {
+    opacity: 0;
+  }
+  /* Bez JS atrybut `onload` nie zadziała – wtedy pokazujemy obraz od razu. */
+  @media (scripting: none) {
+    .cover-fade:not([data-loaded]) {
+      opacity: 1;
+    }
+  }
+
   .sr-only-focusable:not(:focus) {
     position: absolute;
     width: 1px;
