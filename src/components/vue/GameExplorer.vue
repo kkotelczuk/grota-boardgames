@@ -21,8 +21,8 @@ import { provideI18n } from './i18n';
 /*
  * [Vue] Granica wyspy: Astro renderuje ten komponent na serwerze (SSR → pierwsze karty listy
  * w HTML; resztę dokłada klient), a potem hydratuje go w przeglądarce (`client:load`).
- * Props przechodzą przez serializację Astro (format JSON-podobny: obsługuje Map/Set/Date, ale nie funkcje), dlatego to
- * odchudzony indeks (bez opisów) i tylko dane.
+ * Props przechodzą przez serializację Astro (format JSON-podobny: obsługuje Map/Set/Date,
+ * ale nie funkcje), dlatego to odchudzony indeks (bez opisów) i tylko dane.
  */
 const { games, options, locale } = defineProps<{
   games: GameIndexItem[];
