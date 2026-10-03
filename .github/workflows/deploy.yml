@@ -15,7 +15,7 @@ permissions:
 
 env:
   # Opcjonalne nadpisanie (Settings → Secrets and variables → Actions → Variables).
-  # Puste = wartości domyślne z astro.config.ts (project page /grota-boardgames/).
+  # Puste = wartości domyślne z astro.config.ts (grota.bialystok.pl, base /).
   SITE_URL: ${{ vars.SITE_URL }}
   BASE_PATH: ${{ vars.BASE_PATH }}
 
