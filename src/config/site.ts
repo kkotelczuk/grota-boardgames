@@ -9,7 +9,7 @@ export interface SiteConfig {
   address: {
     street: string;
     city: string;
-    /** TODO: kod pocztowy nieznany – uzupełnij. `null` = nie publikujemy. */
+    /** `null` = nie publikujemy. */
     postalCode: string | null;
     region: string;
     /** ISO 3166-2 województwa – meta `geo.region`. */
@@ -32,7 +32,7 @@ export const site: SiteConfig = {
   address: {
     street: 'ul. Warszawska 44/2 lok. 4',
     city: 'Białystok',
-    postalCode: null, // TODO: uzupełnij kod pocztowy
+    postalCode: '15-001',
     region: 'podlaskie',
     regionCode: 'PL-20',
     country: 'PL',

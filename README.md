@@ -75,7 +75,7 @@ pnpm translations import tmp/tlumaczenia   # scala out-*.json do data/translatio
 | Co                               | Gdzie                                                             |
 | -------------------------------- | ----------------------------------------------------------------- |
 | Zaproszenie na Discorda          | `src/config/site.ts` → `discordInvite` (jedyne miejsce)           |
-| Adres, kod pocztowy              | `src/config/site.ts` → `address` (`postalCode: null` = TODO)      |
+| Adres, kod pocztowy              | `src/config/site.ts` → `address`                                  |
 | FAQ („O Grocie”)                 | `src/config/faq.ts` (`answer: null` = TODO, nie jest publikowane) |
 | Teksty interfejsu                | `src/i18n/pl.ts`, `src/i18n/en.ts`                                |
 | Kolory, fonty, promienie, cienie | `src/styles/global.css` (opis: [docs/design.md](docs/design.md))  |
@@ -118,7 +118,6 @@ pnpm test:e2e
 
 ## TODO dla człowieka
 
-- [ ] Kod pocztowy w `src/config/site.ts` (`postalCode`).
 - [ ] Odpowiedzi FAQ w `src/config/faq.ts` (opłaty, własna gra, znajomość zasad, członkostwo).
 - [ ] Uzupełnić 8 gier ręcznych w `data/manual-games.yaml` (braki wypisuje build jako ostrzeżenia).
 - [ ] Po wdrożeniu sprawdzić JSON-LD: https://validator.schema.org i Google Rich Results Test.
