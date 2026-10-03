@@ -95,7 +95,7 @@ test.describe('karta gry', () => {
 
     // Serduszko leży nad warstwą linku – nie nawiguje.
     await card.getByRole('button', { name: /Dodaj do ulubionych/ }).click();
-    await expect(page).toHaveURL(/\/grota-boardgames\/(\?.*)?$/);
+    await expect(page).toHaveURL(/:4321\/(\?.*)?$/);
 
     // Klik w statystyki (nie w tytuł) otwiera stronę gry. `force`, bo Playwright słusznie widzi,
     // że <dl> jest przykryte warstwą linku – klik we współrzędne trafia właśnie w nią.

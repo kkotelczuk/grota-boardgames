@@ -1,6 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
 
-const base = process.env.BASE_PATH || '/grota-boardgames/';
+const base = process.env.BASE_PATH || '/';
 
 export default defineConfig({
   testDir: 'tests/e2e',

@@ -96,7 +96,7 @@ Języki: `pl` (domyślny, bez prefiksu) i `en` (prefiks `/en/`). Ścieżki są z
 | `discord`     | `/discord/`   | `/discord/`        | `pages/discord.astro` (wspólna)                                      |
 | 404           | `/404.html`   | to samo            | `pages/404.astro` (dwujęzyczna)                                      |
 
-(Ścieżki powyżej względem `base`, domyślnie `/grota-boardgames/`.)
+(Ścieżki powyżej względem `base`, domyślnie `/` – strona stoi na `grota.bialystok.pl`.)
 
 - `localizedPath({ name, params }, locale)` buduje ścieżkę z `base`; `withBase(path)` dokleja `import.meta.env.BASE_URL` (zawsze z końcowym `/`). Nigdy nie wpisujemy ścieżek ręcznie.
 - `trailingSlash: 'always'`; `astro.config.ts` ma `i18n` z `prefixDefaultLocale: false`.

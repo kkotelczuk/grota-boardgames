@@ -2,7 +2,7 @@
 
 Statyczna strona (Astro + Vue + Tailwind) z kolekcją gier planszowych Białostockiej Grupy Planszówkowej „Grota” (stowarzyszenie, Białystok). Wyszukiwarka i filtry, strony gier, ulubione (localStorage), wersje PL i EN. Gier nie wypożyczamy – gra się na miejscu.
 
-Adres: https://kkotelczuk.github.io/grota-boardgames/ (działa po włączeniu GitHub Pages, patrz [Deploy](#deploy)).
+Adres: https://grota.bialystok.pl/ (GitHub Pages z własną domeną, patrz [Deploy](#deploy)).
 
 ## Wymagania i start
 
@@ -13,7 +13,7 @@ Adres: https://kkotelczuk.github.io/grota-boardgames/ (działa po włączeniu Gi
 pnpm install
 pnpm dev       # serwer deweloperski
 pnpm build     # statyczny build do dist/
-pnpm preview   # podgląd dist/ (http://localhost:4321/grota-boardgames/)
+pnpm preview   # podgląd dist/ (http://localhost:4321/)
 ```
 
 ## Skrypty
@@ -75,7 +75,7 @@ pnpm translations import tmp/tlumaczenia   # scala out-*.json do data/translatio
 | Co                               | Gdzie                                                             |
 | -------------------------------- | ----------------------------------------------------------------- |
 | Zaproszenie na Discorda          | `src/config/site.ts` → `discordInvite` (jedyne miejsce)           |
-| Adres, kod pocztowy              | `src/config/site.ts` → `address` (`postalCode: null` = TODO)      |
+| Adres, kod pocztowy              | `src/config/site.ts` → `address`                                  |
 | FAQ („O Grocie”)                 | `src/config/faq.ts` (`answer: null` = TODO, nie jest publikowane) |
 | Teksty interfejsu                | `src/i18n/pl.ts`, `src/i18n/en.ts`                                |
 | Kolory, fonty, promienie, cienie | `src/styles/global.css` (opis: [docs/design.md](docs/design.md))  |
@@ -85,7 +85,7 @@ Wszystkie przyciski „Discord” prowadzą do stałego adresu `/discord/`, któ
 
 ## Deploy
 
-Obecny wariant: **GitHub project page** przez `.github/workflows/deploy.yml`. Push na `main` uruchamia kolejno:
+Wariant: **GitHub Pages z własną domeną `grota.bialystok.pl`** przez `.github/workflows/deploy.yml`. Push na `main` uruchamia kolejno:
 
 1. `check` – `pnpm lint`, `prettier --check`, `pnpm typecheck`, `pnpm test`,
 2. `build` – `withastro/action`,
@@ -93,18 +93,17 @@ Obecny wariant: **GitHub project page** przez `.github/workflows/deploy.yml`. Pu
 
 **Jednorazowo:** Settings → Pages → Source: **GitHub Actions**.
 
-Domyślne wartości (z `astro.config.ts`): `SITE_URL=https://kkotelczuk.github.io`, `BASE_PATH=/grota-boardgames/`. Można je nadpisać w repo: Settings → Secrets and variables → Actions → **Variables** (`SITE_URL`, `BASE_PATH`). Puste = domyślne.
+Domyślne wartości (z `astro.config.ts`): `SITE_URL=https://grota.bialystok.pl`, `BASE_PATH=/`. Można je nadpisać w repo: Settings → Secrets and variables → Actions → **Variables** (`SITE_URL`, `BASE_PATH`). Puste = domyślne.
 
-### Przejście na własną domenę
+### Domena
 
-1. Variables: `SITE_URL=https://domena.pl`, `BASE_PATH=/`.
-2. Dodaj plik `public/CNAME` z samą nazwą domeny.
-3. DNS:
-   - subdomena: rekord `CNAME` na `kkotelczuk.github.io`,
-   - apex: rekordy `A` 185.199.108.153 / .109.153 / .110.153 / .111.153 oraz `AAAA` 2606:50c0:8000::153 … 8003::153.
-4. Settings → Pages: ustaw Custom domain i zaznacz **Enforce HTTPS**.
-
-Uwaga: `robots.txt` jest czytany przez crawlery tylko z korzenia domeny, więc na project page (`/grota-boardgames/`) nie działa w pełni – dopiero własna domena to naprawia.
+- `public/CNAME` zawiera `grota.bialystok.pl` (przy deployu przez Actions GitHub i tak bierze domenę z ustawień Pages – plik jest dokumentacją i zabezpieczeniem).
+- DNS (OVH, strefa `grota.bialystok.pl`):
+  - apex: `A` 185.199.108.153 / 185.199.109.153 / 185.199.110.153 / 185.199.111.153 oraz `AAAA` 2606:50c0:8000::153 / 8001::153 / 8002::153 / 8003::153,
+  - `www`: `CNAME` → `kkotelczuk.github.io.` (GitHub przekierowuje `www` na apex),
+  - `_github-pages-challenge-kkotelczuk`: `TXT` z wartością z GitHub → Settings → Pages → Verified domains (ochrona przed przejęciem domeny).
+- Settings → Pages: Custom domain `grota.bialystok.pl`, po wystawieniu certyfikatu zaznacz **Enforce HTTPS**.
+- Stary adres `kkotelczuk.github.io/grota-boardgames/` GitHub przekierowuje (301) na domenę.
 
 ## Jakość
 
@@ -119,7 +118,6 @@ pnpm test:e2e
 
 ## TODO dla człowieka
 
-- [ ] Kod pocztowy w `src/config/site.ts` (`postalCode`).
 - [ ] Odpowiedzi FAQ w `src/config/faq.ts` (opłaty, własna gra, znajomość zasad, członkostwo).
 - [ ] Uzupełnić 8 gier ręcznych w `data/manual-games.yaml` (braki wypisuje build jako ostrzeżenia).
 - [ ] Po wdrożeniu sprawdzić JSON-LD: https://validator.schema.org i Google Rich Results Test.

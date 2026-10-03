@@ -36,6 +36,13 @@ export function organizationLd(
       addressCountry: site.address.country,
       ...(site.address.postalCode ? { postalCode: site.address.postalCode } : {}),
     },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: site.geo.latitude,
+      longitude: site.geo.longitude,
+    },
+    hasMap: site.maps.osm,
+    areaServed: { '@type': 'City', name: site.address.city },
     sameAs: [site.discordInvite],
   };
 }

@@ -9,11 +9,15 @@ export interface SiteConfig {
   address: {
     street: string;
     city: string;
-    /** TODO: kod pocztowy nieznany – uzupełnij. `null` = nie publikujemy. */
+    /** `null` = nie publikujemy. */
     postalCode: string | null;
     region: string;
+    /** ISO 3166-2 województwa – meta `geo.region`. */
+    regionCode: string;
     country: string;
   };
+  /** Współrzędne budynku (OpenStreetMap, way 233189599) – JSON-LD `geo` i meta geo. */
+  geo: { latitude: number; longitude: number };
   /** Aktualne zaproszenie na Discorda. Link nie jest stały – zmieniaj tylko tutaj. */
   discordInvite: string;
   /** Wewnętrzna, stała ścieżka przekierowująca na `discordInvite`. */
@@ -28,10 +32,12 @@ export const site: SiteConfig = {
   address: {
     street: 'ul. Warszawska 44/2 lok. 4',
     city: 'Białystok',
-    postalCode: null, // TODO: uzupełnij kod pocztowy
+    postalCode: '15-001',
     region: 'podlaskie',
+    regionCode: 'PL-20',
     country: 'PL',
   },
+  geo: { latitude: 53.130908, longitude: 23.173157 },
   discordInvite: 'https://discord.gg/Gkc63kgQa',
   discordPath: 'discord/',
   maps: {

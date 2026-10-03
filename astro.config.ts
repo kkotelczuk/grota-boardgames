@@ -4,10 +4,10 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
 // `site` i `base` z env, żeby przejście na własną domenę było zmianą konfiguracji, a nie kodu.
-// Repo: github.com/kkotelczuk/grota-boardgames (GitHub project page).
+// Repo: github.com/kkotelczuk/grota-boardgames (GitHub Pages z własną domeną, patrz public/CNAME).
 // `||`, nie `??`: nieustawiona zmienna repo w GitHub Actions trafia do env jako pusty string.
-const site = process.env.SITE_URL || 'https://kkotelczuk.github.io';
-const base = process.env.BASE_PATH || '/grota-boardgames/';
+const site = process.env.SITE_URL || 'https://grota.bialystok.pl';
+const base = process.env.BASE_PATH || '/';
 
 export default defineConfig({
   site,
