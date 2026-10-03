@@ -1,6 +1,8 @@
 /**
  * Dostęp do danych gier po stronie Astro (build-time). Nie importować w komponentach Vue.
  */
+import path from 'node:path';
+import sharp from 'sharp';
 import { getCollection } from 'astro:content';
 import { getImage } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
@@ -68,17 +70,52 @@ export const gamePath = (game: Pick<Game, 'slug'>, locale: Locale) =>
 /** Do wyszukiwania bierzemy tylko nazwy alternatywne w alfabecie łacińskim – reszta tylko puchnie w HTML. */
 const LATIN = /^[\p{Script=Latin}\p{Number}\p{Punctuation}\p{Symbol}\s]+$/u;
 
+/** Plik źródłowy okładki na dysku (build-time) – do wyliczenia koloru placeholdera. */
+function coverSourcePath(game: Pick<Game, 'image'>): string | null {
+  if (!game.image) return null;
+  const [folder, file] = game.image.split('/');
+  return folder === 'games'
+    ? path.join(process.cwd(), 'src/assets/games', file!)
+    : path.join(process.cwd(), 'data/manual-images', file!);
+}
+
+const colorCache = new Map<string, Promise<string>>();
+
+/** Średni kolor okładki (obraz zmniejszony do 1×1 px). Liczony raz na plik, wspólny dla obu języków. */
+function averageColor(file: string): Promise<string> {
+  let color = colorCache.get(file);
+  if (!color) {
+    color = sharp(file)
+      .removeAlpha()
+      .resize(1, 1)
+      .raw()
+      .toBuffer()
+      .then((rgb) => `#${[...rgb].map((v) => v.toString(16).padStart(2, '0')).join('')}`);
+    colorCache.set(file, color);
+  }
+  return color;
+}
+
 export async function cardCover(game: Game): Promise<CoverImage | null> {
   const image = coverImage(game);
-  if (!image) return null;
-  // Dwie szerokości wystarczą (karta ma ≤ 240 px CSS; 480 px dla ekranów 2x) – każdy wpis
-  // w srcset to dodatkowe bajty w zserializowanych propsach wyspy, powielone ×252.
-  const result = await getImage({ src: image, widths: [240, 480], width: 240, format: 'webp' });
+  const file = coverSourcePath(game);
+  if (!image || !file) return null;
+  // Na mobile okładka ma 104 px CSS → przy DPR 2–3 przeglądarka bierze 320w; na desktopie
+  // (≤ 240 px CSS) 320w/480w. Każdy wpis w srcset to dodatkowe bajty w zserializowanych
+  // propsach wyspy, powielone ×252 – stąd tylko dwie szerokości na format.
+  const widths = [320, 480];
+  const [webp, avif, color] = await Promise.all([
+    getImage({ src: image, widths, width: 320, format: 'webp' }),
+    getImage({ src: image, widths, width: 320, format: 'avif' }),
+    averageColor(file),
+  ]);
   return {
-    src: result.src,
-    srcset: result.srcSet.attribute,
-    width: Number(result.attributes['width']),
-    height: Number(result.attributes['height']),
+    src: webp.src,
+    srcset: webp.srcSet.attribute,
+    avifSrcset: avif.srcSet.attribute,
+    width: Number(webp.attributes['width']),
+    height: Number(webp.attributes['height']),
+    color,
   };
 }
 

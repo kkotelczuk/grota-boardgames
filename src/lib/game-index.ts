@@ -3,10 +3,15 @@
  * zserializowane propsy, więc każdy bajt się liczy. Moduł jest „client-safe” (bez node:fs, astro:*).
  */
 export interface CoverImage {
+  /** Fallback WebP (`<img>`). */
   src: string;
   srcset: string;
+  /** AVIF (`<source>`) – ~2× mniejszy od WebP przy tej samej szerokości. */
+  avifSrcset: string;
   width: number;
   height: number;
+  /** Średni kolor okładki (`#rrggbb`) – placeholder, zanim obraz dojdzie z sieci. */
+  color: string;
 }
 
 export interface GameIndexItem {

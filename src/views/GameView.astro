@@ -101,6 +101,7 @@ const filterHref = (param: 'cat' | 'mech', id: number) => `${homePath}?${param}=
               src={cover}
               alt={locale === 'pl' ? `Okładka gry ${title}` : `${title} box cover`}
               formats={['avif', 'webp']}
+              fallbackFormat="webp"
               widths={[320, 480, 640, 800]}
               sizes="(min-width: 768px) 40vw, 100vw"
               loading="eager"

@@ -9,10 +9,19 @@ defineSlots<{
   actions(props: { game: GameIndexItem }): unknown;
 }>();
 
-const { game, expansions = [] } = defineProps<{
+const {
+  game,
+  expansions = [],
+  priority = 'lazy',
+} = defineProps<{
   game: GameIndexItem;
   /** Dodatki z kolekcji – rozwiązane przez rodzica (karta nie zna całej listy). */
   expansions?: GameIndexItem[];
+  /**
+   * Ładowanie okładki: karty z pierwszego ekranu `eager` (bez czekania na lazy-load),
+   * pierwsze dwie dodatkowo `high` (fetchpriority) – to kandydaci na LCP.
+   */
+  priority?: 'lazy' | 'eager' | 'high';
 }>();
 
 const { t, locale } = useI18n();
@@ -49,20 +58,42 @@ const languageTitle = computed(() =>
   >
     <div class="relative bg-sunken max-sm:row-span-2">
       <!-- Okładka nie ma własnego linku – klikalna jest cała karta (stretched link w tytule). -->
-      <div class="h-full">
-        <img
-          v-if="game.cover"
-          :src="game.cover.src"
-          :srcset="game.cover.srcset"
-          sizes="(min-width: 1280px) 240px, (min-width: 640px) 30vw, 104px"
-          :width="game.cover.width"
-          :height="game.cover.height"
-          alt=""
-          loading="lazy"
-          decoding="async"
-          class="aspect-square h-full w-full object-contain p-2 transition-transform duration-300 group-hover:scale-[1.03] max-sm:p-1.5"
-          :style="{ viewTransitionName: `cover-${game.id}` }"
-        />
+      <div class="relative h-full">
+        <template v-if="game.cover">
+          <!--
+            Placeholder w średnim kolorze okładki: na wolnej sieci karta nie świeci pustym polem,
+            a obraz płynnie się na nim pojawia (`.cover-fade` w global.css).
+          -->
+          <span
+            class="cover-placeholder absolute inset-2 rounded-md max-sm:inset-1.5"
+            :style="{ backgroundColor: game.cover.color }"
+          />
+          <picture class="contents">
+            <source
+              type="image/avif"
+              :srcset="game.cover.avifSrcset"
+              sizes="(min-width: 1280px) 240px, (min-width: 640px) 30vw, 104px"
+            />
+            <!--
+              `onload` jako zwykły atrybut HTML (nie `@load`): działa też przed hydracją wyspy
+              i dla obrazów z cache, które załadują się, zanim Vue podepnie listenery.
+            -->
+            <img
+              :src="game.cover.src"
+              :srcset="game.cover.srcset"
+              sizes="(min-width: 1280px) 240px, (min-width: 640px) 30vw, 104px"
+              :width="game.cover.width"
+              :height="game.cover.height"
+              alt=""
+              :loading="priority === 'lazy' ? 'lazy' : 'eager'"
+              :fetchpriority="priority === 'high' ? 'high' : undefined"
+              decoding="async"
+              onload="this.dataset.loaded = ''"
+              class="cover-fade relative aspect-square h-full w-full object-contain p-2 transition-[opacity,transform] duration-300 group-hover:scale-[1.03] max-sm:p-1.5"
+              :style="{ viewTransitionName: `cover-${game.id}` }"
+            />
+          </picture>
+        </template>
         <div
           v-else
           class="grid aspect-square place-items-center p-3 text-center text-xs text-muted"
