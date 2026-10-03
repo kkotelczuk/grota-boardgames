@@ -1,6 +1,5 @@
 import { expect, test } from '@playwright/test';
 
-/** Wyspy są interaktywne dopiero po hydratacji – Astro usuwa atrybut `ssr` z <astro-island>. */
 /**
  * Karty mają `content-visibility: auto` – tuż po przewinięciu przeglądarka jeszcze ich nie
  * wyrenderowała (hit-testing trafia w <li>). Czekamy dwie klatki, jak zrobiłby to człowiek.
@@ -11,6 +10,7 @@ async function nextFrames(page: import('@playwright/test').Page) {
   );
 }
 
+/** Wyspy są interaktywne dopiero po hydratacji – Astro usuwa atrybut `ssr` z <astro-island>. */
 async function waitForIslands(page: import('@playwright/test').Page) {
   await expect(page.locator('astro-island[ssr]')).toHaveCount(0);
 }

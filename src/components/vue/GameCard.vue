@@ -82,11 +82,12 @@ const languageTitle = computed(() =>
           „Stretched link”: ::after linku rozciąga się na całą kartę (article ma `relative`),
           więc kliknięcie w dowolne miejsce otwiera grę, a w karcie jest tylko JEDEN link
           (czytnik ekranu nie słyszy duplikatów). Interaktywne elementy mają `relative z-10`,
-          żeby leżały nad tą warstwą. Focus rysujemy na ::after – obrys całej karty.
+          żeby leżały nad tą warstwą. Focus rysujemy na ::after – obrys całej karty, do środka
+          (ujemny offset), bo `overflow-hidden` na article przyciąłby obrys rysowany na zewnątrz.
         -->
         <a
           :href="game.href"
-          class="decoration-accent decoration-2 underline-offset-4 group-hover:underline after:absolute after:inset-0 after:rounded-card after:content-[''] focus-visible:outline-none focus-visible:after:outline-3 focus-visible:after:outline-offset-2 focus-visible:after:outline-(--focus)"
+          class="decoration-accent decoration-2 underline-offset-4 group-hover:underline after:absolute after:inset-0 after:rounded-card after:content-[''] focus-visible:outline-none focus-visible:after:outline-3 focus-visible:after:-outline-offset-3 focus-visible:after:outline-(--focus)"
         >
           {{ game.title }}
         </a>
