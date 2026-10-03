@@ -163,6 +163,7 @@ Pytania FAQ z `answer: null` nie są publikowane ani w treści, ani w JSON-LD an
 - **Przejścia stron:** natywne cross-document View Transitions (`@view-transition { navigation: auto }` w CSS, tylko przy `prefers-reduced-motion: no-preference`); okładka ma wspólną `view-transition-name: cover-<id>` na karcie i stronie gry. To zwykła nawigacja MPA bez routera JS, więc wyspy Vue nie są dotknięte.
 - **Hydratacja:** `client:load` tylko tam, gdzie konieczne; reszta `client:idle`.
 - **Długa lista:** `content-visibility: auto` na kartach (`.card-slot`) – przeglądarka pomija layout/malowanie kart poza ekranem (główny koszt TBT przy ~10 tys. węzłów DOM). Leniwa hydracja kart (Vue 3.5 `hydrateOnVisible`) była testowana i pogorszyła TBT – opis w [vue-notes §23](vue-notes.md).
+- **Stopniowe renderowanie listy** (`useProgressiveLimit`): serwer renderuje i klient hydratuje tylko pierwsze 24 karty (`INITIAL_CARDS`), resztę wyspa dokłada porcjami po 12 w `requestIdleCallback` (Safari: `setTimeout`). HTML strony głównej 1,76 MB → 0,65 MB, najdłuższy task hydracji ~670 → ~270 ms (Pixel 7, CPU 4×). Bez JS pozostałe gry są linkami w `<noscript>` (`HomeView.astro`, ta sama kolejność dzięki `defaultResults`); pełna lista jest też w JSON-LD `ItemList` i sitemapie. Przy „wstecz”/odświeżeniu (bez bfcache) renderujemy całą listę od razu i przewijamy na pozycję zapisaną przy `pagehide` (sessionStorage) – przeglądarka przywraca przewinięcie przed hydracją i ucięłaby je do wysokości pierwszych kart.
 - Wyniki Lighthouse: patrz [README](../README.md#jakość).
 
 ## Testy

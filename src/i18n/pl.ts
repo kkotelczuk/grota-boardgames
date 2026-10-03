@@ -64,6 +64,8 @@ export const pl = {
     closeFilters: 'Zamknij filtry',
     applyFilters: (count: number) =>
       p(count, 'Pokaż {n} wynik', 'Pokaż {n} wyniki', 'Pokaż {n} wyników'),
+    /** Nagłówek listy linków bez JS (<noscript>) – gry spoza pierwszych kart. */
+    moreGames: 'Pozostałe gry',
     clearFilters: 'Wyczyść filtry',
     clearShort: 'Wyczyść',
     activeFilters: 'Aktywne filtry',

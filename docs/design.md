@@ -103,5 +103,5 @@ Klasy współdzielone przez Astro i Vue (`@layer components` w `global.css`):
 - **Licznik wyników:** `aria-live="polite"` w `GameExplorer.vue` – czytniki zapowiadają zmianę liczby gier po filtrowaniu.
 - **Skip link:** „Przejdź do treści” (`.sr-only-focusable`, widoczny po fokusie) → `<main id="main" tabindex="-1">`.
 - `lang` na `<html>` (`pl-PL` / `en`), fragmenty EN oznaczone `lang="en"` (np. opis w fallbacku, 404).
-- Strona działa bez JS (lista gier renderowana na serwerze).
+- Strona działa bez JS (pierwsze karty renderowane na serwerze, pozostałe gry jako lista linków w `<noscript>`).
 - Testy: axe-core WCAG 2.2 AA w trybie jasnym i ciemnym (`tests/e2e/a11y.spec.ts`).

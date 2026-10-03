@@ -63,6 +63,7 @@ export const en: Dictionary = {
     showFilters: 'Show filters',
     closeFilters: 'Close filters',
     applyFilters: (count: number) => p(count, 'Show {n} result', 'Show {n} results'),
+    moreGames: 'More games',
     clearFilters: 'Clear filters',
     clearShort: 'Clear',
     activeFilters: 'Active filters',

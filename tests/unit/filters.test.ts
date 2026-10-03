@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import {
   defaultFilterState,
+  defaultResults,
   filterGames,
   matchesFilters,
   matchesQuery,
@@ -139,6 +140,21 @@ describe('sortGames', () => {
     const copy = [...items];
     expect(titles(sortGames(items, 'year', collator))).toEqual(['A', 'B']);
     expect(items).toEqual(copy);
+  });
+});
+
+describe('defaultResults', () => {
+  it('matches the unfiltered list: top-level games only, sorted by title', () => {
+    const base = makeGame({ title: 'Zombicide', expansionIds: ['x'] });
+    const child = makeGame({
+      id: 'x',
+      title: 'Agricola: dodatek',
+      kind: 'expansion',
+      baseGameIds: ['zombicide'],
+    });
+    const standalone = makeGame({ title: 'Ankh', kind: 'expansion' });
+    const items = [base, child, standalone, makeGame({ title: 'Ćma' })];
+    expect(defaultResults(items, 'pl').map((g) => g.title)).toEqual(['Ankh', 'Ćma', 'Zombicide']);
   });
 });
 

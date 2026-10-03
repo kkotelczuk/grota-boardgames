@@ -144,6 +144,16 @@ const nullsLast = (a: number | null, b: number | null, direction: 1 | -1) => {
   return (a - b) * direction;
 };
 
+/** Collator tytułów – te same opcje w wyspie Vue i w Astro (kolejność listy musi być identyczna). */
+export const createCollator = (locale: string) =>
+  new Intl.Collator(locale, { sensitivity: 'base', numeric: true });
+
+/** Lista bez filtrów i fraz, w domyślnej kolejności – tak, jak renderuje ją serwer. */
+export function defaultResults(items: readonly GameIndexItem[], locale: string): GameIndexItem[] {
+  const state = defaultFilterState();
+  return sortGames(filterGames(items, state, new Set()), state.sort, createCollator(locale));
+}
+
 export function sortGames(
   items: GameIndexItem[],
   sort: SortKey,

@@ -4,6 +4,8 @@ import Logo from '@/components/Logo.astro';
 import GameExplorer from '@/components/vue/GameExplorer.vue';
 import { localizedPath, useTranslations, withBase, type Locale } from '@/i18n';
 import { buildFilterOptions, buildIndex, gamePath, gameTitle, getAllGames } from '@/lib/data/games';
+import { defaultResults } from '@/lib/filters';
+import { INITIAL_CARDS } from '@/composables/useProgressiveLimit';
 import { graph, itemListLd, organizationLd, websiteLd } from '@/lib/seo/jsonld';
 
 interface Props {
@@ -15,6 +17,8 @@ const t = useTranslations(locale);
 const games = await getAllGames();
 const index = await buildIndex(locale, games);
 const options = buildFilterOptions(games, locale);
+// Gry, których karty serwer nie renderuje (wyspa dokłada je dopiero w przeglądarce).
+const restOfList = defaultResults(index, locale).slice(INITIAL_CARDS);
 
 const siteUrl = new URL(withBase(''), Astro.site).toString();
 const abs = (path: string) => new URL(path, Astro.site).toString();
@@ -77,9 +81,27 @@ const jsonLd = graph([
     </div>
     <!--
       [Vue] client:load – lista to główna funkcja strony: wyszukiwarka i filtry mają działać od razu.
-      HTML i tak jest w pełni wyrenderowany na serwerze (SEO, działa bez JS); hydratacja tylko
-      „ożywia” istniejący DOM. Skrypty wysp są type="module" (async), nie blokują renderu.
+      Serwer renderuje pierwsze karty (INITIAL_CARDS), resztę wyspa dokłada porcjami po hydratacji.
+      Skrypty wysp są type="module" (async), nie blokują renderu.
     -->
     <GameExplorer client:load games={index} options={options} locale={locale} />
+    <!--
+      Bez JS: pozostałe gry jako zwykłe linki (dla ludzi i crawlerów bez JS; pełna lista jest też
+      w JSON-LD ItemList i w sitemapie). Przy włączonym JS <noscript> nie trafia do DOM-u.
+    -->
+    {restOfList.length > 0 && (
+      <noscript>
+        <h3 class="mt-8 font-display text-xl font-semibold">{t.list.moreGames}</h3>
+        <ul class="mt-3 columns-1 gap-6 sm:columns-2 lg:columns-3">
+          {restOfList.map((game) => (
+            <li class="py-1">
+              <a href={game.href} class="underline decoration-line-strong underline-offset-4">
+                {game.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </noscript>
+    )}
   </section>
 </BaseLayout>

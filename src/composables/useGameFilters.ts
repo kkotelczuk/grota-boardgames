@@ -2,6 +2,7 @@ import { computed, ref, toValue, type MaybeRefOrGetter, type Ref } from 'vue';
 import type { GameIndexItem } from '@/lib/game-index';
 import {
   activeFilterCount,
+  createCollator,
   defaultFilterState,
   filterGames,
   sortGames,
@@ -26,7 +27,7 @@ export function useGameFilters(
 ) {
   const state = ref<FilterState>(defaultFilterState());
   // [Vue] Collator jest drogi w tworzeniu – jeden na instancję, nie w każdym porównaniu.
-  const collator = new Intl.Collator(options.locale, { sensitivity: 'base', numeric: true });
+  const collator = createCollator(options.locale);
 
   // [Vue] computed, nie watch: wyniki są czystą pochodną stanu, cache'owaną do zmiany zależności.
   const effectiveState = computed<FilterState>(() =>

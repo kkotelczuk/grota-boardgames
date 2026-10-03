@@ -1195,7 +1195,7 @@ const isFavorite = (id: string) => visible.value.has(id);
 
 ### Dlaczego tak
 
-- **`client:load` dla `GameExplorer`**: wyszukiwarka i filtry to główna funkcja strony; HTML z pełną listą i tak jest w SSR (SEO, działa bez JS), a skrypty wysp są modułami (async), więc nie blokują renderu.
+- **`client:load` dla `GameExplorer`**: wyszukiwarka i filtry to główna funkcja strony; pierwsze karty są w SSR (resztę dokłada `useProgressiveLimit`, bez JS – linki w `<noscript>`), a skrypty wysp są modułami (async), więc nie blokują renderu.
 - **`client:load` dla `FavoritesList`**: bez JS strona nie ma treści. SSR (a nie `client:only`) daje placeholder o tych samych wymiarach co pusty stan – brak CLS.
 - **`client:idle` w headerze i na stronie gry**: nie są potrzebne do pierwszego malowania; nie konkurują z hydracją listy. `client:visible` nic by nie dało – są nad zgięciem, więc „widoczne” od razu.
 - **Bramka `mounted` per instancja w `useFavorites`**: wyspy hydratują się w różnym czasie. Gdyby `FavoritesCounter` (idle) wczytał ulubione do wspólnego stanu, a potem hydratowała się wyspa z serduszkiem, jej pierwszy render pokazałby `aria-pressed="true"` wobec `"false"` w HTML-u – a Vue w produkcji nie poprawi tego atrybutu. Każda instancja widzi więc ulubione dopiero po **swoim** `onMounted`.
@@ -1381,7 +1381,7 @@ const LazyGameCard = defineAsyncComponent({
 ### Alternatywy i trade-offy
 
 - **Lazy hydration kart** – mniejszy TBT na starcie, kosztem: martwych serduszek przed hydracją karty, trudniejszego debugowania i pilnowania, by nikt nie przywrócił niestabilnych propsów/slotów (regresja byłaby cicha – tylko ostrzeżenie w dev).
-- **Paginacja / „pokaż więcej”** – mniej DOM i mniej hydracji; gorsze SEO listy (choć strony gier są osobno indeksowane) i UX przeglądania.
+- **Paginacja / „pokaż więcej”** – mniej DOM i mniej hydracji; gorsze SEO listy (choć strony gier są osobno indeksowane) i UX przeglądania. **Wybrany wariant bez przycisku**: `useProgressiveLimit` – SSR i hydracja 24 kart, reszta doklejana porcjami w `requestIdleCallback` (krótkie taski zamiast jednego ~650 ms), bez JS linki w `<noscript>`. W przeciwieństwie do `hydrateOnVisible` nie mierzy pozycji elementów, więc nie wymusza layoutu. Koszt: ręczne przywracanie przewinięcia przy „wstecz” bez bfcache.
 - **Wirtualizacja listy** – minimalny DOM, ale konflikt z SSR (pełna lista w HTML dla SEO) i z `Ctrl+F`.
 - **Rozbicie na osobne wyspy Astro (`client:visible` per karta)** – niemożliwe, bo karty zależą od stanu filtrów wyspy `GameExplorer`.
 - **`v-memo`** na elemencie listy – alternatywny sposób odcięcia zbędnych re-renderów; tu niepotrzebny, bo stabilne propsy i sloty dają ten sam efekt bez ręcznej listy zależności.

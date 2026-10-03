@@ -20,8 +20,22 @@ test('lista gier jest w HTML-u także bez JS', async ({ browser }) => {
   const page = await context.newPage();
   await page.goto('./');
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
-  expect(await page.locator('article').count()).toBeGreaterThan(200);
+  // Serwer renderuje pierwsze karty, pozostałe gry są linkami w <noscript>.
+  const cards = await page.locator('article').count();
+  const rest = await page
+    .getByRole('heading', { level: 3, name: 'Pozostałe gry' })
+    .locator('xpath=following-sibling::ul[1]')
+    .getByRole('link')
+    .count();
+  expect(cards).toBe(24);
+  expect(cards + rest).toBeGreaterThan(200);
   await context.close();
+});
+
+test('z JS lista dorasta do pełnej długości', async ({ page }) => {
+  await page.goto('./');
+  await waitForIslands(page);
+  await expect.poll(() => page.locator('article').count()).toBeGreaterThan(200);
 });
 
 test('wyszukiwanie bez polskich znaków i filtr liczby graczy', async ({ page }) => {

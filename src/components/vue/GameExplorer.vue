@@ -7,6 +7,7 @@ import type { Locale } from '@/lib/languages';
 import { useFavorites } from '@/composables/useFavorites';
 import { useGameFilters } from '@/composables/useGameFilters';
 import { useGameSearch } from '@/composables/useGameSearch';
+import { useProgressiveLimit } from '@/composables/useProgressiveLimit';
 import { useUrlQueryState } from '@/composables/useUrlQueryState';
 import AppIcon from './AppIcon.vue';
 import FavoriteButton from './FavoriteButton.vue';
@@ -18,9 +19,9 @@ import GameCard from './GameCard.vue';
 import { provideI18n } from './i18n';
 
 /*
- * [Vue] Granica wyspy: Astro renderuje ten komponent na serwerze (SSR → pełna lista w HTML dla
- * SEO i bez JS), a potem hydratuje go w przeglądarce (`client:load`). Props przechodzą przez
- * serializację Astro (format JSON-podobny: obsługuje Map/Set/Date, ale nie funkcje), dlatego to
+ * [Vue] Granica wyspy: Astro renderuje ten komponent na serwerze (SSR → pierwsze karty listy
+ * w HTML; resztę dokłada klient), a potem hydratuje go w przeglądarce (`client:load`).
+ * Props przechodzą przez serializację Astro (format JSON-podobny: obsługuje Map/Set/Date, ale nie funkcje), dlatego to
  * odchudzony indeks (bez opisów) i tylko dane.
  */
 const { games, options, locale } = defineProps<{
@@ -83,6 +84,18 @@ const expansionsById = computed(() => {
   );
 });
 const expansionsOf = (game: GameIndexItem) => expansionsById.value.get(game.id) ?? NO_EXPANSIONS;
+
+// ---------- Stopniowe renderowanie listy ----------
+/*
+ * Serwer renderuje (a klient hydratuje) tylko pierwsze karty; resztę dokładamy porcjami
+ * w wolnych chwilach przeglądarki – zamiast jednego długiego taska hydracji 252 kart.
+ * Bez JS pozostałe gry są linkami w <noscript> (HomeView.astro). Patrz useProgressiveLimit.
+ * Limit tylko rośnie: zmiana filtrów nie odmontowuje już wyrenderowanych kart.
+ */
+const limit = useProgressiveLimit(() => games.length);
+const visibleResults = computed(() =>
+  results.value.length > limit.value ? results.value.slice(0, limit.value) : results.value,
+);
 
 // ---------- Komunikat dla czytników ekranu po kliknięciu serduszka ----------
 const announcement = ref('');
@@ -303,7 +316,7 @@ function clearEverything() {
         class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 xl:grid-cols-4"
         role="list"
       >
-        <li v-for="(game, index) in results" :key="game.id" class="card-slot">
+        <li v-for="(game, index) in visibleResults" :key="game.id" class="card-slot">
           <!--
             [Vue] Scoped slot: treść slotu używa propsów slotu (`card`), a nie zmiennej `game` z v-for.
             Slot odwołujący się do zmiennych z v-for kompilator oznacza jako dynamiczny i wymusza
