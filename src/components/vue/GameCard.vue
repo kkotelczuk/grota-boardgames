@@ -48,8 +48,8 @@ const languageTitle = computed(() =>
     class="group relative flex h-full flex-col overflow-hidden rounded-card border border-line bg-surface shadow-card transition-[box-shadow,transform] duration-200 ease-out-soft focus-within:shadow-lift hover:-translate-y-0.5 hover:shadow-lift max-sm:grid max-sm:grid-cols-[6.5rem_1fr]"
   >
     <div class="relative bg-sunken max-sm:row-span-2">
-      <!-- Okładka jest dekoracyjnym duplikatem linku z tytułu: poza tabulacją i czytnikiem. -->
-      <a :href="game.href" tabindex="-1" aria-hidden="true" class="block">
+      <!-- Okładka nie ma własnego linku – klikalna jest cała karta (stretched link w tytule). -->
+      <div class="h-full">
         <img
           v-if="game.cover"
           :src="game.cover.src"
@@ -69,7 +69,7 @@ const languageTitle = computed(() =>
         >
           {{ t.card.noImage }}
         </div>
-      </a>
+      </div>
     </div>
     <!-- Jeden slot akcji: na desktopie nad okładką, na mobile w prawym górnym rogu treści. -->
     <div class="absolute top-1.5 right-1.5 z-10">
@@ -78,9 +78,16 @@ const languageTitle = computed(() =>
 
     <div class="flex min-w-0 flex-1 flex-col gap-2 p-3 sm:p-4">
       <h3 class="font-display text-lg leading-snug font-semibold max-sm:pr-10">
+        <!--
+          „Stretched link”: ::after linku rozciąga się na całą kartę (article ma `relative`),
+          więc kliknięcie w dowolne miejsce otwiera grę, a w karcie jest tylko JEDEN link
+          (czytnik ekranu nie słyszy duplikatów). Interaktywne elementy mają `relative z-10`,
+          żeby leżały nad tą warstwą. Focus rysujemy na ::after – obrys całej karty, do środka
+          (ujemny offset), bo `overflow-hidden` na article przyciąłby obrys rysowany na zewnątrz.
+        -->
         <a
           :href="game.href"
-          class="decoration-accent decoration-2 underline-offset-4 hover:underline"
+          class="decoration-accent decoration-2 underline-offset-4 group-hover:underline after:absolute after:inset-0 after:rounded-card after:content-[''] focus-visible:outline-none focus-visible:after:outline-3 focus-visible:after:-outline-offset-3 focus-visible:after:outline-(--focus)"
         >
           {{ game.title }}
         </a>
@@ -141,7 +148,7 @@ const languageTitle = computed(() =>
         <button
           v-if="expansions.length"
           type="button"
-          class="ml-auto inline-flex min-h-11 items-center gap-1 rounded-full px-2 text-sm font-semibold text-accent hover:bg-accent-soft"
+          class="relative z-10 ml-auto inline-flex min-h-11 items-center gap-1 rounded-full px-2 text-sm font-semibold text-accent hover:bg-accent-soft"
           :aria-expanded="showExpansions"
           :aria-controls="expansionsId"
           @click="showExpansions = !showExpansions"
@@ -161,7 +168,7 @@ const languageTitle = computed(() =>
         <ul
           v-if="expansions.length && showExpansions"
           :id="expansionsId"
-          class="space-y-1 border-t border-line pt-2 text-sm"
+          class="relative z-10 space-y-1 border-t border-line pt-2 text-sm"
         >
           <li v-for="expansion in expansions" :key="expansion.id">
             <a

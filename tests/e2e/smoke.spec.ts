@@ -1,5 +1,15 @@
 import { expect, test } from '@playwright/test';
 
+/**
+ * Karty mają `content-visibility: auto` – tuż po przewinięciu przeglądarka jeszcze ich nie
+ * wyrenderowała (hit-testing trafia w <li>). Czekamy dwie klatki, jak zrobiłby to człowiek.
+ */
+async function nextFrames(page: import('@playwright/test').Page) {
+  await page.evaluate(
+    () => new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))),
+  );
+}
+
 /** Wyspy są interaktywne dopiero po hydratacji – Astro usuwa atrybut `ssr` z <astro-island>. */
 async function waitForIslands(page: import('@playwright/test').Page) {
   await expect(page.locator('astro-island[ssr]')).toHaveCount(0);
@@ -69,4 +79,37 @@ test('przekierowanie /discord/ ma link awaryjny', async ({ request }) => {
   const html = await response.text();
   expect(html).toContain('http-equiv="refresh"');
   expect(html).toMatch(/href="https:\/\/discord\.gg\//);
+});
+
+test.describe('karta gry', () => {
+  // Bez animacji View Transition: w trakcie przejścia (np. po „wstecz”) kliknięcia trafiają
+  // w nakładkę ::view-transition, co w teście dawałoby losowe wyniki.
+  test.use({ contextOptions: { reducedMotion: 'reduce' } });
+
+  test('cała karta jest klikalna, a serduszko działa osobno', async ({ page }) => {
+    await page.goto('./');
+    await waitForIslands(page);
+    const card = page.locator('article').filter({ hasText: 'Scythe' }).first();
+    await card.scrollIntoViewIfNeeded();
+    await nextFrames(page);
+
+    // Serduszko leży nad warstwą linku – nie nawiguje.
+    await card.getByRole('button', { name: /Dodaj do ulubionych/ }).click();
+    await expect(page).toHaveURL(/\/grota-boardgames\/(\?.*)?$/);
+
+    // Klik w statystyki (nie w tytuł) otwiera stronę gry. `force`, bo Playwright słusznie widzi,
+    // że <dl> jest przykryte warstwą linku – klik we współrzędne trafia właśnie w nią.
+    await nextFrames(page);
+    await card.locator('dl').click({ force: true });
+    await expect(page).toHaveURL(/\/gry\/scythe\/$/);
+
+    // Klik w okładkę też.
+    await page.goBack();
+    await waitForIslands(page);
+    const cover = page.locator('article').filter({ hasText: 'Scythe' }).first().locator('img');
+    await cover.scrollIntoViewIfNeeded();
+    await nextFrames(page);
+    await cover.click({ force: true });
+    await expect(page).toHaveURL(/\/gry\/scythe\/$/);
+  });
 });
