@@ -22,6 +22,7 @@ const routes = {
   favorites: { pl: 'ulubione/', en: 'en/favorites/' },
   about: { pl: 'o-grocie/', en: 'en/about/' },
   discord: { pl: 'discord/', en: 'discord/' },
+  generator: { pl: 'generator/', en: 'en/generator/' },
 } as const satisfies Record<string, Record<Locale, string>>;
 
 export type RouteName = keyof typeof routes;

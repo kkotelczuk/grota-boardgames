@@ -5,6 +5,8 @@ import { useI18n } from './i18n';
 
 // [Vue] defineModel = prop `modelValue` + emit `update:modelValue` w jednym, zapisywalnym refie.
 const query = defineModel<string>({ required: true });
+// Domyślnie teksty listy gier; generator grafik podaje własne.
+const { label, placeholder } = defineProps<{ label?: string; placeholder?: string }>();
 const { t } = useI18n();
 
 // [Vue] useId() – stabilne id identyczne na serwerze i kliencie (zwykły licznik dałby mismatch).
@@ -22,7 +24,7 @@ defineExpose({ focus: () => input.value?.focus() });
 
 <template>
   <div class="relative">
-    <label :for="inputId" class="sr-only">{{ t.list.searchLabel }}</label>
+    <label :for="inputId" class="sr-only">{{ label ?? t.list.searchLabel }}</label>
     <AppIcon
       name="search"
       class="pointer-events-none absolute top-1/2 left-3.5 -translate-y-1/2 text-muted"
@@ -36,7 +38,7 @@ defineExpose({ focus: () => input.value?.focus() });
       enterkeyhint="search"
       autocomplete="off"
       spellcheck="false"
-      :placeholder="t.list.searchPlaceholder"
+      :placeholder="placeholder ?? t.list.searchPlaceholder"
       class="h-12 w-full rounded-full border border-line-strong bg-surface pr-12 pl-11 text-base text-ink placeholder:text-muted focus:border-accent focus-visible:outline-offset-0 [&::-webkit-search-cancel-button]:hidden"
       @keydown.esc="query && (clear(), $event.stopPropagation())"
     />
