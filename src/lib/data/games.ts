@@ -119,10 +119,15 @@ export async function cardCover(game: Game): Promise<CoverImage | null> {
   };
 }
 
-export async function toIndexItem(game: Game, locale: Locale): Promise<GameIndexItem> {
+/** Znormalizowane tytuły + łacińskie nazwy alternatywne – pole `search` (lista gier, generator). */
+export function searchText(game: Game): string {
   const titles = [game.titlePl, game.titleOriginal, ...game.copies.map((c) => c.localTitle)];
   const alternates = game.alternateNames.filter((name) => LATIN.test(name));
-  const search = [...new Set([...titles, ...alternates].map(normalizeForSearch))].join(' | ');
+  return [...new Set([...titles, ...alternates].map(normalizeForSearch))].join(' | ');
+}
+
+export async function toIndexItem(game: Game, locale: Locale): Promise<GameIndexItem> {
+  const search = searchText(game);
 
   return {
     id: game.id,

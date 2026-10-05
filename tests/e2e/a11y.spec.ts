@@ -1,7 +1,15 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
-const pages = ['./', './en/', './gry/scythe/', './o-grocie/', './ulubione/', './404.html'];
+const pages = [
+  './',
+  './en/',
+  './gry/scythe/',
+  './o-grocie/',
+  './ulubione/',
+  './generator/',
+  './404.html',
+];
 
 for (const colorScheme of ['light', 'dark'] as const) {
   test.describe(`WCAG 2.2 AA (${colorScheme})`, () => {
@@ -19,3 +27,17 @@ for (const colorScheme of ['light', 'dark'] as const) {
     }
   });
 }
+
+test('generator po podaniu hasła', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('grota:generator-access', '1'));
+  await page.goto('./generator/');
+  await page.getByRole('searchbox', { name: 'Szukaj gry z kolekcji' }).fill('scythe');
+  await page
+    .getByRole('button', { name: /^Scythe/ })
+    .first()
+    .click();
+  const results = await new AxeBuilder({ page })
+    .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'])
+    .analyze();
+  expect(results.violations.map((v) => `${v.id}: ${v.nodes.length} × ${v.help}`)).toEqual([]);
+});

@@ -74,6 +74,39 @@ test('szczegóły gry, przełącznik języka i ulubione', async ({ page }) => {
   await expect(page.locator('html')).toHaveAttribute('lang', 'en');
 });
 
+test('generator grafik: hasło, wybór gier i pobranie PNG', async ({ page }) => {
+  await page.goto('./generator/');
+  await waitForIslands(page);
+
+  const password = page.getByLabel('Hasło');
+  await password.fill('zle');
+  await page.getByRole('button', { name: 'Wejdź' }).click();
+  await expect(page.getByRole('alert')).toHaveText('Nieprawidłowe hasło.');
+  await password.fill('test-123');
+  await page.getByRole('button', { name: 'Wejdź' }).click();
+
+  const search = page.getByRole('searchbox', { name: 'Szukaj gry z kolekcji' });
+  for (const [phrase, title] of [
+    ['scythe', 'Scythe'],
+    ['sabotazysta', 'Sabotażysta'],
+  ] as const) {
+    await search.fill(phrase);
+    await page.getByRole('button', { name: new RegExp(`^${title}`) }).click();
+  }
+  await expect(page.getByText('2 / 25')).toBeVisible();
+
+  const downloadPromise = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Pobierz PNG' }).click();
+  const download = await downloadPromise;
+  expect(download.suggestedFilename()).toMatch(/^grota-gry-\d{4}-\d{2}-\d{2}\.png$/);
+
+  // Hasło zapamiętane – po przeładowaniu od razu generator.
+  await page.reload();
+  await waitForIslands(page);
+  await expect(page.getByRole('searchbox', { name: 'Szukaj gry z kolekcji' })).toBeVisible();
+  await expect(page.getByLabel('Hasło')).toHaveCount(0);
+});
+
 test('przekierowanie /discord/ ma link awaryjny', async ({ request }) => {
   const response = await request.get('./discord/');
   const html = await response.text();

@@ -192,18 +192,23 @@
   .btn:active {
     transform: scale(0.97);
   }
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
   .btn-primary {
     background: var(--accent);
     color: var(--accent-ink);
   }
-  .btn-primary:hover {
+  .btn-primary:hover:not(:disabled) {
     background: var(--accent-hover);
   }
   .btn-ghost {
     border: 1px solid var(--line-strong);
     color: var(--ink);
   }
-  .btn-ghost:hover {
+  .btn-ghost:hover:not(:disabled) {
     border-color: var(--ink);
     background: var(--surface);
   }
