@@ -196,6 +196,11 @@ export const en: Dictionary = {
       'We don’t lend games out. This website shows what you can play with us.',
       'Open days are announced on Discord – it’s also the easiest place to find other players.',
     ],
+    feeHeading: 'How much does it cost',
+    feeText: 'A one-time fee for using the club and the game library is',
+    feeAmount: 'PLN 10',
+    feeNote:
+      'The fee is collected as part of the Association’s paid statutory activity and is used to pursue its statutory goals, in particular maintaining and developing the club and providing access to its resources.',
     whereHeading: 'Where to find us',
     addressLabel: 'Address',
     openMap: 'Open in OpenStreetMap',

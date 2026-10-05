@@ -118,7 +118,7 @@ pnpm test:e2e
 
 ## TODO dla człowieka
 
-- [ ] Odpowiedzi FAQ w `src/config/faq.ts` (opłaty, własna gra, znajomość zasad, członkostwo).
+- [ ] Odpowiedzi FAQ w `src/config/faq.ts` (własna gra, znajomość zasad, członkostwo).
 - [ ] Uzupełnić 8 gier ręcznych w `data/manual-games.yaml` (braki wypisuje build jako ostrzeżenia).
 - [ ] Po wdrożeniu sprawdzić JSON-LD: https://validator.schema.org i Google Rich Results Test.
 
