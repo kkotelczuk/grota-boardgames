@@ -4,9 +4,9 @@ import { useGameFilters } from '@/composables/useGameFilters';
 import { makeGame } from './fixtures';
 
 const items = [
-  makeGame({ id: 'a', title: 'Alpha', maxPlayers: 2 }),
-  makeGame({ id: 'b', title: 'Beta', maxPlayers: 6 }),
-  makeGame({ id: 'c', title: 'Gamma', maxPlayers: 6 }),
+  makeGame({ id: 'a', title: 'Alpha', maxPlayers: 2, rating: 8 }),
+  makeGame({ id: 'b', title: 'Beta', maxPlayers: 6, rating: 7.5 }),
+  makeGame({ id: 'c', title: 'Gamma', maxPlayers: 6, rating: 6 }),
 ];
 
 function setup(favs: string[] = []) {
@@ -15,7 +15,7 @@ function setup(favs: string[] = []) {
 }
 
 describe('useGameFilters', () => {
-  it('returns all games sorted by title initially', () => {
+  it('returns all games sorted by BGG rating initially', () => {
     expect(setup().results.value.map((g) => g.id)).toEqual(['a', 'b', 'c']);
   });
 

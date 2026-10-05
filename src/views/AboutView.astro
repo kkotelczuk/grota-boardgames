@@ -66,6 +66,17 @@ const jsonLd = graph([
           ))}
         </ul>
 
+        <h2 class="mt-10 font-display text-2xl font-semibold">{a.feeHeading}</h2>
+        <!-- Przypis (*) bezpośrednio pod kwotą – informacja o charakterze opłaty ma być widoczna, nie schowana. -->
+        <div class="mt-3 rounded-xl border border-line bg-surface p-4">
+          <p class="text-lg">
+            {a.feeText} <strong class="whitespace-nowrap">{a.feeAmount}</strong><sup aria-hidden="true">*</sup>.
+          </p>
+          <p class="mt-3 border-t border-line pt-3 text-sm">
+            <span aria-hidden="true">* </span>{a.feeNote}
+          </p>
+        </div>
+
         <h2 class="mt-10 font-display text-2xl font-semibold">{a.whereHeading}</h2>
         <address class="mt-3 not-italic">
           <span class="font-semibold">{a.addressLabel}:</span> {fullAddress}

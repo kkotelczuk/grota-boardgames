@@ -44,7 +44,7 @@ export const defaultFilterState = (): FilterState => ({
   mechanics: [],
   kind: 'all',
   favoritesOnly: false,
-  sort: 'title',
+  sort: 'rating',
 });
 
 /** Liczba aktywnych filtrów (bez frazy i sortowania) – do badge'a na przycisku „Filtry”. */
@@ -191,7 +191,7 @@ export function stateFromQuery(params: URLSearchParams): FilterState {
   state.mechanics = numbers(params.get('mech'));
   state.kind = oneOf(params.get('kind'), ['base', 'expansion'] as const) ?? 'all';
   state.favoritesOnly = params.get('fav') === '1';
-  state.sort = oneOf(params.get('sort'), SORT_KEYS) ?? 'title';
+  state.sort = oneOf(params.get('sort'), SORT_KEYS) ?? 'rating';
   return state;
 }
 
@@ -212,6 +212,6 @@ export function stateToQuery(state: FilterState): URLSearchParams {
   set('mech', state.mechanics.join(','));
   if (state.kind !== 'all') set('kind', state.kind);
   if (state.favoritesOnly) set('fav', 1);
-  if (state.sort !== 'title') set('sort', state.sort);
+  if (state.sort !== 'rating') set('sort', state.sort);
   return params;
 }

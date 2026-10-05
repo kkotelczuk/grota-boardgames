@@ -169,7 +169,7 @@ describe('URL state', () => {
     );
     expect(s.players).toBeNull();
     expect(s.time).toEqual(['short']);
-    expect(s.sort).toBe('title');
+    expect(s.sort).toBe('rating');
     expect(s.kind).toBe('all');
     expect(s.age).toBeNull();
     expect(s.languages).toEqual(['PL']);

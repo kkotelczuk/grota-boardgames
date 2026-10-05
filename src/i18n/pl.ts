@@ -198,6 +198,11 @@ export const pl = {
       'Gier nie wypożyczamy do domu. Ta strona pokazuje, w co możesz u nas zagrać.',
       'Terminy dni otwartych ogłaszamy na Discordzie – tam też najłatwiej znaleźć współgraczy.',
     ],
+    feeHeading: 'Ile to kosztuje',
+    feeText: 'Jednorazowa opłata za skorzystanie z klubu i biblioteki gier wynosi',
+    feeAmount: '10 zł',
+    feeNote:
+      'Opłata jest pobierana w ramach odpłatnej działalności statutowej Stowarzyszenia i przeznaczana na realizację jego celów statutowych, w szczególności utrzymanie i rozwój działalności klubu oraz zapewnienie dostępu do jego zasobów.',
     whereHeading: 'Gdzie jesteśmy',
     addressLabel: 'Adres',
     openMap: 'Otwórz w OpenStreetMap',

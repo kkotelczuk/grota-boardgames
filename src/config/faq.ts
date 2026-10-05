@@ -32,8 +32,13 @@ export const faq: FaqItem[] = [
       en: 'The full list of games is on this website – you can search it and filter by player count, playing time and more.',
     },
   },
-  // TODO: uzupełnij odpowiedź (opłaty / składki / wejściówki)
-  { question: { pl: 'Czy trzeba płacić?', en: 'Do I have to pay?' }, answer: null },
+  {
+    question: { pl: 'Czy trzeba płacić?', en: 'Do I have to pay?' },
+    answer: {
+      pl: 'Tak. Jednorazowa opłata za skorzystanie z klubu i biblioteki gier wynosi 10 zł. Opłata jest pobierana w ramach odpłatnej działalności statutowej Stowarzyszenia i przeznaczana na realizację jego celów statutowych, w szczególności utrzymanie i rozwój działalności klubu oraz zapewnienie dostępu do jego zasobów.',
+      en: 'Yes. A one-time fee for using the club and the game library is PLN 10. The fee is collected as part of the Association’s paid statutory activity and is used to pursue its statutory goals, in particular maintaining and developing the club and providing access to its resources.',
+    },
+  },
   // TODO: uzupełnij odpowiedź
   {
     question: { pl: 'Czy mogę przynieść swoją grę?', en: 'Can I bring my own game?' },
