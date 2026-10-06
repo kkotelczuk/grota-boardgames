@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { GRID, computeLayout } from '@/lib/generator/layout';
+import { GRID, TILE_FRAMES, computeLayout, tileFrameFor } from '@/lib/generator/layout';
+import { TILE_STYLES } from '@/lib/generator/design';
 import { shuffle } from '@/lib/generator/shuffle';
 
 describe('computeLayout', () => {
@@ -38,6 +39,49 @@ describe('computeLayout', () => {
     const left = last[0]!.x - GRID.x;
     const right = GRID.x + GRID.width - (last[1]!.x + tile);
     expect(Math.abs(left - right)).toBeLessThanOrEqual(1);
+  });
+});
+
+describe('computeLayout – tile styles', () => {
+  it('classic is the v1 layout (regression)', () => {
+    for (const n of [1, 2, 4, 5, 10, 25]) {
+      expect(computeLayout(n, TILE_FRAMES.classic)).toEqual(computeLayout(n));
+    }
+    expect(computeLayout(25, TILE_FRAMES.classic).pad).toBe(0);
+  });
+
+  it.each(TILE_STYLES.flatMap((style) => [true, false].map((labels) => [style, labels] as const)))(
+    '%s (labels: %s): every card fits inside the grid area',
+    (style, labels) => {
+      const frame = tileFrameFor(style, labels);
+      for (let n = 1; n <= 25; n++) {
+        const { cells, card, tile } = computeLayout(n, frame);
+        const allowance = Math.floor(tile * frame.rotationAllowance) / 2;
+        expect(cells).toHaveLength(n);
+        for (const { x, y } of cells) {
+          expect(x - allowance).toBeGreaterThanOrEqual(GRID.x);
+          expect(y - allowance).toBeGreaterThanOrEqual(GRID.y);
+          expect(x + card.width + allowance).toBeLessThanOrEqual(GRID.x + GRID.width);
+          expect(y + card.height + allowance).toBeLessThanOrEqual(GRID.y + GRID.height);
+        }
+      }
+    },
+  );
+
+  it('hiding game names gives bigger covers', () => {
+    for (const style of TILE_STYLES) {
+      if (style === 'overlay') continue; // podpis na okładce i tak nie zajmuje miejsca
+      expect(computeLayout(6, tileFrameFor(style, false)).tile).toBeGreaterThan(
+        computeLayout(6, tileFrameFor(style, true)).tile,
+      );
+    }
+  });
+
+  it('overlay labels take no space, cards add padding', () => {
+    expect(computeLayout(6, TILE_FRAMES.overlay).labelHeight).toBe(0);
+    const card = computeLayout(6, TILE_FRAMES.card);
+    expect(card.pad).toBeGreaterThan(0);
+    expect(card.card.width).toBe(card.tile + 2 * card.pad);
   });
 });
 

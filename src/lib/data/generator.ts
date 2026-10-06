@@ -5,6 +5,7 @@ import { getImage } from 'astro:assets';
 import type { Locale } from '@/i18n';
 import type { GeneratorGame } from '@/lib/generator/types';
 import logoBlack from '@/assets/brand/bgp_grota.png';
+import logoWhite from '@/assets/brand/bgp_grota_white.png';
 import { coverImage, gameSubtitle, gameTitle, getAllGames, searchText } from './games';
 
 /**
@@ -30,7 +31,12 @@ export async function buildGeneratorIndex(locale: Locale): Promise<GeneratorGame
   return items.sort((a, b) => collator.compare(a.title, b.title));
 }
 
-/** Czarne logo (jasne tło grafiki) – PNG z przezroczystością. */
-export async function generatorLogoUrl(): Promise<string> {
-  return (await getImage({ src: logoBlack, width: 320, format: 'png' })).src;
+/** Logo do grafiki: czarne (na jasne tło) i białe (na ciemne) – PNG z przezroczystością. */
+export async function generatorLogoUrls(): Promise<{ dark: string; light: string }> {
+  const [dark, light] = await Promise.all(
+    [logoBlack, logoWhite].map(
+      async (src) => (await getImage({ src, width: 320, format: 'png' })).src,
+    ),
+  );
+  return { dark: dark!, light: light! };
 }

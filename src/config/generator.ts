@@ -9,3 +9,5 @@ export const GENERATOR_PASSWORD = 'test-123';
 export const GENERATOR_MAX_GAMES = 25;
 /** Klucz w localStorage – `'1'` = hasło podane, nie pytamy ponownie. */
 export const GENERATOR_ACCESS_KEY = 'grota:generator-access';
+/** Klucz w localStorage – zapamiętany wygląd grafiki (`PosterDesign`, bez zdjęcia tła). */
+export const GENERATOR_DESIGN_KEY = 'grota:generator-design:v1';

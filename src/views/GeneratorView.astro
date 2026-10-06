@@ -2,14 +2,14 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import GeneratorApp from '@/components/vue/generator/GeneratorApp.vue';
 import { localizedPath, useTranslations, type Locale } from '@/i18n';
-import { buildGeneratorIndex, generatorLogoUrl } from '@/lib/data/generator';
+import { buildGeneratorIndex, generatorLogoUrls } from '@/lib/data/generator';
 
 interface Props {
   locale: Locale;
 }
 const { locale } = Astro.props;
 const t = useTranslations(locale);
-const [games, logoUrl] = await Promise.all([buildGeneratorIndex(locale), generatorLogoUrl()]);
+const [games, logoUrls] = await Promise.all([buildGeneratorIndex(locale), generatorLogoUrls()]);
 // Narzędzie dla części osób z Groty: noindex, poza sitemapą, bez linków w menu.
 // Celowo NIE ma wpisu w robots.txt – publiczny `Disallow` zdradzałby adres.
 const alternates = {
@@ -33,7 +33,7 @@ const alternates = {
       Przy SSR serwer zawsze wyrenderowałby formularz hasła, który by mignął (albo dał mismatch).
       Strona nie potrzebuje treści w HTML – i tak jest noindex.
     -->
-    <GeneratorApp client:only="vue" locale={locale} games={games} logoUrl={logoUrl} />
+    <GeneratorApp client:only="vue" locale={locale} games={games} logoUrls={logoUrls} />
     <noscript>
       <p class="mt-6 text-muted">{t.generator.noscript}</p>
     </noscript>

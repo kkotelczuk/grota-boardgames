@@ -478,6 +478,18 @@ Na koniec: `pnpm lint`, `pnpm typecheck`, `pnpm test`, `pnpm format`.
 3. **Font „Grota” – Fascinate Inline** (właściciel nie ma pliku fontu z logo).
 4. **Zestaw 7 fontów** z pkt 3.1 – na razie bez zmian.
 
+## Zmiany przy implementacji (2026-10-06)
+
+- **Bez pola `themeId`**: zaznaczony motyw jest wyliczany (`matchingTheme(design)` – głębokie porównanie z motywami). Po dowolnej zmianie zaznaczenie znika samo, bez flag i `watch`.
+- **`tone` → `textColor`** (`'auto' | 'dark' | 'light'` = kolor **napisów**, jak w UI). Ton tła wynika z niego odwrotnie.
+- `image` w `BackgroundDesign` zawsze obecne (ustawienia zdjęcia), a nie `| null` – prostszy schemat i UI.
+- Ton „auto” dla zdjęcia: `pickTextColor(średni kolor)` (ten sam wzór co dla presetów) zamiast progu luminancji 0.4.
+- Akcent dla tła własnego i zdjęcia = kolor tekstu (pewny kontrast); przy wymuszonym kolorze napisów niezgodnym z tonem presetu – też.
+- Ramka `dice`: kostki 24 px, wcięcie 6, obrót ±6° (32 px przy wcięciu 16 wychodziło poza `FRAME_BAND`).
+- Wzory i ramki wybierane chipami (tekst), bez miniatur; miniatury mają presety, motywy (4 kafelki) i style kafelków (2 kafelki – przy 4 były nieczytelne).
+- Zapis wyglądu w `src/lib/generator/storage.ts`, schemat w `zod/mini` (mniejszy bundle niż pełny zod).
+- Preset `aurora`: ciemniejsze plamy (`#5b4bff`, `#00806e`, `#c2306a`) – jaśniejsze nie miały 3:1 z białym tekstem.
+
 ## Poza zakresem (pomysły na później)
 
 - Układ „bento” – pierwsza gra wyróżniona (kafelek 2×2).

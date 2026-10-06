@@ -36,8 +36,14 @@ test('generator po podaniu hasła', async ({ page }) => {
     .getByRole('button', { name: /^Scythe/ })
     .first()
     .click();
-  const results = await new AxeBuilder({ page })
-    .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'])
-    .analyze();
-  expect(results.violations.map((v) => `${v.id}: ${v.nodes.length} × ${v.help}`)).toEqual([]);
+  // Panel „Wygląd”: sprawdzamy każdą zakładkę (nieaktywne panele są ukryte i axe ich nie widzi).
+  for (const tab of ['Tło', 'Napis', 'Kafelki']) {
+    await page.getByRole('tab', { name: tab }).click();
+    const results = await new AxeBuilder({ page })
+      .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'])
+      .analyze();
+    expect(
+      results.violations.map((v) => `${tab} – ${v.id}: ${v.nodes.length} × ${v.help}`),
+    ).toEqual([]);
+  }
 });
