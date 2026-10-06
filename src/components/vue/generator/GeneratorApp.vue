@@ -1,19 +1,23 @@
 <script setup lang="ts">
-import { computed, onBeforeUnmount, ref, useId } from 'vue';
+import { computed, onBeforeUnmount, ref, shallowRef, useId, watch } from 'vue';
 import type { Locale } from '@/lib/languages';
 import type { GeneratorGame, SelectedItem } from '@/lib/generator/types';
 import { GENERATOR_ACCESS_KEY, GENERATOR_MAX_GAMES } from '@/config/generator';
 import { shuffle } from '@/lib/generator/shuffle';
+import type { PosterDesign } from '@/lib/generator/design';
+import { decodeBackgroundFile, type BackgroundImage } from '@/lib/generator/render/background';
+import { loadDesign, saveDesign } from '@/lib/generator/storage';
 import { provideI18n } from '../i18n';
+import DesignPanel from './DesignPanel.vue';
 import GamePicker from './GamePicker.vue';
 import PasswordGate from './PasswordGate.vue';
 import PosterPreview from './PosterPreview.vue';
 import SelectedList from './SelectedList.vue';
 
-const { locale, games, logoUrl } = defineProps<{
+const { locale, games, logoUrls } = defineProps<{
   locale: Locale;
   games: GeneratorGame[];
-  logoUrl: string;
+  logoUrls: { dark: string; light: string };
 }>();
 const { t } = provideI18n(locale);
 
@@ -64,13 +68,53 @@ function clear() {
 }
 
 onBeforeUnmount(() => selected.value.forEach(release));
+
+// ---------- Wygląd (zapamiętywany; zdjęcie tła – nie) ----------
+
+const design = ref<PosterDesign>(loadDesign());
+// Panel zawsze podmienia cały obiekt projektu, więc wystarczy płytki watch (bez `deep`).
+watch(design, saveDesign);
+
+/*
+ * [Vue] shallowRef: canvas ze zdjęciem to duży obiekt DOM – głęboka reaktywność (proxy na
+ * każdym polu) nic by nie dała, a kosztowała. Zmieniamy go tylko przez podmianę `.value`.
+ */
+const backgroundImage = shallowRef<BackgroundImage | null>(null);
+const imageError = ref(false);
+let imageCounter = 0;
+
+async function setBackgroundImage(file: File | null) {
+  imageError.value = false;
+  if (!file) {
+    backgroundImage.value = null;
+    if (design.value.background.source === 'image') {
+      design.value = {
+        ...design.value,
+        background: { ...design.value.background, source: 'preset' },
+      };
+    }
+    return;
+  }
+  try {
+    const source = await decodeBackgroundFile(file);
+    backgroundImage.value = { id: ++imageCounter, source };
+    design.value = { ...design.value, background: { ...design.value.background, source: 'image' } };
+  } catch {
+    imageError.value = true;
+  }
+}
 </script>
 
 <template>
   <PasswordGate v-if="!unlocked" class="mt-6" @unlock="unlocked = true" />
 
+  <!--
+    Kolejność w DOM = kolejność na mobile: gry → podgląd → wygląd (przy zmianie wyglądu podgląd
+    jest tuż nad kontrolkami). Na desktopie siatka przenosi podgląd do prawej kolumny na całą
+    wysokość (row-span-2) i przykleja go – bez duplikowania komponentów.
+  -->
   <div v-else class="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,540px)] lg:items-start">
-    <div class="grid gap-8">
+    <div class="grid gap-8 lg:col-start-1 lg:row-start-1">
       <div>
         <label :for="headingId" class="block text-sm font-semibold">
           {{ t.generator.headingLabel }}
@@ -101,12 +145,21 @@ onBeforeUnmount(() => selected.value.forEach(release));
       />
     </div>
 
-    <!-- Na mobile podgląd ląduje pod listą (kolejność w DOM), na desktopie przyklejony z prawej. -->
     <PosterPreview
-      class="lg:sticky lg:top-24"
+      class="lg:sticky lg:top-24 lg:col-start-2 lg:row-span-2 lg:row-start-1"
       :heading="heading"
       :items="selected"
-      :logo-url="logoUrl"
+      :design="design"
+      :logo-urls="logoUrls"
+      :background-image="backgroundImage"
+    />
+
+    <DesignPanel
+      v-model="design"
+      class="lg:col-start-1 lg:row-start-2"
+      :has-image="backgroundImage !== null"
+      :image-error="imageError"
+      @image="setBackgroundImage"
     />
   </div>
 </template>

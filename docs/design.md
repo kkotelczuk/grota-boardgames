@@ -52,6 +52,7 @@ Wszystkie pary tekstowe przekraczają 4,5:1 (AA), większość 7:1 (AAA). `line-
 - Odchudzone skryptem `scripts/subset-fonts.py`: oś wagi 400–700, `latin` + Latin Extended-A (polskie znaki). Ok. 85 KB zamiast ok. 200 KB.
 - Dwa pliki na krój (`latin`, `latin-ext`) wybierane przez `unicode-range`; `latin` jest preloadowany w `BaseLayout.astro`. `font-display: swap`.
 - Stosy zapasowe: `Iowan Old Style`, `Palatino Linotype`, Georgia / `system-ui`.
+- **Wyjątek – generator grafik** (`/generator/`): 6 krojów ozdobnych do napisu na grafice (Fascinate Inline, Bricolage Grotesque, Anton, Special Elite, Caveat, Lobster) z `@fontsource*`, ładowanych przez FontFace API tylko na tej stronie (`src/lib/generator/fonts.ts`), nie w `global.css`.
 
 ## Odstępy, promienie, cienie
 

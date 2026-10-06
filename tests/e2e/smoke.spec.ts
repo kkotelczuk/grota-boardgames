@@ -100,11 +100,34 @@ test('generator grafik: hasło, wybór gier i pobranie PNG', async ({ page }) =>
   const download = await downloadPromise;
   expect(download.suggestedFilename()).toMatch(/^grota-gry-\d{4}-\d{2}-\d{2}\.png$/);
 
-  // Hasło zapamiętane – po przeładowaniu od razu generator.
+  // Wygląd: motyw, font, styl kafelków, zdjęcie tła – pobieranie nadal działa
+  // (zdjęcie z urządzenia jest same-origin, więc canvas nie jest „brudny” i toBlob przechodzi).
+  await page
+    .getByRole('group', { name: 'Motywy' })
+    .getByRole('radio', { name: 'Zorza' })
+    .check({ force: true });
+  await page.getByRole('tab', { name: 'Napis' }).click();
+  await page.getByRole('radio', { name: 'Mocny' }).check({ force: true });
+  await page.getByRole('tab', { name: 'Kafelki' }).click();
+  await page.getByRole('radio', { name: 'Polaroid' }).check({ force: true });
+  await page.getByRole('tab', { name: 'Tło' }).click();
+  await page.getByRole('radio', { name: 'Zdjęcie' }).check({ force: true });
+  await page
+    .getByLabel('Zdjęcie z urządzenia', { exact: true })
+    .setInputFiles('public/og-default.png');
+  await expect(page.getByRole('button', { name: 'Usuń zdjęcie' })).toBeVisible();
+
+  const styledDownload = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Pobierz PNG' }).click();
+  expect((await styledDownload).suggestedFilename()).toMatch(/\.png$/);
+
+  // Hasło i wygląd zapamiętane (bez zdjęcia – wraca tło presetu).
   await page.reload();
   await waitForIslands(page);
   await expect(page.getByRole('searchbox', { name: 'Szukaj gry z kolekcji' })).toBeVisible();
   await expect(page.getByLabel('Hasło')).toHaveCount(0);
+  await page.getByRole('tab', { name: 'Kafelki' }).click();
+  await expect(page.getByRole('radio', { name: 'Polaroid' })).toBeChecked();
 });
 
 test('przekierowanie /discord/ ma link awaryjny', async ({ request }) => {
