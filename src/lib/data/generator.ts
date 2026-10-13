@@ -19,12 +19,20 @@ export async function buildGeneratorIndex(locale: Locale): Promise<GeneratorGame
   const items = await Promise.all(
     games.map(async (game): Promise<GeneratorGame> => {
       const image = coverImage(game);
+      const [cover, thumb] = image
+        ? await Promise.all(
+            [480, 96].map(
+              async (width) => (await getImage({ src: image, width, format: 'webp' })).src,
+            ),
+          )
+        : [null, null];
       return {
         id: game.id,
         title: gameTitle(game, locale),
         subtitle: gameSubtitle(game, locale),
         search: searchText(game),
-        cover: image ? (await getImage({ src: image, width: 480, format: 'webp' })).src : null,
+        cover: cover ?? null,
+        thumb: thumb ?? null,
       };
     }),
   );
