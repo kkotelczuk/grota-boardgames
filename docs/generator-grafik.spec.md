@@ -254,3 +254,10 @@ generator: {
 3. Napis u góry (Fraunces), **logo w prawym dolnym rogu**.
 4. Gra bez okładki w kolekcji: beżowy kwadrat + nazwa pod spodem.
 5. Poza napisem, okładkami z nazwami i logo nic więcej na grafice.
+
+## Okładki z BGG dla gier spoza kolekcji (2026-10-13)
+
+- Wyniki wyszukiwania w kolekcji pokazują miniaturę okładki (96 px WebP z builda – `GeneratorGame.thumb`).
+- Pod wynikami przycisk „Szukaj „…” w BoardGameGeek” – BGG odpytujemy dopiero po kliknięciu (limity API). Wyniki: tylko gry bazowe, z miniaturą i rokiem, sortowane po trafności nazwy, potem po liczbie ocen. Gra, która jest w kolekcji, dodaje się jako gra z kolekcji (polski tytuł, okładka z naszej domeny).
+- Token BGG XML API wpisuje się w generatorze i zostaje w `localStorage` (`grota:bgg-token`) – nie trafia do bundla, bo strona jest publiczna. Odrzucony token (401) jest zapominany.
+- Okładka na grafikę idzie przez proxy `images.weserv.nl` (nagłówki CORS) – obrazki prosto z `cf.geekdo-images.com` „brudziłyby” canvas i blokowały eksport PNG. Kod: `src/lib/generator/bgg.ts`, `BggSearch.vue`.

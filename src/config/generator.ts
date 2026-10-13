@@ -11,3 +11,8 @@ export const GENERATOR_MAX_GAMES = 25;
 export const GENERATOR_ACCESS_KEY = 'grota:generator-access';
 /** Klucz w localStorage – zapamiętany wygląd grafiki (`PosterDesign`, bez zdjęcia tła). */
 export const GENERATOR_DESIGN_KEY = 'grota:generator-design:v1';
+/**
+ * Klucz w localStorage – token BGG XML API do wyszukiwania gier spoza kolekcji. Wpisywany
+ * w generatorze, a nie wkompilowany w bundle (strona jest publiczna, token byłby jawny).
+ */
+export const GENERATOR_BGG_TOKEN_KEY = 'grota:bgg-token';

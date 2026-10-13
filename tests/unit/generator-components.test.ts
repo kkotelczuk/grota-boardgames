@@ -26,6 +26,7 @@ const game = (id: string, title: string, subtitle: string | null = null): Genera
     .map((s) => normalizeForSearch(s!))
     .join(' | '),
   cover: null,
+  thumb: null,
 });
 const games = [
   game('zlodziej', 'Złodziej', 'The Thief'),

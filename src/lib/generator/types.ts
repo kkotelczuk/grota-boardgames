@@ -11,9 +11,17 @@ export interface GeneratorGame {
   search: string;
   /** Okładka 480 px WebP z tej samej domeny (canvas nie zostaje „brudny”). */
   cover: string | null;
+  /** Miniatura 96 px WebP – do listy wyników wyszukiwania. */
+  thumb: string | null;
 }
 
-/** Pozycja na grafice: gra z kolekcji albo spoza niej (obrazek z urządzenia). */
+/** Pozycja na grafice: gra z kolekcji, z BGG albo spoza obu (obrazek z urządzenia). */
 export type SelectedItem =
   | { key: string; source: 'catalog'; title: string; cover: string | null }
+  | {
+      key: string;
+      source: 'bgg';
+      title: string;
+      /** URL przez proxy z CORS */ cover: string | null;
+    }
   | { key: string; source: 'custom'; title: string; /** `blob:` URL */ cover: string };

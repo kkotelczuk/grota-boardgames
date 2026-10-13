@@ -4,6 +4,7 @@ import type { GeneratorGame, SelectedItem } from '@/lib/generator/types';
 import { matchesQuery } from '@/lib/filters';
 import { useGameSearch } from '@/composables/useGameSearch';
 import SearchBox from '../SearchBox.vue';
+import BggSearch from './BggSearch.vue';
 import { useI18n } from '../i18n';
 
 const MAX_RESULTS = 8;
@@ -37,6 +38,7 @@ const results = computed(() => {
   }
   return found;
 });
+const catalog = computed(() => new Map(games.map((game) => [game.id, game])));
 const showNoResults = computed(
   () => !!debouncedQuery.value.trim() && !isPending.value && !results.value.length,
 );
@@ -84,10 +86,21 @@ function addCustom() {
       <li v-for="game in results" :key="game.id">
         <button
           type="button"
-          class="flex w-full items-baseline gap-2 rounded-xl px-4 py-2.5 text-left hover:bg-sunken disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:bg-transparent"
+          class="flex w-full items-center gap-3 rounded-xl px-2 py-1.5 text-left hover:bg-sunken disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:bg-transparent"
           :disabled="disabled || selectedKeys.has(game.id)"
           @click="addGame(game)"
         >
+          <!-- Okładka ułatwia rozpoznanie tytułu (zwłaszcza przy kilku wydaniach jednej gry). -->
+          <img
+            v-if="game.thumb"
+            :src="game.thumb"
+            alt=""
+            width="40"
+            height="40"
+            loading="lazy"
+            class="size-10 shrink-0 rounded-md object-cover"
+          />
+          <span v-else class="size-10 shrink-0 rounded-md bg-sunken" aria-hidden="true" />
           <span class="min-w-0">
             <span class="font-semibold">{{ game.title }}</span>
             <!-- Jawna spacja: bez niej czytnik ekranu dostaje „SabotażystaSaboteur”. -->
@@ -104,6 +117,19 @@ function addCustom() {
     <p v-else-if="showNoResults" class="mt-3 px-4 text-sm text-muted" role="status">
       {{ t.generator.noResults }}
     </p>
+
+    <!--
+      Gry spoza kolekcji – z BoardGameGeek (z okładką), zanim trzeba będzie wgrywać zdjęcie.
+      Po dodaniu fraza zostaje, żeby dało się dodać kilka wyników z jednego wyszukiwania.
+    -->
+    <BggSearch
+      v-if="debouncedQuery.trim()"
+      :query="debouncedQuery"
+      :catalog="catalog"
+      :selected-keys="selectedKeys"
+      :disabled="disabled"
+      @add="emit('add', $event)"
+    />
 
     <details class="mt-4 rounded-card border border-line bg-surface">
       <summary class="cursor-pointer px-4 py-3 font-semibold">

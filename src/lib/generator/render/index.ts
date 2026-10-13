@@ -39,6 +39,9 @@ export function loadImage(url: string): Promise<HTMLImageElement | null> {
   let promise = imageCache.get(url);
   if (!promise) {
     const img = new Image();
+    // Okładki z BGG idą przez proxy z CORS – bez `anonymous` canvas i tak by się „zabrudził”.
+    // Dla obrazków z tej samej domeny i blob: URL-i nic to nie zmienia.
+    img.crossOrigin = 'anonymous';
     img.src = url;
     promise = img.decode().then(
       () => img,
