@@ -38,7 +38,7 @@ export const site: SiteConfig = {
     country: 'PL',
   },
   geo: { latitude: 53.130908, longitude: 23.173157 },
-  discordInvite: 'https://discord.gg/Gkc63kgQa',
+  discordInvite: 'https://discord.gg/D7UDx3YcS7',
   discordPath: 'discord/',
   maps: {
     osm: 'https://www.openstreetmap.org/search?query=Warszawska%2044%2C%20Bia%C5%82ystok',
