@@ -191,7 +191,46 @@ export const en: Dictionary = {
     heading: 'About Grota',
     collection: (count: number) =>
       `The Grota collection has ${p(count, '{n} game', '{n} games')} – browse them with descriptions on the home page.`,
+    tagline: 'Where shared adventures begin!',
     lead: 'Białystok Board Game Group “Grota” (Białostocka Grupa Planszówkowa „Grota”) is an association in Białystok, Poland, bringing together fans of unplugged games: board games, card games, wargames and party games.',
+    intro:
+      'Grota is a Białystok crew of board game lovers – and so much more! We have our own spot right in the city centre, and the door is open to anyone who enjoys a shared table, a good game and meeting new people.',
+    offerHeading: 'What will you find at Grota?',
+    offer: [
+      {
+        icon: '🎲',
+        title: 'Board games – from your first play to heavy strategy',
+        paragraphs: [
+          'Just getting started with board games? You’re in the right place! Our crew includes people who will patiently and stress-free walk you into the world of gaming: help you pick a title, explain the rules and show you that board games are one of the best ways to spend time together.',
+          'Or maybe simple games aren’t enough and you want a real brain workout? Our resident strategists will show you what a truly heavy board game means: tough decisions, planning several moves ahead and strategies that stay on your mind long after the box is packed away.',
+        ],
+      },
+      {
+        icon: '🐉',
+        title: 'RPGs – adventures without limits',
+        paragraphs: [
+          'We have an award-winning Game Master on the team and a room set up specifically for RPG sessions. A projector, atmospheric LED lighting and a soundproofed space let you sink deep into the world of adventure. Seasoned player or first-timer – either way, discover the magic of telling stories together.',
+        ],
+      },
+      {
+        icon: '⚔️',
+        title: 'Wargames and miniature painting',
+        paragraphs: [
+          'Love tactical clashes, armies of miniatures and spectacular battles? Or are you still wondering what it’s all about? Our wargamers will gladly share their passion: introduce you to tabletop wargaming, teach you the basics and, once you want an army of your own, help you take your first steps in painting miniatures.',
+        ],
+      },
+    ],
+    audienceHeading: 'Who is Grota for?',
+    audienceLead: 'For anyone who fancies spending time around a shared table!',
+    audience: [
+      'A lone rider looking for a party to play with?',
+      'Got a group of friends and need a place to play together?',
+      'Want to meet new people, discover interesting titles and try games you’ve never had the chance to play?',
+      'Wondering what suits you best: light board games, demanding strategy, wargames or RPGs?',
+      'Fancy trying something new with people who love sharing their hobby?',
+    ],
+    audienceOutro:
+      'Then Grota is just the place for you! You don’t need to know every rule or bring your own crew – all it takes is a love of playing together and an openness to new friendships.',
     howItWorksHeading: 'How it works',
     howItWorks: [
       'You come to Grota to play on site – there are tables, games from our collection and people to play with.',
@@ -205,10 +244,21 @@ export const en: Dictionary = {
       'The fee is collected as part of the Association’s paid statutory activity and is used to pursue its statutory goals, in particular maintaining and developing the club and providing access to its resources.',
     whereHeading: 'Where to find us',
     addressLabel: 'Address',
+    whereHint: 'You’ll find us in the centre of Białystok, between a florist and a barber shop.',
     openMap: 'Open in OpenStreetMap',
     openGoogleMap: 'Open in Google Maps',
     hoursHeading: 'When we’re open',
-    hoursText: 'Opening days and hours are announced on our Discord server.',
+    hoursText:
+      'Every Sunday and Monday we post the schedule for the coming week on Discord – with the days and hours the club is open. Just take a look and plan your visit.',
+    communityHeading: 'Join our community!',
+    communityText:
+      'Our buzzing Discord server is where we arrange games, talk about games and meet new people. Drop in and say a few words about yourself – others will get to know you sooner, and you’ll find people you click with more easily.',
+    questionsHeading: 'Got questions?',
+    questionsBefore: 'Message us on Facebook or on ',
+    questionsLink: 'Discord',
+    questionsAfter:
+      '. And if you don’t want to wait for the next meetup and feel like playing right now, check the “Umówmy się na granie” (“Let’s arrange a game”) section on our Discord. That’s where you’ll find a crew, set up a specific game and start your adventure with Grota!',
+    outro: 'See you at the table!',
     faqHeading: 'Frequently asked questions',
   },
   generator: {

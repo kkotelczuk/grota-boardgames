@@ -193,7 +193,46 @@ export const pl = {
     heading: 'O Grocie',
     collection: (count: number) =>
       `${p(count, 'W kolekcji Groty jest {n} gra', 'W kolekcji Groty są {n} gry', 'W kolekcji Groty jest {n} gier')} – listę z opisami znajdziesz na stronie głównej.`,
+    tagline: 'Miejsce, w którym zaczyna się wspólna przygoda!',
     lead: 'Białostocka Grupa Planszówkowa „Grota” to stowarzyszenie z Białegostoku, które zrzesza miłośników gier bez prądu: planszówek, karcianek, gier wojennych i imprezowych.',
+    intro:
+      'Grota to białostocka ekipa miłośników planszówek – i nie tylko! Mamy swój kąt w samym centrum miasta, a drzwi są otwarte dla każdego, kto lubi wspólny stół, dobrą grę i nowe znajomości.',
+    offerHeading: 'Co znajdziesz w Grocie?',
+    offer: [
+      {
+        icon: '🎲',
+        title: 'Planszówki – od pierwszej partii po ciężkie strategie',
+        paragraphs: [
+          'Dopiero zaczynasz przygodę z planszówkami? Dobrze trafiasz! W naszej ekipie są osoby, które cierpliwie i bez stresu wprowadzą Cię w świat gier: pomogą dobrać tytuł, wytłumaczą zasady i pokażą, że planszówki to jeden z najlepszych sposobów na wspólnie spędzony czas.',
+          'A może proste gry to dla Ciebie za mało i chcesz porządnie zmęczyć szare komórki? Nasi klubowi stratedzy pokażą Ci, co znaczy prawdziwie ciężka planszówka: wymagające decyzje, planowanie kilka ruchów naprzód i strategie, które nie dają spokoju jeszcze długo po spakowaniu pudełka.',
+        ],
+      },
+      {
+        icon: '🐉',
+        title: 'RPG, czyli przygody bez granic',
+        paragraphs: [
+          'Mamy w ekipie utytułowanego Mistrza Gry i pokój przygotowany specjalnie do sesji RPG. Rzutnik, klimatyczne oświetlenie LED i wyciszone wnętrze sprawiają, że świat przygody wciąga bez reszty. Grasz od lat czy dopiero chcesz spróbować swoich sił? Tak czy inaczej – odkryj z nami magię wspólnego opowiadania historii.',
+        ],
+      },
+      {
+        icon: '⚔️',
+        title: 'Gry bitewne i malowanie figurek',
+        paragraphs: [
+          'Lubisz taktyczne starcia, armie figurek i widowiskowe bitwy? A może dopiero zastanawiasz się, o co w tym wszystkim chodzi? Nasi bitewniakowcy chętnie zarażą Cię swoją pasją: wprowadzą w świat gier bitewnych, pokażą podstawy rozgrywki, a gdy zechcesz zebrać własną armię – pomogą postawić pierwsze kroki w malowaniu figurek.',
+        ],
+      },
+    ],
+    audienceHeading: 'Dla kogo jest Grota?',
+    audienceLead: 'Dla każdego, kto ma ochotę spędzić czas przy wspólnym stole!',
+    audience: [
+      'Jesteś samotnym jeźdźcem i szukasz drużyny do grania?',
+      'Masz paczkę znajomych i szukacie miejsca, w którym możecie razem pograć?',
+      'Chcesz poznać nowych ludzi, odkryć ciekawe tytuły i sprawdzić gry, w które jeszcze nie było okazji zagrać?',
+      'Zastanawiasz się, co bardziej Ci leży: lekkie planszówki, wymagające strategie, gry bitewne czy RPG?',
+      'Masz ochotę spróbować czegoś nowego w gronie ludzi, którzy z pasją dzielą się swoim hobby?',
+    ],
+    audienceOutro:
+      'W takim razie Grota jest właśnie dla Ciebie! Nie musisz znać wszystkich zasad ani mieć własnej ekipy – wystarczy chęć do wspólnej zabawy i otwartość na nowe znajomości.',
     howItWorksHeading: 'Jak to działa',
     howItWorks: [
       'Do Groty przychodzi się zagrać na miejscu – są stoły, gry z naszej kolekcji i ludzie, z którymi można zagrać.',
@@ -207,10 +246,21 @@ export const pl = {
       'Opłata jest pobierana w ramach odpłatnej działalności statutowej Stowarzyszenia i przeznaczana na realizację jego celów statutowych, w szczególności utrzymanie i rozwój działalności klubu oraz zapewnienie dostępu do jego zasobów.',
     whereHeading: 'Gdzie jesteśmy',
     addressLabel: 'Adres',
+    whereHint: 'Znajdziesz nas w centrum Białegostoku, między kwiaciarnią a barberem.',
     openMap: 'Otwórz w OpenStreetMap',
     openGoogleMap: 'Otwórz w Mapach Google',
     hoursHeading: 'Kiedy jesteśmy otwarci',
-    hoursText: 'Godziny i dni otwarte ogłaszamy na bieżąco na naszym Discordzie.',
+    hoursText:
+      'W każdą niedzielę i poniedziałek publikujemy na Discordzie rozkład jazdy na nadchodzący tydzień – z dniami i godzinami, w których klub jest otwarty. Wystarczy rzucić okiem i zaplanować wizytę.',
+    communityHeading: 'Dołącz do naszej społeczności!',
+    communityText:
+      'Na naszym tętniącym życiem serwerze Discord umawiamy się na granie, rozmawiamy o grach i poznajemy nowych ludzi. Wpadnij i napisz kilka słów o sobie – inni szybciej Cię poznają, a Ty łatwiej znajdziesz osoby, z którymi złapiesz wspólny język.',
+    questionsHeading: 'Masz pytania?',
+    questionsBefore: 'Napisz do nas na Facebooku lub na ',
+    questionsLink: 'Discordzie',
+    questionsAfter:
+      '. A jeśli nie chcesz czekać na kolejne spotkanie i masz ochotę zagrać już teraz, zajrzyj na Discordzie do sekcji „Umówmy się na granie”. To tam znajdziesz ekipę, umówisz się na konkretny tytuł i zaczniesz swoją przygodę z Grotą!',
+    outro: 'Do zobaczenia przy stole!',
     faqHeading: 'Najczęstsze pytania',
   },
   generator: {
