@@ -254,10 +254,14 @@ export const en: Dictionary = {
     communityText:
       'Our buzzing Discord server is where we arrange games, talk about games and meet new people. Drop in and say a few words about yourself – others will get to know you sooner, and you’ll find people you click with more easily.',
     questionsHeading: 'Got questions?',
-    questionsBefore: 'Message us on Facebook or on ',
-    questionsLink: 'Discord',
-    questionsAfter:
-      '. And if you don’t want to wait for the next meetup and feel like playing right now, check the “Umówmy się na granie” (“Let’s arrange a game”) section on our Discord. That’s where you’ll find a crew, set up a specific game and start your adventure with Grota!',
+    questions: {
+      before: 'Message us on ',
+      facebook: 'Facebook',
+      between: ' or on ',
+      discord: 'Discord',
+      after:
+        '. And if you don’t want to wait for the next meetup and feel like playing right now, check the “Umówmy się na granie” (“Let’s arrange a game”) section on our Discord. That’s where you’ll find a crew, set up a specific game and start your adventure with Grota!',
+    },
     outro: 'See you at the table!',
     faqHeading: 'Frequently asked questions',
   },

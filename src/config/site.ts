@@ -22,6 +22,8 @@ export interface SiteConfig {
   discordInvite: string;
   /** Wewnętrzna, stała ścieżka przekierowująca na `discordInvite`. */
   discordPath: string;
+  /** Profil na Facebooku. */
+  facebook: string;
   maps: { osm: string; google: string };
 }
 
@@ -40,6 +42,7 @@ export const site: SiteConfig = {
   geo: { latitude: 53.130908, longitude: 23.173157 },
   discordInvite: 'https://discord.gg/D7UDx3YcS7',
   discordPath: 'discord/',
+  facebook: 'https://www.facebook.com/GrotaBialystok',
   maps: {
     osm: 'https://www.openstreetmap.org/search?query=Warszawska%2044%2C%20Bia%C5%82ystok',
     google: 'https://www.google.com/maps/search/?api=1&query=Warszawska+44%2F2%2C+Bia%C5%82ystok',

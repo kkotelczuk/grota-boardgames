@@ -256,10 +256,14 @@ export const pl = {
     communityText:
       'Na naszym tętniącym życiem serwerze Discord umawiamy się na granie, rozmawiamy o grach i poznajemy nowych ludzi. Wpadnij i napisz kilka słów o sobie – inni szybciej Cię poznają, a Ty łatwiej znajdziesz osoby, z którymi złapiesz wspólny język.',
     questionsHeading: 'Masz pytania?',
-    questionsBefore: 'Napisz do nas na Facebooku lub na ',
-    questionsLink: 'Discordzie',
-    questionsAfter:
-      '. A jeśli nie chcesz czekać na kolejne spotkanie i masz ochotę zagrać już teraz, zajrzyj na Discordzie do sekcji „Umówmy się na granie”. To tam znajdziesz ekipę, umówisz się na konkretny tytuł i zaczniesz swoją przygodę z Grotą!',
+    questions: {
+      before: 'Napisz do nas na ',
+      facebook: 'Facebooku',
+      between: ' lub na ',
+      discord: 'Discordzie',
+      after:
+        '. A jeśli nie chcesz czekać na kolejne spotkanie i masz ochotę zagrać już teraz, zajrzyj na Discordzie do sekcji „Umówmy się na granie”. To tam znajdziesz ekipę, umówisz się na konkretny tytuł i zaczniesz swoją przygodę z Grotą!',
+    },
     outro: 'Do zobaczenia przy stole!',
     faqHeading: 'Najczęstsze pytania',
   },

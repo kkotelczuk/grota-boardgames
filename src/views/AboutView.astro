@@ -13,6 +13,7 @@ interface Props {
 const { locale } = Astro.props;
 const t = useTranslations(locale);
 const a = t.about;
+const q = a.questions;
 
 const games = await getAllGames();
 const alternates = {
@@ -133,12 +134,20 @@ const jsonLd = graph([
         </a>
 
         <h2 class="mt-10 font-display text-2xl font-semibold">{a.questionsHeading}</h2>
+        <!-- Jedno wyrażenie zamiast tekstu i <a> w osobnych liniach: Prettier łamie linie,
+             a Astro zamienia złamania na spacje (np. „Discordzie .”). -->
         <p class="mt-3">
-          {a.questionsBefore}
-          <a href={withBase('discord/')} class="font-semibold underline">
-            {a.questionsLink}
-          </a>
-          {a.questionsAfter}
+          {[
+            q.before,
+            <a href={site.facebook} rel="noopener" class="font-semibold underline">
+              {q.facebook}
+            </a>,
+            q.between,
+            <a href={withBase('discord/')} class="font-semibold underline">
+              {q.discord}
+            </a>,
+            q.after,
+          ]}
         </p>
         <p class="mt-6 font-display text-2xl font-semibold">
           {a.outro} <span aria-hidden="true">🎲</span>
