@@ -20,7 +20,7 @@ Drugi, równie ważny cel: **właściciel projektu uczy się Vue na poziomie sen
 - **Czym się zajmuje:** gry bez prądu – głównie planszówki, karcianki, gry wojenne, imprezowe.
 - **Miejsce:** ul. Warszawska 44/2 lok. 4, Białystok. Kodu pocztowego **nie znamy** – nie zmyślaj go, zostaw `TODO` w konfiguracji.
 - **Jak to działa:** do Groty przychodzi się zagrać na miejscu – są stoły i ludzie. **Gier się nie wypożycza.** Ta strona pokazuje, w co można u nas zagrać.
-- **Dni otwarte i społeczność:** Discord – https://discord.gg/Gkc63kgQa. Godzin otwarcia nie podajemy na stronie, tylko odsyłamy na Discorda.
+- **Dni otwarte i społeczność:** Discord – https://discord.gg/D7UDx3YcS7. Godzin otwarcia nie podajemy na stronie, tylko odsyłamy na Discorda.
   - **Ten link do zaproszenia nie jest stały** i może się zmienić. Trzymaj go w jednym miejscu (`src/config/site.ts`).
   - Wszystkie przyciski i linki na stronie kieruj na wewnętrzną ścieżkę `/discord/`, która przekierowuje na aktualny link (statyczna strona z `<meta http-equiv="refresh">` + `<link rel="canonical">` + widoczny link awaryjny). Zmiana zaproszenia = edycja jednej wartości, a udostępnione wcześniej linki do strony dalej działają.
   - W JSON-LD (`sameAs`) i w `llms.txt` używaj tego samego, aktualnego linku z konfiguracji.

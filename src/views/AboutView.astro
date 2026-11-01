@@ -13,6 +13,7 @@ interface Props {
 const { locale } = Astro.props;
 const t = useTranslations(locale);
 const a = t.about;
+const q = a.questions;
 
 const games = await getAllGames();
 const alternates = {
@@ -55,9 +56,35 @@ const jsonLd = graph([
     <div class="grid items-start gap-10 lg:grid-cols-[1fr_18rem]">
       <div class="max-w-prose">
         <h1 class="font-display text-4xl font-semibold sm:text-5xl">{a.heading}</h1>
+        <p class="mt-3 font-display text-2xl text-muted">{a.tagline}</p>
         <!-- Zdania faktograficzne (GEO): kto, co, gdzie – łatwe do zacytowania przez modele językowe. -->
-        <p class="mt-4 text-lg">{a.lead}</p>
+        <p class="mt-6 text-lg">{a.lead}</p>
+        <p class="mt-3">{a.intro}</p>
         <p class="mt-3 text-muted">{a.collection(games.length)}</p>
+
+        <h2 class="mt-10 font-display text-2xl font-semibold">{a.offerHeading}</h2>
+        <div class="mt-4 space-y-4">
+          {a.offer.map((item) => (
+            <section class="rounded-xl border border-line bg-surface p-4">
+              <h3 class="flex items-baseline gap-2 font-display text-xl font-semibold">
+                <span aria-hidden="true">{item.icon}</span>
+                {item.title}
+              </h3>
+              {item.paragraphs.map((text) => (
+                <p class="mt-2">{text}</p>
+              ))}
+            </section>
+          ))}
+        </div>
+
+        <h2 class="mt-10 font-display text-2xl font-semibold">{a.audienceHeading}</h2>
+        <p class="mt-3 font-semibold">{a.audienceLead}</p>
+        <ul class="mt-3 list-disc space-y-2 pl-5">
+          {a.audience.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+        <p class="mt-3">{a.audienceOutro}</p>
 
         <h2 class="mt-10 font-display text-2xl font-semibold">{a.howItWorksHeading}</h2>
         <ul class="mt-3 list-disc space-y-2 pl-5">
@@ -87,6 +114,7 @@ const jsonLd = graph([
         <address class="mt-3 not-italic">
           <span class="font-semibold">{a.addressLabel}:</span> {fullAddress}
         </address>
+        <p class="mt-2 text-muted">{a.whereHint}</p>
         <div class="mt-4 flex flex-wrap gap-3">
           <a href={site.maps.osm} rel="noopener" class="btn btn-ghost">
             {a.openMap}
@@ -98,9 +126,32 @@ const jsonLd = graph([
 
         <h2 class="mt-10 font-display text-2xl font-semibold">{a.hoursHeading}</h2>
         <p class="mt-3">{a.hoursText}</p>
+
+        <h2 class="mt-10 font-display text-2xl font-semibold">{a.communityHeading}</h2>
+        <p class="mt-3">{a.communityText}</p>
         <a href={withBase('discord/')} class="btn btn-primary mt-4">
           {t.hero.cta}
         </a>
+
+        <h2 class="mt-10 font-display text-2xl font-semibold">{a.questionsHeading}</h2>
+        <!-- Jedno wyrażenie zamiast tekstu i <a> w osobnych liniach: Prettier łamie linie,
+             a Astro zamienia złamania na spacje (np. „Discordzie .”). -->
+        <p class="mt-3">
+          {[
+            q.before,
+            <a href={site.facebook} rel="noopener" class="font-semibold underline">
+              {q.facebook}
+            </a>,
+            q.between,
+            <a href={withBase('discord/')} class="font-semibold underline">
+              {q.discord}
+            </a>,
+            q.after,
+          ]}
+        </p>
+        <p class="mt-6 font-display text-2xl font-semibold">
+          {a.outro} <span aria-hidden="true">🎲</span>
+        </p>
 
         <h2 class="mt-12 font-display text-2xl font-semibold">{a.faqHeading}</h2>
         <div class="mt-4 divide-y divide-line rounded-xl border border-line bg-surface">

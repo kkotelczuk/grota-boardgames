@@ -43,7 +43,7 @@ export function organizationLd(
     },
     hasMap: site.maps.osm,
     areaServed: { '@type': 'City', name: site.address.city },
-    sameAs: [site.discordInvite],
+    sameAs: [site.discordInvite, site.facebook],
   };
 }
 
