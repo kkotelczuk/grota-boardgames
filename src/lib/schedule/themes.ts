@@ -35,6 +35,11 @@ export interface Face {
    * tła nie dało się odróżnić od białego marginesu – zamiast przezroczystości przycinamy kształtem.
    */
   crop?: { rect: [number, number, number, number]; radius: number };
+  /**
+   * Pas nagłówka dorysowywany na grafice karty (wysokość = ułamek wysokości karty). W pliku
+   * letniej karty granatowy pas jest węższy od karty i ma nierówne brzegi – rysujemy go sami.
+   */
+  header?: { height: number; color: string };
   opacity: number;
   name: TextSpot & { abbreviated: boolean };
   /** Brak = na tej karcie nie rysujemy danego elementu. */
@@ -113,10 +118,12 @@ const fadedFace = (
 });
 
 /** Lato: wszystkie karty równe; nieaktywna ma czerwone pole zamiast godzin. */
-const summerFace = (name: string, hours: boolean): Face => ({
+const summerFace = (name: string, left: number, hours: boolean): Face => ({
   src: cardUrl(name),
-  ratio: 327 / 144,
-  crop: { rect: [8, 12, 144, 327], radius: 0.07 },
+  ratio: 327 / 138,
+  // Karta leży w każdym z dwóch plików w innym miejscu – stąd osobny lewy brzeg wycinka.
+  crop: { rect: [left, 12, 138, 327], radius: 0.07 },
+  header: { height: 0.128, color: '#0c1d3e' },
   opacity: 1,
   name: { cy: 0.066, size: 0.098, maxW: 0.9, color: '#ffffff', abbreviated: false },
   icon: { cy: 0.33, maxW: 0.74, maxH: 0.3 },
@@ -182,8 +189,8 @@ export const THEMES: Record<ThemeId, Theme> = {
     fonts: { name: SANS, hours: SANS_BOLD },
     iconShadow: false,
     cardShadow: false,
-    active: summerFace('summer', true),
-    inactive: summerFace('summer-inactive', false),
+    active: summerFace('summer', 10, true),
+    inactive: summerFace('summer-inactive', 3, false),
   },
   classic: {
     id: 'classic',

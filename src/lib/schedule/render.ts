@@ -152,6 +152,11 @@ function drawFace(
     ctx.shadowColor = 'transparent';
     ctx.clip();
     if (picture) ctx.drawImage(picture, ...face.crop.rect, 0, 0, w, h);
+    if (face.header) {
+      // Wciąż działa clip() karty, więc górne rogi pasa są zaokrąglone razem z nią.
+      ctx.fillStyle = face.header.color;
+      ctx.fillRect(0, 0, w, face.header.height * h);
+    }
   } else if (picture) {
     // Grafika karty ma przezroczystość, więc cień sam układa się po jej (nieregularnym) kształcie.
     if (shadow || lifted) {
