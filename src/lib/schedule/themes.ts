@@ -131,7 +131,7 @@ export const THEMES: Record<ThemeId, Theme> = {
     label: 'Jesień',
     background: backgroundUrl('autumn'),
     row: CARD_ROW,
-    date: { x: 1538, cy: 128, size: 54, font: SERIF, prefix: '', shadow: true },
+    date: { x: 1586, cy: 127, size: 52, font: SMALL_CAPS, prefix: '', shadow: true },
     fonts: { name: SERIF, hours: SERIF },
     iconShadow: true,
     cardShadow: true,
