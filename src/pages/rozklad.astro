@@ -1,0 +1,30 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ScheduleApp from '@/components/vue/schedule/ScheduleApp.vue';
+import { buildGeneratorIndex } from '@/lib/data/generator';
+
+// Narzędzie dla prowadzących Grotę: noindex, poza sitemapą, bez linków w menu i bez wersji EN.
+// Celowo NIE ma wpisu w robots.txt – publiczny `Disallow` zdradzałby adres.
+const games = await buildGeneratorIndex('pl');
+---
+
+<BaseLayout
+  title="Rozkład jazdy – Grota"
+  description="Generator grafiki z godzinami otwarcia Groty."
+  locale="pl"
+  alternates={null}
+  current={null}
+  noindex
+>
+  <section class="container-page pt-8 sm:pt-12">
+    <h1 class="font-display text-4xl font-semibold sm:text-5xl">Rozkład jazdy</h1>
+    <!--
+      [Vue] client:only: cały stan pochodzi z localStorage, którego serwer nie zna – SSR
+      wyrenderowałby pusty rozkład, a po hydracji treść by się podmieniła (mismatch).
+    -->
+    <ScheduleApp client:only="vue" games={games} />
+    <noscript>
+      <p class="mt-6 text-muted">Generator wymaga JavaScriptu.</p>
+    </noscript>
+  </section>
+</BaseLayout>
