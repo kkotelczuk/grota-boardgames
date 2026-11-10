@@ -3,6 +3,7 @@ import { computed, useId } from 'vue';
 import { SCHEDULE_CAPTION_MAX } from '@/config/schedule';
 import type { IconMeta } from '@/lib/schedule/icons';
 import { isActive, type DayPlan } from '@/lib/schedule/plan';
+import IconPicker from './IconPicker.vue';
 
 const { name, date, icons } = defineProps<{
   name: string;
@@ -29,13 +30,10 @@ function patch(change: Partial<DayPlan>) {
 const active = computed(() => isActive(day.value));
 /** Podana tylko jedna z godzin – dzień zostaje nieaktywny, więc podpowiadamy dlaczego. */
 const incomplete = computed(() => !active.value && !!(day.value.from || day.value.to));
-const standardIcons = computed(() => icons.filter((icon) => icon.standard));
-const specialIcons = computed(() => icons.filter((icon) => !icon.standard));
-
 // [Vue] useId (3.5+): unikalne i stabilne id dla par label–input, także gdy komponent jest
 // użyty 7 razy na stronie.
 const id = useId();
-const valueOf = (event: Event) => (event.target as HTMLInputElement | HTMLSelectElement).value;
+const valueOf = (event: Event) => (event.target as HTMLInputElement).value;
 const checkedOf = (event: Event) => (event.target as HTMLInputElement).checked;
 
 const field =
@@ -100,25 +98,14 @@ const field =
       </label>
 
       <div>
-        <label :for="`${id}-icon`" class="block text-sm font-semibold">Ikona</label>
-        <select
-          :id="`${id}-icon`"
-          :class="field"
-          :value="day.icon"
+        <!-- Zwykły tekst, nie <label>: wybierak to przycisk z listą, a nie pojedyncze pole. -->
+        <p class="text-sm font-semibold">Ikona</p>
+        <IconPicker
+          :model-value="day.icon"
+          :icons="icons"
           :disabled="!!day.image"
-          @change="patch({ icon: valueOf($event) })"
-        >
-          <optgroup label="Standardowe">
-            <option v-for="icon in standardIcons" :key="icon.id" :value="icon.id">
-              {{ icon.label }}
-            </option>
-          </optgroup>
-          <optgroup v-if="specialIcons.length" label="Okolicznościowe">
-            <option v-for="icon in specialIcons" :key="icon.id" :value="icon.id">
-              {{ icon.label }}
-            </option>
-          </optgroup>
-        </select>
+          @update:model-value="patch({ icon: $event })"
+        />
       </div>
 
       <div v-if="day.image" class="flex items-center gap-3">
