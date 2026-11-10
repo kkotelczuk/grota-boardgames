@@ -135,8 +135,8 @@ export const THEMES: Record<ThemeId, Theme> = {
     fonts: { name: SERIF, hours: SERIF },
     iconShadow: true,
     cardShadow: true,
-    active: paperFace('autumn', 322, 444, 0.132),
-    inactive: fadedFace('inactive', 228, 322, { cy: 0.13, size: 0.19 }, '#8b8e80'),
+    active: paperFace('autumn', 310, 443, 0.131),
+    inactive: fadedFace('inactive', 227, 321, { cy: 0.13, size: 0.19 }, '#8b8e80'),
   },
   winter: {
     id: 'winter',
@@ -194,8 +194,8 @@ export const THEMES: Record<ThemeId, Theme> = {
     fonts: { name: SERIF, hours: SERIF },
     iconShadow: true,
     cardShadow: true,
-    active: paperFace('classic', 322, 434, 0.108),
-    inactive: fadedFace('inactive', 228, 322, { cy: 0.13, size: 0.19 }, '#8b8e80'),
+    active: paperFace('classic', 310, 431, 0.107),
+    inactive: fadedFace('inactive', 227, 321, { cy: 0.13, size: 0.19 }, '#8b8e80'),
   },
 };
 
