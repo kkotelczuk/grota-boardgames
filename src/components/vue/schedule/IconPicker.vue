@@ -88,13 +88,17 @@ watch(
         v-if="current"
         :src="iconUrl(current.id)"
         alt=""
-        class="size-10 shrink-0 object-contain"
+        class="size-10 shrink-0 rounded-lg object-contain dark:bg-[#f6f1e7] dark:p-0.5"
       />
       <span class="min-w-0 flex-1 truncate">{{ current?.label ?? 'Wybierz ikonę' }}</span>
       <span aria-hidden="true" class="text-muted">▾</span>
     </button>
 
     <!--
+      Ikony to granatowy rysunek na papier kart, więc na ciemnym tle strony znikają. W trybie
+      ciemnym każda miniatura dostaje jasny kafelek w kolorze papieru (stały kolor, nie token –
+      tokeny w dark mode są ciemne). Rysunku nie przekolorowujemy: ma wyglądać jak na grafice.
+
       Zwykłe pola radio (ukryte wizualnie) zamiast własnej obsługi klawiatury: strzałki, Tab
       i czytniki ekranu działają natywnie. Strzałki od razu zmieniają ikonę (widać ją na
       podglądzie), Enter albo kliknięcie zamyka listę.
@@ -129,7 +133,11 @@ watch(
               :value="icon.id"
               :aria-label="icon.label"
             />
-            <img :src="iconUrl(icon.id)" alt="" class="size-full object-contain" />
+            <img
+              :src="iconUrl(icon.id)"
+              alt=""
+              class="size-full rounded-lg object-contain dark:bg-[#f6f1e7] dark:p-1"
+            />
           </label>
         </div>
       </template>
