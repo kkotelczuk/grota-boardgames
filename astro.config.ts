@@ -23,9 +23,9 @@ export default defineConfig({
     vue(),
     sitemap({
       i18n: { defaultLocale: 'pl', locales: { pl: 'pl-PL', en: 'en' } },
-      // Bez przekierowania, stron ulubionych (noindex – treść zależy od localStorage) i generatora
-      // grafik (strona za hasłem, tylko dla części osób).
-      filter: (page) => !/\/(discord|ulubione|favorites|generator)\/$/.test(page),
+      // Bez przekierowania, stron ulubionych (noindex – treść zależy od localStorage) oraz narzędzi
+      // tylko dla części osób: generatora grafik (za hasłem) i rozkładu jazdy.
+      filter: (page) => !/\/(discord|ulubione|favorites|generator|rozklad)\/$/.test(page),
     }),
   ],
   vite: {

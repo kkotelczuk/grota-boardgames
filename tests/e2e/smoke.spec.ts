@@ -130,6 +130,28 @@ test('generator grafik: hasło, wybór gier i pobranie PNG', async ({ page }) =>
   await expect(page.getByRole('radio', { name: 'Polaroid' })).toBeChecked();
 });
 
+test('rozkład jazdy: hasło i pobranie PNG', async ({ page }) => {
+  await page.goto('./rozklad/');
+  await waitForIslands(page);
+
+  // Przed hasłem edytora w ogóle nie ma na stronie.
+  await expect(page.getByRole('button', { name: 'Pobierz PNG' })).toHaveCount(0);
+  const password = page.getByLabel('Hasło');
+  await password.fill('zle');
+  await page.getByRole('button', { name: 'Wejdź' }).click();
+  await expect(page.getByRole('alert')).toHaveText('Nieprawidłowe hasło.');
+  await password.fill('test-123');
+  await page.getByRole('button', { name: 'Wejdź' }).click();
+
+  const downloadPromise = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Pobierz PNG' }).click();
+  expect((await downloadPromise).suggestedFilename()).toMatch(/\.png$/);
+
+  // Hasło jest wspólne z generatorem grafik – tam już nie pytamy.
+  await page.goto('./generator/');
+  await expect(page.getByRole('searchbox', { name: 'Szukaj gry z kolekcji' })).toBeVisible();
+});
+
 test('przekierowanie /discord/ ma link awaryjny', async ({ request }) => {
   const response = await request.get('./discord/');
   const html = await response.text();

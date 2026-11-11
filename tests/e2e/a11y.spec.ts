@@ -8,6 +8,7 @@ const pages = [
   './o-grocie/',
   './ulubione/',
   './generator/',
+  './rozklad/',
   './404.html',
 ];
 
@@ -46,4 +47,14 @@ test('generator po podaniu hasła', async ({ page }) => {
       results.violations.map((v) => `${tab} – ${v.id}: ${v.nodes.length} × ${v.help}`),
     ).toEqual([]);
   }
+});
+
+test('rozkład jazdy po podaniu hasła', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('grota:generator-access', '1'));
+  await page.goto('./rozklad/');
+  await expect(page.getByRole('button', { name: 'Pobierz PNG' })).toBeVisible();
+  const results = await new AxeBuilder({ page })
+    .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'])
+    .analyze();
+  expect(results.violations.map((v) => `${v.id}: ${v.nodes.length} × ${v.help}`)).toEqual([]);
 });
