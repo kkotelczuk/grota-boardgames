@@ -19,8 +19,8 @@ const games = await buildGeneratorIndex('pl');
   <section class="container-page pt-8 sm:pt-12">
     <h1 class="font-display text-4xl font-semibold sm:text-5xl">Rozkład jazdy</h1>
     <!--
-      [Vue] client:only: cały stan pochodzi z localStorage, którego serwer nie zna – SSR
-      wyrenderowałby pusty rozkład, a po hydracji treść by się podmieniła (mismatch).
+      [Vue] client:only: i bramka hasła, i sam rozkład zależą od localStorage, którego serwer
+      nie zna – SSR wyrenderowałby formularz hasła, a po hydracji treść by się podmieniła.
     -->
     <ScheduleApp client:only="vue" games={games} />
     <noscript>

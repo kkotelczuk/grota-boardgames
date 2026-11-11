@@ -7,7 +7,10 @@
 export const GENERATOR_PASSWORD = 'test-123';
 /** Maks. liczba gier na grafice (siatka 5×5). */
 export const GENERATOR_MAX_GAMES = 25;
-/** Klucz w localStorage – `'1'` = hasło podane, nie pytamy ponownie. */
+/**
+ * Klucz w localStorage – `'1'` = hasło podane, nie pytamy ponownie. Wspólny z rozkładem jazdy
+ * (`/rozklad/`): to samo hasło, wpisane raz, otwiera oba narzędzia.
+ */
 export const GENERATOR_ACCESS_KEY = 'grota:generator-access';
 /** Klucz w localStorage – zapamiętany wygląd grafiki (`PosterDesign`, bez zdjęcia tła). */
 export const GENERATOR_DESIGN_KEY = 'grota:generator-design:v1';

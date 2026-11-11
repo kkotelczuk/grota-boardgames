@@ -2,7 +2,8 @@
 import { computed, onBeforeUnmount, ref, shallowRef, useId, watch } from 'vue';
 import type { Locale } from '@/lib/languages';
 import type { GeneratorGame, SelectedItem } from '@/lib/generator/types';
-import { GENERATOR_ACCESS_KEY, GENERATOR_MAX_GAMES } from '@/config/generator';
+import { GENERATOR_MAX_GAMES } from '@/config/generator';
+import { hasToolAccess } from '@/lib/generator/access';
 import { shuffle } from '@/lib/generator/shuffle';
 import type { PosterDesign } from '@/lib/generator/design';
 import { decodeBackgroundFile, type BackgroundImage } from '@/lib/generator/render/background';
@@ -23,16 +24,9 @@ const { t } = provideI18n(locale);
 
 // ---------- Bramka hasła ----------
 
-function hasAccess(): boolean {
-  try {
-    return localStorage.getItem(GENERATOR_ACCESS_KEY) === '1';
-  } catch {
-    return false; // storage zablokowany – po prostu pytamy o hasło
-  }
-}
 // [Vue] Odczyt localStorage wprost w setup jest bezpieczny tylko dlatego, że wyspa ma
 // `client:only` – przy SSR serwer nie zna localStorage i HTML różniłby się od klienta.
-const unlocked = ref(hasAccess());
+const unlocked = ref(hasToolAccess());
 
 // ---------- Wybór (nic nie zapisujemy między wizytami) ----------
 
